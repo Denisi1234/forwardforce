@@ -241,7 +241,7 @@ body {
   height: 480px;
   min-height: 440px;
   background-color: #2a221d;
-  background-image: url('../images/clean-banner-desktop.jpg');
+  background-image: url('../images/clean-banner-desktop.webp');
   background-size: cover;
   background-position: center right;
   display: flex;
@@ -1372,6 +1372,19 @@ body {
   pointer-events: auto;
 }
 
+.up-nav-toggle {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .up-nav-dropdown-wrapper:focus-within .up-mega-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
 .up-mega-content {
   max-width: 1380px;
   margin: 0 auto;
@@ -1531,16 +1544,45 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Mega Dropdown adjustments for tablets & mobile */
+  /* Touch-friendly category menus open from a dedicated disclosure button. */
+  .up-nav-dropdown-wrapper { flex: 0 0 auto; }
+  .up-nav-item { padding-right: 8px; }
+  .up-nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 40px;
+    min-width: 40px;
+    min-height: 44px;
+    margin: 0 6px 0 0;
+    border: 0;
+    border-radius: 4px;
+    color: #095079;
+    background: #eef5f9;
+    font-size: 18px;
+    cursor: pointer;
+    touch-action: manipulation;
+  }
+  .up-nav-toggle:focus-visible { outline: 2px solid #095079; outline-offset: 2px; }
+  .up-nav-dropdown-wrapper.is-open > .up-nav-toggle { color: #fff; background: #095079; }
+
   .up-mega-dropdown {
     position: fixed;
-    top: auto;
+    top: var(--ff-mobile-nav-top, 120px);
     left: 0;
     right: 0;
     width: 100vw;
-    max-height: 80vh;
+    max-height: calc(100vh - var(--ff-mobile-nav-top, 120px));
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .up-nav-dropdown-wrapper.is-open > .up-mega-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
   .up-mega-content {
     grid-template-columns: repeat(2, 1fr);
@@ -1564,7 +1606,7 @@ body {
     height: 380px;
     min-height: 380px;
     padding: 0 16px;
-    background-image: url('../images/clean-banner-tablet.jpg');
+    background-image: url('../images/clean-banner-tablet.webp');
     background-position: 70% center;
   }
   .up-hero-title {
@@ -1616,6 +1658,11 @@ body {
     text-align: center;
     gap: 8px;
   }
+}
+
+@media (max-width: 480px) {
+  .up-mega-content { grid-template-columns: 1fr; }
+  .up-mega-img-link { display: none; }
 }
 
 @media (max-width: 576px) {
@@ -1684,7 +1731,7 @@ body {
   .up-hero-banner {
     height: 320px;
     min-height: 320px;
-    background-image: url('../images/clean-banner-mobile.jpg');
+    background-image: url('../images/clean-banner-mobile.webp');
     background-position: center center;
   }
   .up-hero-title {
@@ -2166,6 +2213,12 @@ body {
 }
 
 @media (max-width: 767px) {
+  /* Use the full phone width for products; category navigation is already
+     available in the swipeable header and product filter pills. */
+  .up-layout-grid { grid-template-columns: minmax(0, 1fr); }
+  .up-layout-grid > .up-sidebar-card { display: none; }
+  .up-main-panel { min-width: 0; }
+
   .ff-download-card {
     flex-direction: column;
     text-align: center;

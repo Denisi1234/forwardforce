@@ -18,10 +18,9 @@ Serve this folder with any static web server and open `index.html`. Product brow
 - `faq.html` - help and frequently asked questions
 - `resellers.html` - reseller programme and application form
 - `templates.html` - artwork guidelines, product sizes, template requests
-- `samples.html` - sample request form
 - `blog.html` - printing and branding guides
 
-## Forms (newsletter, samples, resellers, templates)
+## Forms (newsletter, resellers, templates)
 
 All forms marked `data-ff-form` are sent by `assets/js/ff-forms.js` through
 FormSubmit (https://formsubmit.co) to **info@forwardforce.co.tz**. No server code is needed.

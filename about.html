@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: #24201d url('assets/images/clean-banner-desktop.jpg') center right / cover no-repeat;
+  background: #24201d url('assets/images/clean-banner-desktop.webp') center right / cover no-repeat;
 }
 .ab-hero-banner::before {
   content: "";
@@ -307,6 +307,12 @@
   .ab-support-grid { grid-template-columns: 1fr; }
   .ab-check-grid { grid-template-columns: 1fr; }
   .ab-growth-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ab-hero-banner { background-image: url('assets/images/clean-banner-tablet.webp'); }
+}
+@media (max-width: 767px) {
+  .ab-hero-banner { background-image: url('assets/images/clean-banner-mobile.webp'); }
 }
 </style>
 <meta name="author" content="Forward Force Co. Ltd"/>
@@ -960,5 +966,6 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
 <script src="assets/js/ff-forms.js"></script>
+  <script src="assets/js/mobile-nav.js"></script>
 </body>
 </html>
