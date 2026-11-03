@@ -23,6 +23,7 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
+<link href="assets/css/ff-pages.css" rel="stylesheet"/>
 <style>
 /* ========================================================
    CLEAN & POLISHED CONTACT PAGE (Forward Force Accurate)
@@ -336,7 +337,7 @@
   "publisher": {
     "@type": "Organization",
     "name": "Forward Force Co. Ltd",
-    "email": "forwardforce87@gmail.com",
+    "email": "info@forwardforce.co.tz",
     "telephone": "+255 672 009 990",
     "address": {
       "@type": "PostalAddress",
@@ -717,8 +718,8 @@
                 <h4 class="up-mega-col-title">Custom Product Builder</h4>
                 <ul class="up-mega-list">
                   <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="products.html">Upload Artwork &amp; Proof Free</a></li>
-                  <li><a href="contact.html">Request Free Sample Kit</a></li>
+                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
+                  
                 </ul>
               </div>
               <div class="up-mega-col">
@@ -740,17 +741,24 @@
     </div>
   </header>
 
+  <section class="ff-page-hero up-hero-banner ff-home-style-hero">
+    <div class="up-section-container">
+      <div class="ff-page-hero-content">
+        <div class="ff-breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</div>
+        <span class="ff-page-badge">We're here to help</span>
+        <h1 class="ff-page-title">Contact Forward Force Co. Ltd</h1>
+        <p class="ff-page-lead">Based in Kijitonyama, Dar es Salaam, we provide DTF printing, embroidery, corporate branding, and graphic design support. Tell us about your project and our team will help you plan the next step.</p>
+        <a class="up-shop-now-btn" href="#contact-form" style="margin-top:24px;">SEND US A MESSAGE</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ==========================================
-       CONTACT FORM ONLY SECTION
+       CONTACT FORM
        ========================================== -->
   <section class="ct-main-section">
     <div class="up-section-container">
-      <header class="ct-page-intro">
-        <h1>Contact Forward Force Co. Ltd</h1>
-        <p>Based in Kijitonyama, Dar es Salaam, Forward Force provides DTF printing, embroidery, corporate branding, and graphic design support. Call, WhatsApp, or email us to discuss your project.</p>
-      </header>
-      
-      <div class="ct-form-card">
+      <div class="ct-form-card" id="contact-form">
         <h2>Send a Message</h2>
         <p>Tell us what you would like printed or branded. We'll assist you directly via WhatsApp or Email.</p>
 
@@ -808,19 +816,34 @@
        SAMPLE KIT PROMO
        ========================================== -->
 
+
+  <!-- ==========================================
+       SECTION: NEWSLETTER SUBSCRIBE
+       ========================================== -->
+  <section class="up-newsletter-section">
+    <div class="up-newsletter-inner">
+      <h4>Don't Miss Out</h4>
+      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
+      <form class="up-newsletter-form" data-ff-form="newsletter">
+        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
   <!-- ==========================================
        GLOBAL FOOTER (Shared Forward Force Footer)
        ========================================== -->
     <footer class="global-footer-container">
     <div class="footer-contents-container">
       <ul class="links-container">
-        <li><a href="contact.html">Help &amp; FAQs</a></li>
+        <li><a href="faq.html">Help &amp; FAQs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="products.html">Resellers</a></li>
-        <li><a href="services.html">Templates</a></li>
-        <li><a href="products.html">Samples</a></li>
-        <li><a href="about.html">Blog</a></li>
+        <li><a href="resellers.html">Resellers</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        
+        <li><a href="blog.html">Blog</a></li>
       </ul>
 
       <ul class="social-container">
@@ -843,6 +866,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
+<script src="assets/js/ff-forms.js"></script>
 <script>
   (function() {
     var form = document.getElementById('up-contact-form');
@@ -898,7 +922,7 @@
                    'Service: ' + data.topic + '\n\n' +
                    'Project Details:\n' + data.message;
 
-        var mailUrl = 'mailto:forwardforce87@gmail.com?subject=' + encodeURIComponent('Project Inquiry: ' + data.topic + ' - ' + data.name) + '&body=' + encodeURIComponent(body);
+        var mailUrl = 'mailto:info@forwardforce.co.tz?subject=' + encodeURIComponent('Project Inquiry: ' + data.topic + ' - ' + data.name) + '&body=' + encodeURIComponent(body);
         window.location.href = mailUrl;
       });
     }

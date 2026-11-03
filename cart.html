@@ -23,6 +23,530 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
+<link href="assets/css/ff-pages.css" rel="stylesheet"/>
+<style>
+/* ========================================================
+   FORWARD FORCE COMPACT, CLEAN & PROFESSIONAL CART
+   ======================================================== */
+.up-cart-page-sec {
+  background: #fdfdfd;
+  min-height: 60vh;
+  padding: 30px 0 50px;
+}
+.up-cart-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.up-cart-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaedf0;
+}
+.up-cart-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+.up-continue-shopping {
+  font-size: 13px;
+  font-weight: 600;
+  color: #186f3b;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.15s;
+}
+.up-continue-shopping:hover {
+  color: #11522b;
+  text-decoration: underline;
+}
+
+/* 2-Column Responsive Layout */
+.up-cart-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Left Panel: Cart Table & Items */
+.up-cart-main {
+  background: #ffffff;
+  border: 1px solid #e5e8ec;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* Empty State */
+.up-empty-cart-state {
+  text-align: center;
+  padding: 45px 16px;
+}
+.up-empty-cart-icon {
+  font-size: 40px;
+  color: #9aa5b1;
+  margin-bottom: 14px;
+}
+.up-empty-cart-state h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+.up-empty-cart-state p {
+  font-size: 13.5px;
+  color: #666;
+  max-width: 380px;
+  margin: 0 auto 18px;
+  line-height: 1.5;
+}
+.up-browse-catalog-btn {
+  display: inline-block;
+  background: #186f3b;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 22px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  transition: background 0.15s;
+}
+.up-browse-catalog-btn:hover {
+  background: #11522b;
+}
+
+/* Compact Table Design */
+.up-cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.up-cart-table thead th {
+  padding: 8px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #7b8794;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eaedf0;
+  letter-spacing: 0.5px;
+}
+.up-cart-row {
+  border-bottom: 1px solid #f0f2f5;
+}
+.up-cart-row td {
+  padding: 14px 10px;
+  vertical-align: middle;
+}
+.up-cart-prod-flex {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.up-cart-thumb {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #eaedf0;
+  background: #f7f9fa;
+  flex-shrink: 0;
+}
+.up-cart-prod-info {
+  flex: 1;
+}
+.up-cart-item-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 2px;
+  line-height: 1.3;
+}
+.up-cart-item-cat {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #186f3b;
+  background: #eef7f0;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+.up-cart-item-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 4px;
+  font-size: 11.5px;
+  color: #666;
+  line-height: 1.4;
+}
+.up-cart-item-specs li b {
+  color: #444;
+}
+.up-remove-link {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  font-size: 11.5px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s;
+}
+.up-remove-link:hover {
+  color: #e53e3e;
+}
+
+/* Compact Quantity Control */
+.up-qty-control {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d2d6dc;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #ffffff;
+}
+.up-qty-btn {
+  background: #f7fafc;
+  border: none;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4a5568;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.up-qty-btn:hover {
+  background: #edf2f7;
+}
+.up-qty-input {
+  width: 36px;
+  height: 28px;
+  border: none;
+  border-left: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d3748;
+}
+.up-unit-price {
+  display: block;
+  font-size: 11.5px;
+  color: #718096;
+  margin-top: 4px;
+}
+
+/* Total Column */
+.up-row-price {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #186f3b;
+  display: block;
+}
+
+/* Cart Footer Bar */
+.up-cart-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #eaedf0;
+}
+.up-clear-cart-link {
+  background: none;
+  border: none;
+  color: #a0aec0;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  transition: color 0.15s;
+}
+.up-clear-cart-link:hover {
+  color: #e53e3e;
+}
+
+/* Right Summary Panel */
+.up-summary-panel {
+  background: #ffffff;
+  border: 1px solid #e5e8ec;
+  border-radius: 6px;
+  padding: 18px;
+}
+.up-summary-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaedf0;
+}
+.up-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #4a5568;
+  margin-bottom: 10px;
+}
+.up-summary-row b {
+  color: #1a1a1a;
+}
+.up-summary-row.total-row {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eaedf0;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.up-summary-row.total-row span:last-child {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* Promo Box */
+.up-promo-box {
+  background: #f8fafc;
+  border: 1px dashed #cbd5e0;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 12px 0;
+}
+.up-promo-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 5px;
+}
+.up-promo-input-group {
+  display: flex;
+  gap: 4px;
+}
+.up-promo-input-group input {
+  flex: 1;
+  height: 30px;
+  padding: 0 8px;
+  font-size: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.up-promo-input-group button {
+  height: 30px;
+  padding: 0 12px;
+  background: #186f3b;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.up-promo-input-group button:hover {
+  background: #11522b;
+}
+.up-promo-success {
+  font-size: 11px;
+  color: #186f3b;
+  margin-top: 4px;
+  font-weight: 600;
+}
+.up-promo-error {
+  font-size: 11px;
+  color: #e53e3e;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+/* Checkout CTA */
+.up-checkout-cta {
+  display: block;
+  width: 100%;
+  padding: 11px 14px;
+  background: #186f3b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background 0.15s;
+}
+.up-checkout-cta:hover {
+  background: #11522b;
+}
+.up-guarantee-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #718096;
+  margin-top: 12px;
+  line-height: 1.35;
+}
+.up-guarantee-badge i {
+  color: #186f3b;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Clean, Modern Checkout Modal */
+.up-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(2px);
+  z-index: 99999;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.up-modal-card {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.06);
+  border: 1px solid #e2e8f0;
+  animation: upCleanFade 0.2s ease;
+}
+@keyframes upCleanFade {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.up-modal-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eaedf0;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.up-modal-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+.up-modal-close {
+  background: none;
+  border: none;
+  color: #718096;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s;
+}
+.up-modal-close:hover {
+  color: #1a1a1a;
+}
+.up-modal-body {
+  padding: 18px;
+  max-height: 82vh;
+  overflow-y: auto;
+}
+.up-form-group {
+  margin-bottom: 11px;
+}
+.up-form-group label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+.up-form-group input {
+  width: 100%;
+  height: 36px;
+  padding: 0 10px;
+  font-size: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.up-form-group input:focus {
+  border-color: #186f3b;
+  box-shadow: 0 0 0 2px rgba(24, 111, 59, 0.12);
+}
+.up-confirm-btn {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.up-confirm-btn:hover {
+  opacity: 0.95;
+}
+
+/* Responsiveness */
+@media (max-width: 860px) {
+  .up-cart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 540px) {
+  .up-cart-main {
+    padding: 14px 10px;
+  }
+  .up-cart-table thead {
+    display: none;
+  }
+  .up-cart-row {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    gap: 8px;
+  }
+  .up-cart-row td {
+    padding: 0;
+    width: 100% !important;
+  }
+  .up-cart-col-qty {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .up-cart-col-total {
+    text-align: left !important;
+  }
+  .up-cart-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+</style>
 <meta name="author" content="Forward Force Co. Ltd"/>
 <script type="application/ld+json">
 {
@@ -33,7 +557,7 @@
   "publisher": {
     "@type": "Organization",
     "name": "Forward Force Co. Ltd",
-    "email": "forwardforce87@gmail.com",
+    "email": "info@forwardforce.co.tz",
     "telephone": "+255 672 009 990",
     "address": {
       "@type": "PostalAddress",
@@ -413,8 +937,8 @@
                 <h4 class="up-mega-col-title">Custom Product Builder</h4>
                 <ul class="up-mega-list">
                   <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="products.html">Upload Artwork &amp; Proof Free</a></li>
-                  <li><a href="contact.html">Request Free Sample Kit</a></li>
+                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
+                  
                 </ul>
               </div>
               <div class="up-mega-col">
@@ -545,78 +1069,79 @@
   </main>
 
   <!-- ==========================================
-       CHECKOUT SIMULATION MODAL
+       CHECKOUT MODAL
        ========================================== -->
   <div class="up-modal-overlay" id="up-checkout-modal">
     <div class="up-modal-card">
       <div class="up-modal-header">
-        <h3>Complete Your Order</h3>
+        <h3>Complete Order via WhatsApp</h3>
         <button class="up-modal-close" id="up-close-modal" type="button">&times;</button>
       </div>
       
       <div class="up-modal-body">
         <form id="up-checkout-form">
           <div id="up-checkout-fields">
-            <p style="font-size:13.5px; color:#555; margin-bottom:18px;">
-              Enter your details to generate your itemized WhatsApp order. We will verify artwork and specs with you immediately.
+            <p style="font-size:12.5px; color:#666; margin-bottom:14px; line-height:1.4;">
+              Enter your contact details below to send your itemized order directly to Forward Force via WhatsApp.
             </p>
 
             <div class="up-form-group">
-              <label>Your Name / Company Name *</label>
-              <input name="fullname" placeholder="Enter your full name or company" required="" type="text"/>
+              <label>Full Name / Company *</label>
+              <input name="fullname" placeholder="e.g. Forward Group / John Doe" required="" type="text"/>
             </div>
 
-            <div class="up-form-group">
-              <label>Email Address (For PDF proofs &amp; invoices)</label>
-              <input name="email" placeholder="name@example.com" type="email"/>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+              <div class="up-form-group">
+                <label>WhatsApp Number *</label>
+                <input name="phone" placeholder="+255 7XX XXX XXX" required="" type="tel"/>
+              </div>
+              <div class="up-form-group">
+                <label>Email (Optional for PDF)</label>
+                <input name="email" placeholder="name@example.com" type="email"/>
+              </div>
             </div>
 
-            <div class="up-form-group">
-              <label>Delivery Location *</label>
-              <input name="address" placeholder="e.g. Office / Street / Building name" required="" type="text"/>
-            </div>
-
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+              <div class="up-form-group">
+                <label>Delivery Area *</label>
+                <input name="zip" placeholder="e.g. Kijitonyama / Posta" required="" type="text"/>
+              </div>
               <div class="up-form-group">
                 <label>City *</label>
-                <input name="city" placeholder="Dar es Salaam" value="Dar es Salaam" required="" type="text"/>
-              </div>
-              <div class="up-form-group">
-                <label>District / Area *</label>
-                <input name="zip" placeholder="e.g. Kijitonyama / Posta / Kinondoni" required="" type="text"/>
+                <input name="city" value="Dar es Salaam" required="" type="text"/>
               </div>
             </div>
 
             <div class="up-form-group">
-              <label>WhatsApp Phone Number *</label>
-              <input name="phone" placeholder="+255 7XX XXX XXX" required="" type="tel"/>
+              <label>Delivery Address / Street *</label>
+              <input name="address" placeholder="Physical location or building name" required="" type="text"/>
             </div>
 
-            <div style="background:#f4f6f8; padding:12px 14px; border-radius:4px; margin:16px 0; display:flex; justify-content:space-between; font-weight:700;">
-              <span>Total Estimated Amount:</span>
-              <span id="up-modal-total" style="color:#186f3b;">TZS 0</span>
+            <div style="background:#f8fafc; border:1px solid #eaedf0; padding:10px 12px; border-radius:4px; margin:12px 0; display:flex; justify-content:space-between; align-items:center; font-size:13px; font-weight:700;">
+              <span style="color:#4a5568;">Total Estimated Due:</span>
+              <span id="up-modal-total" style="color:#186f3b; font-size:15px; font-weight:800;">TZS 0</span>
             </div>
 
-            <button class="up-confirm-btn" type="submit" style="background:#15833b; display:flex; align-items:center; justify-content:center; gap:8px;">
-              <i class="fa fa-whatsapp" style="font-size:18px;"></i> SEND ORDER ON WHATSAPP
+            <button class="up-confirm-btn" type="submit" style="background:#186f3b; display:flex; align-items:center; justify-content:center; gap:8px;">
+              <i class="fa fa-whatsapp" style="font-size:16px;"></i> Send Order on WhatsApp
             </button>
           </div>
 
           <!-- Confirmation Screen -->
-          <div id="up-order-confirmation" style="display:none; text-align:center; padding:20px 10px;">
-            <div style="font-size:52px; color:#15833b; margin-bottom:12px;">
+          <div id="up-order-confirmation" style="display:none; text-align:center; padding:14px 6px;">
+            <div style="font-size:42px; color:#186f3b; margin-bottom:10px;">
               <i class="fa fa-whatsapp"></i>
             </div>
-            <h3 style="font-size:22px; font-weight:800; color:#222; margin-bottom:10px;">Order Summary Prepared!</h3>
-            <p style="font-size:14px; color:#555; line-height:1.6;">
-              Your order reference is <b id="up-conf-order-id" style="color:#186f3b;">FF-000000</b>.<br/>
+            <h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:6px;">Order Ready!</h3>
+            <p style="font-size:13px; color:#666; line-height:1.5; margin-bottom:14px;">
+              Order Ref: <b id="up-conf-order-id" style="color:#186f3b;">FF-000000</b>.<br/>
               Your order items and details have been formatted for instant WhatsApp checkout.
             </p>
-            <a id="up-wa-direct-btn" href="#" target="_blank" rel="noopener" class="up-confirm-btn" style="background:#15833b; display:inline-flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; text-decoration:none;">
-              <i class="fa fa-whatsapp"></i> OPEN WHATSAPP CHAT NOW
+            <a id="up-wa-direct-btn" href="#" target="_blank" rel="noopener" class="up-confirm-btn" style="background:#186f3b; display:inline-flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;">
+              <i class="fa fa-whatsapp"></i> Open WhatsApp Chat Now
             </a>
-            <div>
-              <a class="up-browse-catalog-btn" href="products.html" style="margin-top:16px;">Add More Products</a>
+            <div style="margin-top:12px;">
+              <a class="up-browse-catalog-btn" href="products.html" style="padding:7px 16px; font-size:12px;">Add More Products</a>
             </div>
           </div>
         </form>
@@ -624,19 +1149,34 @@
     </div>
   </div>
 
+
+  <!-- ==========================================
+       SECTION: NEWSLETTER SUBSCRIBE
+       ========================================== -->
+  <section class="up-newsletter-section">
+    <div class="up-newsletter-inner">
+      <h4>Don't Miss Out</h4>
+      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
+      <form class="up-newsletter-form" data-ff-form="newsletter">
+        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
   <!-- ==========================================
        GLOBAL FOOTER (Shared Forward Force Footer)
        ========================================== -->
     <footer class="global-footer-container">
     <div class="footer-contents-container">
       <ul class="links-container">
-        <li><a href="contact.html">Help &amp; FAQs</a></li>
+        <li><a href="faq.html">Help &amp; FAQs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="products.html">Resellers</a></li>
-        <li><a href="services.html">Templates</a></li>
-        <li><a href="products.html">Samples</a></li>
-        <li><a href="about.html">Blog</a></li>
+        <li><a href="resellers.html">Resellers</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        
+        <li><a href="blog.html">Blog</a></li>
       </ul>
 
       <ul class="social-container">
@@ -659,5 +1199,6 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
+<script src="assets/js/ff-forms.js"></script>
 </body>
 </html>

@@ -23,328 +23,290 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
+<link href="assets/css/ff-pages.css" rel="stylesheet"/>
 <style>
 /* ========================================================
-   ABOUT US PAGE SPECIFIC STYLES (Forward Force Accurate)
+   ABOUT US - CLEAN, AIRY & PROFESSIONAL (HOME-INSPIRED)
    ======================================================== */
 .ab-hero-banner {
-  background: linear-gradient(135deg, #09476c 0%, #0d5f8f 60%, #1579a8 100%);
-  color: #ffffff;
-  padding: 60px 0 65px;
   position: relative;
+  min-height: 440px;
+  padding: 90px 0;
+  display: flex;
+  align-items: center;
   overflow: hidden;
+  background: #24201d url('assets/images/clean-banner-desktop.jpg') center right / cover no-repeat;
 }
-
-.ab-hero-banner::after {
+.ab-hero-banner::before {
   content: "";
   position: absolute;
-  right: -50px;
-  bottom: -50px;
-  width: 450px;
-  height: 450px;
-  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 70%);
-  border-radius: 50%;
-  pointer-events: none;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(20,15,12,.78) 0%, rgba(20,15,12,.53) 48%, rgba(0,0,0,.08) 100%);
 }
-
 .ab-hero-content {
-  max-width: 860px;
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
 }
-
 .ab-hero-badge {
   display: inline-block;
-  background: #05334d;
-  color: #ffffff;
+  background: rgba(9,80,121,.85);
+  color: #fff;
   font-weight: 700;
-  font-size: 13.5px;
-  padding: 6px 16px;
-  border-radius: 3px;
-  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-
 .ab-hero-title {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 800;
-  line-height: 1.2;
-  margin: 0 0 18px;
-  color: #ffffff;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1.25;
+  text-shadow: 0 2px 5px rgba(0,0,0,.45);
 }
-
 .ab-hero-lead {
   font-size: 17px;
-  line-height: 1.65;
-  color: #e5f1f8;
+  line-height: 1.6;
+  color: #fff;
   margin: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,.65);
 }
 
-/* 5 Steps of Online Printing Made Easy */
+/* Company Identity & Philosophy */
 .ab-easy-section {
-  padding: 55px 0;
+  padding: 40px 0;
   background: #ffffff;
 }
-
 .ab-easy-title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
-  color: #222;
-  margin-bottom: 30px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
   text-align: center;
 }
-
 .ab-easy-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
-
 .ab-easy-card {
-  background: #fbfcfd;
-  border: 1px solid #e5eaee;
+  background: #ffffff;
+  border: 1px solid #eaedf0;
   border-radius: 6px;
-  padding: 24px 18px;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.15s, border-color 0.15s;
 }
-
 .ab-easy-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+  border-color: #186f3b;
 }
-
 .ab-easy-num {
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: #095079;
+  background: #186f3b;
   color: #fff;
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
-
 .ab-easy-text {
-  font-size: 14px;
-  font-weight: 700;
-  color: #333;
-  line-height: 1.4;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
   margin: 0;
 }
 
-/* Personal Support Feature Row */
+/* Vision & Mission Row */
 .ab-support-section {
-  padding: 60px 0;
-  background: #f7f9fa;
-  border-top: 1px solid #eef2f5;
-  border-bottom: 1px solid #eef2f5;
+  padding: 45px 0;
+  background: #fbfcfd;
+  border-top: 1px solid #eaedf0;
+  border-bottom: 1px solid #eaedf0;
 }
-
 .ab-support-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 45px;
+  gap: 36px;
   align-items: center;
 }
-
 .ab-support-img {
   width: 100%;
+  max-height: 440px;
+  object-fit: cover;
   border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border: 1px solid #eaedf0;
 }
-
 .ab-support-info h2 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
-  color: #222;
-  line-height: 1.25;
-  margin: 0 0 16px;
+  color: #1a1a1a;
+  margin: 0 0 14px;
 }
-
 .ab-support-info p {
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 13.5px;
+  line-height: 1.6;
   color: #555;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
-
 .ab-support-bullets {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 14px 0 0;
 }
-
 .ab-support-bullets li {
-  font-size: 14.5px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
-
 .ab-support-bullets li i {
-  color: #15833b;
-  font-size: 16px;
+  color: #186f3b;
+  font-size: 14px;
 }
 
-/* Quality Assurance */
+/* Quality Protocol */
 .ab-check-section {
-  padding: 65px 0;
+  padding: 45px 0;
   background: #ffffff;
   text-align: center;
 }
-
 .ab-check-heading {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 800;
-  color: #222;
-  margin-bottom: 12px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
 }
-
 .ab-check-sub {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #666;
-  max-width: 720px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.5;
 }
-
 .ab-check-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   text-align: left;
 }
-
 .ab-check-card {
-  background: #fbfcfd;
-  border: 1px solid #e2e7ec;
-  border-top: 4px solid #095079;
+  background: #ffffff;
+  border: 1px solid #eaedf0;
+  border-top: 3px solid #186f3b;
   border-radius: 6px;
-  padding: 30px 24px;
+  padding: 22px 18px;
 }
-
 .ab-check-icon {
-  width: 54px;
-  height: 54px;
-  margin-bottom: 18px;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
 }
-
 .ab-check-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
 .ab-check-title {
-  font-size: 19px;
-  font-weight: 800;
-  color: #222;
-  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
 }
-
 .ab-check-desc {
-  font-size: 14px;
-  line-height: 1.65;
-  color: #555;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #666;
   margin: 0;
 }
 
-/* Moving Every Client Forward (4 Core Innovations) */
+/* 4 Core Services */
 .ab-growth-section {
-  padding: 65px 0;
-  background: #f4f6f8;
-  border-top: 1px solid #e5e9ec;
+  padding: 45px 0;
+  background: #fbfcfd;
+  border-top: 1px solid #eaedf0;
 }
-
 .ab-growth-header {
   text-align: center;
-  max-width: 750px;
-  margin: 0 auto 45px;
+  max-width: 680px;
+  margin: 0 auto 30px;
 }
-
 .ab-growth-title {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 800;
-  color: #222;
-  margin-bottom: 10px;
+  color: #1a1a1a;
+  margin-bottom: 6px;
 }
-
 .ab-growth-sub {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #666;
 }
-
 .ab-growth-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 20px;
 }
-
 .ab-growth-box {
   background: #ffffff;
-  border: 1px solid #e1e5e8;
+  border: 1px solid #eaedf0;
   border-radius: 6px;
-  padding: 28px 24px;
+  padding: 20px 18px;
   display: flex;
-  gap: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  gap: 16px;
 }
-
 .ab-growth-num {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  background: #095079;
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 800;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #eef7f0;
+  color: #186f3b;
+  font-size: 14px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
-
 .ab-growth-details h4 {
-  font-size: 18px;
-  font-weight: 800;
-  color: #222;
-  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px;
 }
-
 .ab-growth-details p {
-  font-size: 14px;
-  line-height: 1.65;
-  color: #555;
-  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0 0 8px;
 }
-
 .ab-growth-details ul {
-  margin: 12px 0 0;
-  padding-left: 20px;
-  font-size: 13.5px;
+  padding-left: 18px;
+  margin: 0;
+  font-size: 12px;
   color: #555;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .ab-easy-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 991px) {
+  .ab-hero-banner { min-height: 400px; padding: 70px 0; background-position: 62% center; }
+  .ab-hero-title { font-size: 36px; }
+  .ab-easy-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .ab-support-grid { grid-template-columns: 1fr; }
   .ab-check-grid { grid-template-columns: 1fr; }
   .ab-growth-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 600px) {
-  .ab-easy-grid { grid-template-columns: 1fr; }
-  .ab-hero-title { font-size: 28px; }
 }
 </style>
 <meta name="author" content="Forward Force Co. Ltd"/>
@@ -357,7 +319,7 @@
   "publisher": {
     "@type": "Organization",
     "name": "Forward Force Co. Ltd",
-    "email": "forwardforce87@gmail.com",
+    "email": "info@forwardforce.co.tz",
     "telephone": "+255 672 009 990",
     "address": {
       "@type": "PostalAddress",
@@ -738,8 +700,8 @@
                 <h4 class="up-mega-col-title">Custom Product Builder</h4>
                 <ul class="up-mega-list">
                   <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="products.html">Upload Artwork &amp; Proof Free</a></li>
-                  <li><a href="contact.html">Request Free Sample Kit</a></li>
+                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
+                  
                 </ul>
               </div>
               <div class="up-mega-col">
@@ -772,6 +734,7 @@
         <p class="ab-hero-lead">
           Forward Force Co. Ltd is a printing and branding company committed to delivering high-quality, reliable and creative print solutions. The company supports businesses, institutions, organizations and individuals with professional branding materials that help them communicate clearly and present their identity with confidence.
         </p>
+        <a class="up-shop-now-btn" href="contact.html" style="margin-top:24px;">TALK TO OUR TEAM</a>
       </div>
     </div>
   </section>
@@ -818,7 +781,7 @@
     <div class="up-section-container">
       <div class="ab-support-grid">
         <div>
-          <img alt="Personal Support Team" class="ab-support-img" loading="lazy" src="https://staticecp.uprinting.com/9995/image-rounded-3b.png"/>
+          <img alt="Forward Force DTF printing equipment" class="ab-support-img" loading="lazy" src="assets/images/ff-dtf-printer.jpg"/>
         </div>
         <div class="ab-support-info">
           <h2>Our Vision, Mission &amp; Purpose</h2>
@@ -948,22 +911,32 @@
        ========================================== -->
 
   <!-- ==========================================
-       SAMPLE KIT BANNER CALLOUT
+       SECTION: NEWSLETTER SUBSCRIBE
        ========================================== -->
-
+  <section class="up-newsletter-section">
+    <div class="up-newsletter-inner">
+      <h4>Don't Miss Out</h4>
+      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
+      <form class="up-newsletter-form" data-ff-form="newsletter">
+        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
   <!-- ==========================================
        GLOBAL FOOTER (Shared Forward Force Footer)
        ========================================== -->
     <footer class="global-footer-container">
     <div class="footer-contents-container">
       <ul class="links-container">
-        <li><a href="contact.html">Help &amp; FAQs</a></li>
+        <li><a href="faq.html">Help &amp; FAQs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="products.html">Resellers</a></li>
-        <li><a href="services.html">Templates</a></li>
-        <li><a href="products.html">Samples</a></li>
-        <li><a href="about.html">Blog</a></li>
+        <li><a href="resellers.html">Resellers</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        
+        <li><a href="blog.html">Blog</a></li>
       </ul>
 
       <ul class="social-container">
@@ -986,5 +959,6 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
+<script src="assets/js/ff-forms.js"></script>
 </body>
 </html>

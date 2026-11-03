@@ -23,369 +23,326 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
+<link href="assets/css/ff-pages.css" rel="stylesheet"/>
 <style>
 /* ========================================================
-   SERVICES PAGE STYLES (Forward Force Accurate)
+   SERVICES - CLEAN, AIRY & PROFESSIONAL (HOME-INSPIRED)
    ======================================================== */
-.sv-hero {
-  background: linear-gradient(135deg, #073a58 0%, #095079 50%, #0d6394 100%);
-  color: #ffffff;
-  padding: 55px 0 60px;
-  position: relative;
-  overflow: hidden;
-}
-
-.sv-hero::after {
-  content: "";
-  position: absolute;
-  right: -60px;
-  top: -60px;
-  width: 420px;
-  height: 420px;
-  background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.sv-hero-content {
-  max-width: 820px;
-}
-
 .sv-hero-badge {
   display: inline-block;
-  background: #052a3f;
-  color: #ffffff;
-  font-size: 13px;
+  background: rgba(9,80,121,.85);
+  color: #fff;
+  font-size: 12px;
   font-weight: 700;
-  padding: 5px 14px;
-  border-radius: 3px;
-  margin-bottom: 16px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-.sv-hero-title {
-  font-size: 38px;
-  font-weight: 800;
-  line-height: 1.2;
-  margin: 0 0 14px;
-  color: #ffffff;
-}
-
-.sv-hero-lead {
-  font-size: 16px;
-  line-height: 1.65;
-  color: #dbeaf2;
-  margin: 0;
-}
-
 /* Service Pillars Grid */
 .sv-pillars-section {
-  padding: 55px 0 35px;
+  padding: 45px 0 35px;
   background: #ffffff;
 }
-
 .sv-section-title-center {
   text-align: center;
-  max-width: 720px;
-  margin: 0 auto 40px;
+  max-width: 680px;
+  margin: 0 auto 32px;
 }
-
 .sv-section-title-center h2 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 800;
-  color: #222;
-  margin-bottom: 10px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
 }
-
 .sv-section-title-center p {
-  font-size: 15px;
+  font-size: 13.5px;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
 }
-
 .sv-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 20px;
 }
-
 .sv-pillar-card {
-  background: #fbfcfd;
-  border: 1px solid #e2e6eb;
+  background: #ffffff;
+  border: 1px solid #eaedf0;
   border-radius: 6px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition: transform 0.15s, border-color 0.15s;
 }
-
 .sv-pillar-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  border-color: #095079;
+  transform: translateY(-2px);
+  border-color: #186f3b;
 }
-
 .sv-pillar-img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   overflow: hidden;
-  background: #f4f6f8;
+  background: #f7f9fa;
 }
-
 .sv-pillar-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.35s ease;
+  transition: transform 0.25s ease;
 }
-
 .sv-pillar-card:hover .sv-pillar-img img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
-
 .sv-pillar-body {
-  padding: 22px 20px;
+  padding: 18px 16px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-
 .sv-pillar-title {
-  font-size: 18px;
-  font-weight: 800;
-  color: #222;
-  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px;
 }
-
 .sv-pillar-text {
-  font-size: 13.5px;
+  font-size: 13px;
   color: #555;
-  line-height: 1.6;
-  margin: 0 0 18px;
+  line-height: 1.5;
+  margin: 0 0 14px;
   flex: 1;
 }
-
 .sv-pillar-link {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 700;
-  color: #095079;
+  color: #186f3b;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
-
 .sv-pillar-link:hover {
   text-decoration: underline;
 }
 
-/* Feature Row Comparison (Corporate Branding vs Embroidery) */
+/* Feature Comparison Box */
 .sv-compare-section {
-  padding: 55px 0;
-  background: #f7f9fa;
-  border-top: 1px solid #e6eaed;
-  border-bottom: 1px solid #e6eaed;
+  padding: 45px 0;
+  background: #fbfcfd;
+  border-top: 1px solid #eaedf0;
+  border-bottom: 1px solid #eaedf0;
 }
-
 .sv-compare-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 24px;
 }
-
 .sv-compare-box {
   background: #ffffff;
-  border: 1px solid #dce2e6;
+  border: 1px solid #eaedf0;
   border-radius: 6px;
-  padding: 30px 26px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 24px 20px;
 }
-
 .sv-compare-tag {
   display: inline-block;
-  background: #095079;
-  color: #fff;
+  background: #eef7f0;
+  color: #186f3b;
   font-size: 11px;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 2px 8px;
   border-radius: 3px;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-
 .sv-compare-title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 800;
-  color: #222;
-  margin: 0 0 10px;
+  color: #1a1a1a;
+  margin: 0 0 8px;
 }
-
 .sv-compare-desc {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.65;
-  margin-bottom: 18px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 14px;
 }
-
 .sv-compare-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 }
-
 .sv-compare-list li {
-  font-size: 13.5px;
+  font-size: 12.5px;
   color: #444;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
   line-height: 1.5;
 }
-
 .sv-compare-list li i {
-  color: #15833b;
+  color: #186f3b;
   margin-top: 3px;
+  font-size: 13px;
 }
-
 .sv-compare-btn {
   display: inline-block;
-  padding: 10px 22px;
-  background: #095079;
-  color: #fff;
-  font-size: 13px;
+  padding: 8px 18px;
+  background: #186f3b;
+  color: #fff !important;
+  font-size: 12.5px;
   font-weight: 700;
   border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.2s;
+  text-decoration: none !important;
+  transition: background 0.15s;
 }
-
 .sv-compare-btn:hover {
-  background: #063c5b;
-  color: #fff;
+  background: #11522b;
 }
 
-/* 4-Step Corporate Branding Workflow */
+/* 6-Step Workflow */
 .sv-process-section {
-  padding: 60px 0;
+  padding: 45px 0;
   background: #ffffff;
 }
-
 .sv-process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
-  margin-top: 35px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 25px;
 }
-
 .sv-process-card {
-  border: 1px solid #e2e6eb;
+  border: 1px solid #eaedf0;
   border-radius: 6px;
-  padding: 24px 20px;
+  padding: 18px 14px;
   background: #fbfcfd;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  position: relative;
 }
-
 .sv-process-num {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: #095079;
+  background: #186f3b;
   color: #fff;
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 14px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
-
 .sv-process-heading {
-  font-size: 16px;
-  font-weight: 800;
-  color: #222;
-  margin-bottom: 8px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 6px;
 }
-
 .sv-process-text {
-  font-size: 13px;
+  font-size: 12.5px;
   color: #666;
-  line-height: 1.55;
+  line-height: 1.5;
   margin: 0;
 }
 
-/* Free Templates & Support Callout */
+/* Design Tools */
 .sv-tools-section {
-  padding: 55px 0;
-  background: #f4f6f8;
-  border-top: 1px solid #e5e9ec;
+  padding: 45px 0;
+  background: #fbfcfd;
+  border-top: 1px solid #eaedf0;
 }
-
 .sv-tools-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  gap: 18px;
+  margin-top: 25px;
 }
-
 .sv-tool-box {
   background: #ffffff;
-  border: 1px solid #dce2e6;
+  border: 1px solid #eaedf0;
   border-radius: 6px;
-  padding: 26px;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
 }
-
 .sv-tool-icon {
-  font-size: 32px;
-  color: #095079;
-  margin-bottom: 14px;
+  font-size: 24px;
+  color: #186f3b;
+  margin-bottom: 10px;
 }
-
 .sv-tool-title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
-  color: #222;
-  margin-bottom: 8px;
+  color: #1a1a1a;
+  margin: 0 0 6px;
 }
-
 .sv-tool-desc {
-  font-size: 13.5px;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  font-size: 12.5px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 14px;
   flex: 1;
 }
-
 .sv-tool-btn {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 700;
-  color: #095079;
+  color: #186f3b;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
 }
-
 .sv-tool-btn:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 992px) {
+/* Sample Kit Banner */
+.up-sample-kit-section {
+  padding: 30px 0;
+  background: #ffffff;
+}
+.up-sample-kit-box {
+  background: #f4f6f8;
+  border: 1px solid #eaedf0;
+  border-radius: 6px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.up-sample-kit-content h3 {
+  font-size: 17px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 4px;
+}
+.up-sample-kit-content p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+.up-sample-kit-btn {
+  background: #186f3b;
+  color: #fff !important;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 9px 20px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.up-sample-kit-btn:hover {
+  background: #11522b;
+}
+
+@media (max-width: 991px) {
   .sv-grid-3 { grid-template-columns: 1fr; }
   .sv-compare-grid { grid-template-columns: 1fr; }
-  .sv-process-grid { grid-template-columns: repeat(2, 1fr); }
+  .sv-process-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .sv-tools-grid { grid-template-columns: 1fr; }
-}
-@media (max-width: 600px) {
-  .sv-process-grid { grid-template-columns: 1fr; }
-  .sv-hero-title { font-size: 28px; }
+  .up-sample-kit-box { flex-direction: column; text-align: center; }
 }
 </style>
 <meta name="author" content="Forward Force Co. Ltd"/>
@@ -398,7 +355,7 @@
   "publisher": {
     "@type": "Organization",
     "name": "Forward Force Co. Ltd",
-    "email": "forwardforce87@gmail.com",
+    "email": "info@forwardforce.co.tz",
     "telephone": "+255 672 009 990",
     "address": {
       "@type": "PostalAddress",
@@ -779,8 +736,8 @@
                 <h4 class="up-mega-col-title">Custom Product Builder</h4>
                 <ul class="up-mega-list">
                   <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="products.html">Upload Artwork &amp; Proof Free</a></li>
-                  <li><a href="contact.html">Request Free Sample Kit</a></li>
+                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
+                  
                 </ul>
               </div>
               <div class="up-mega-col">
@@ -805,14 +762,15 @@
   <!-- ==========================================
        HERO: PRINTING & DIRECT MAILING SERVICES
        ========================================== -->
-  <section class="sv-hero">
+  <section class="sv-hero up-hero-banner ff-home-style-hero">
     <div class="up-section-container">
-      <div class="sv-hero-content">
+      <div class="sv-hero-content ff-page-hero-content">
         <span class="sv-hero-badge">Corporate Branding &bull; File Proofing &bull; Design Services</span>
-        <h1 class="sv-hero-title">Printing &amp; Branding Services</h1>
-        <p class="sv-hero-lead">
+        <h1 class="sv-hero-title ff-page-title">Printing &amp; Branding Services</h1>
+        <p class="sv-hero-lead ff-page-lead">
           From artwork preparation to production and finishing, Forward Force helps businesses and organizations create branded materials with clear communication and dependable support.
         </p>
+        <a class="up-shop-now-btn" href="products.html" style="margin-top:24px;">EXPLORE PRODUCTS</a>
       </div>
     </div>
   </section>
@@ -1042,19 +1000,34 @@
     </div>
   </section>
 
+
+  <!-- ==========================================
+       SECTION: NEWSLETTER SUBSCRIBE
+       ========================================== -->
+  <section class="up-newsletter-section">
+    <div class="up-newsletter-inner">
+      <h4>Don't Miss Out</h4>
+      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
+      <form class="up-newsletter-form" data-ff-form="newsletter">
+        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
   <!-- ==========================================
        GLOBAL FOOTER (Shared Forward Force Footer)
        ========================================== -->
     <footer class="global-footer-container">
     <div class="footer-contents-container">
       <ul class="links-container">
-        <li><a href="contact.html">Help &amp; FAQs</a></li>
+        <li><a href="faq.html">Help &amp; FAQs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="products.html">Resellers</a></li>
-        <li><a href="services.html">Templates</a></li>
-        <li><a href="products.html">Samples</a></li>
-        <li><a href="about.html">Blog</a></li>
+        <li><a href="resellers.html">Resellers</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        
+        <li><a href="blog.html">Blog</a></li>
       </ul>
 
       <ul class="social-container">
@@ -1077,5 +1050,6 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
+<script src="assets/js/ff-forms.js"></script>
 </body>
 </html>

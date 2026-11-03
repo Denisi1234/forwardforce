@@ -23,37 +23,55 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
+<link href="assets/css/ff-pages.css" rel="stylesheet"/>
 <style>
 /* Products Catalog Page Enhancements */
 .ff-prod-hero {
-  background: #f7f9fa;
-  border-bottom: 1px solid #e2e5e8;
-  padding: 32px 0 26px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 440px;
+  padding: 0;
+  border: 0;
+  background: #25211f url('assets/images/clean-banner-desktop.jpg') center right / cover no-repeat;
+}
+.ff-prod-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(20,15,12,.78) 0%, rgba(20,15,12,.53) 48%, rgba(0,0,0,.08) 100%);
+}
+.ff-prod-hero .up-section-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 .ff-prod-breadcrumb {
   font-size: 13px;
-  color: #777;
+  color: rgba(255,255,255,.82);
   margin-bottom: 10px;
 }
 .ff-prod-breadcrumb a {
-  color: #095079;
+  color: #fff;
   text-decoration: none;
 }
 .ff-prod-breadcrumb a:hover {
   text-decoration: underline;
 }
 .ff-prod-title {
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 800;
-  color: #1a1f24;
+  color: #fff;
   margin: 0 0 8px;
+  text-shadow: 0 2px 5px rgba(0,0,0,.45);
 }
 .ff-prod-desc {
-  font-size: 14.5px;
-  color: #555;
+  font-size: 16px;
+  color: #fff;
   max-width: 860px;
   line-height: 1.6;
   margin: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,.65);
 }
 
 /* Category Filter Tabs */
@@ -79,12 +97,12 @@
   white-space: nowrap;
 }
 .ff-filter-btn:hover {
-  border-color: #186f3b;
-  color: #186f3b;
+  border-color: #095079;
+  color: #095079;
 }
 .ff-filter-btn.active {
-  background: #186f3b;
-  border-color: #186f3b;
+  background: #095079;
+  border-color: #095079;
   color: #ffffff;
 }
 
@@ -92,7 +110,7 @@
 .up-product-tile .up-product-price {
   font-size: 13.5px;
   font-weight: 700;
-  color: #186f3b;
+  color: #095079;
   margin-top: 4px;
 }
 .up-product-tile .up-product-price-sub {
@@ -103,9 +121,9 @@
 
 /* Search Feedback Box */
 .ff-search-feedback {
-  background: #eef7f0;
-  border: 1px solid #c3e6cb;
-  color: #155724;
+  background: #eef5f9;
+  border: 1px solid #c8dce8;
+  color: #095079;
   padding: 12px 18px;
   border-radius: 6px;
   margin-bottom: 24px;
@@ -114,9 +132,14 @@
   justify-content: space-between;
 }
 .ff-search-feedback a {
-  color: #155724;
+  color: #095079;
   font-weight: 700;
   text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .ff-prod-hero { min-height: 390px; background-position: 62% center; }
+  .ff-prod-title { font-size: 32px; }
+  .ff-prod-desc { font-size: 15px; }
 }
 </style>
 <meta name="author" content="Forward Force Co. Ltd"/>
@@ -129,7 +152,7 @@
   "publisher": {
     "@type": "Organization",
     "name": "Forward Force Co. Ltd",
-    "email": "forwardforce87@gmail.com",
+    "email": "info@forwardforce.co.tz",
     "telephone": "+255 672 009 990",
     "address": {
       "@type": "PostalAddress",
@@ -667,17 +690,34 @@
     </div>
   </section>
 
+
+  <!-- ==========================================
+       SECTION: NEWSLETTER SUBSCRIBE
+       ========================================== -->
+  <section class="up-newsletter-section">
+    <div class="up-newsletter-inner">
+      <h4>Don't Miss Out</h4>
+      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
+      <form class="up-newsletter-form" data-ff-form="newsletter">
+        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+    </div>
+  </section>
   <!-- ==========================================
        GLOBAL FOOTER
        ========================================== -->
   <footer class="global-footer-container">
     <div class="footer-contents-container">
       <ul class="links-container">
-        <li><a href="contact.html">Help &amp; FAQs</a></li>
+        <li><a href="faq.html">Help &amp; FAQs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="resellers.html">Resellers</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        
+        <li><a href="blog.html">Blog</a></li>
       </ul>
 
       <ul class="social-container">
@@ -689,7 +729,7 @@
       </ul>
 
       <ul class="legal-container">
-        <li class="copyright">&copy; 2000&ndash;2026 Forward Force Co. Ltd. All rights reserved.</li>
+        <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
         <li><a href="about.html">Terms of Service</a></li>
         <li><a href="about.html">Privacy Policy</a></li>
       </ul>
@@ -701,6 +741,7 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
+<script src="assets/js/ff-forms.js"></script>
 <script>
 // Category Filtering & URL Search Handler
 document.addEventListener('DOMContentLoaded', function () {

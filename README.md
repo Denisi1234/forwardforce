@@ -1,4 +1,4 @@
-# Forward Force Co. Ltd website
+﻿# Forward Force Co. Ltd website
 
 Professional printing and branding services in Kijitonyama, Dar es Salaam. The website presents Forward Force's DTF printing, embroidery, corporate branding, custom products, and project inquiry options.
 
@@ -8,16 +8,29 @@ Serve this folder with any static web server and open `index.html`. Product brow
 
 ## Main pages
 
-- `index.html` — homepage and featured products
-- `services.html` — printing and branding services
-- `products.html` — product catalog and search
-- `product-details.html` — product customization
-- `cart.html` — quote basket and order inquiry
-- `about.html` — company profile
-- `contact.html` — phone, email, WhatsApp, and project inquiry form
+- `index.html` - homepage and featured products
+- `services.html` - printing and branding services
+- `products.html` - product catalog and search
+- `product-details.html` - product customization
+- `cart.html` - quote basket and order inquiry
+- `about.html` - company profile
+- `contact.html` - phone, email, WhatsApp, and project inquiry form
+- `faq.html` - help and frequently asked questions
+- `resellers.html` - reseller programme and application form
+- `templates.html` - artwork guidelines, product sizes, template requests
+- `samples.html` - sample request form
+- `blog.html` - printing and branding guides
+
+## Forms (newsletter, samples, resellers, templates)
+
+All forms marked `data-ff-form` are sent by `assets/js/ff-forms.js` through
+FormSubmit (https://formsubmit.co) to **info@forwardforce.co.tz**. No server code is needed.
+
+One-time setup: after the site is online, submit any form once. FormSubmit emails an
+"Activate Form" link to info@forwardforce.co.tz. Click it, and every later submission is delivered.
 
 ## Contact
 
 Phone / WhatsApp: +255 672 009 990  
-Email: forwardforce87@gmail.com  
+Email: info@forwardforce.co.tz  
 Location: Kijitonyama, Dar es Salaam, Tanzania

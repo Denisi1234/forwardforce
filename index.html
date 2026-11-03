@@ -23,6 +23,7 @@
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/style.css" rel="stylesheet"/>
 <link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
+<link href="assets/css/ff-pages.css" rel="stylesheet"/>
 
 <script type="application/ld+json">
 {
@@ -31,7 +32,7 @@
   "name": "Forward Force Co. Ltd",
   "description": "Printing and branding company providing DTF printing, embroidery, corporate branding, graphic design, and print finishing.",
   "telephone": "+255 672 009 990",
-  "email": "forwardforce87@gmail.com",
+  "email": "info@forwardforce.co.tz",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Kijitonyama, Dar es Salaam",
@@ -415,8 +416,8 @@
                 <h4 class="up-mega-col-title">Custom Product Builder</h4>
                 <ul class="up-mega-list">
                   <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="products.html">Upload Artwork &amp; Proof Free</a></li>
-                  <li><a href="contact.html">Request Free Sample Kit</a></li>
+                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
+                  
                 </ul>
               </div>
               <div class="up-mega-col">
@@ -793,14 +794,37 @@
   </section>
 
   <!-- ==========================================
+       SECTION: COMPANY PROFILE DOWNLOAD
+       ========================================== -->
+  <section class="ff-download-section" id="company-profile">
+    <div class="up-section-container">
+      <div class="ff-download-card">
+        <div class="ff-download-icon"><i class="fa fa-file-pdf-o"></i></div>
+        <div class="ff-download-text">
+          <h2>Download Our Company Profile</h2>
+          <p>Get the full Forward Force Co. Ltd profile: our services, equipment, past projects and contact details, all in one PDF.</p>
+          <span class="ff-download-meta">PDF &middot; approx. 50 MB</span>
+        </div>
+        <div class="ff-download-actions">
+          <a class="ff-download-btn" href="forward%20force.pdf" download="Forward-Force-Company-Profile.pdf">
+            <i class="fa fa-download"></i> Download PDF
+          </a>
+          <a class="ff-download-link" href="forward%20force.pdf" target="_blank" rel="noopener">View online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
        SECTION: NEWSLETTER SUBSCRIBE
        ========================================== -->
   <section class="up-newsletter-section">
     <div class="up-newsletter-inner">
       <h4>Don't Miss Out</h4>
       <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
-      <form class="up-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to our email list!');">
-        <input aria-label="Newsletter email" placeholder="Enter your email" required="" type="email"/>
+      <form class="up-newsletter-form" data-ff-form="newsletter">
+        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
         <button type="submit">SUBSCRIBE</button>
       </form>
     </div>
@@ -812,13 +836,13 @@
     <footer class="global-footer-container">
     <div class="footer-contents-container">
       <ul class="links-container">
-        <li><a href="contact.html">Help &amp; FAQs</a></li>
+        <li><a href="faq.html">Help &amp; FAQs</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="products.html">Resellers</a></li>
-        <li><a href="services.html">Templates</a></li>
-        <li><a href="products.html">Samples</a></li>
-        <li><a href="about.html">Blog</a></li>
+        <li><a href="resellers.html">Resellers</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        
+        <li><a href="blog.html">Blog</a></li>
       </ul>
 
       <ul class="social-container">
@@ -841,23 +865,6 @@
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
-<script>
-// Category tab switching
-document.addEventListener('DOMContentLoaded', function () {
-  var tabButtons = document.querySelectorAll('.up-tab-btn');
-  var tabPanes = document.querySelectorAll('.up-tab-pane');
-
-  tabButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var target = btn.getAttribute('data-tab');
-      tabButtons.forEach(function (b) { b.classList.remove('active'); });
-      tabPanes.forEach(function (p) { p.classList.remove('active'); });
-      btn.classList.add('active');
-      var activePane = document.getElementById(target);
-      if (activePane) activePane.classList.add('active');
-    });
-  });
-});
-</script>
+<script src="assets/js/ff-forms.js"></script>
 </body>
 </html>
