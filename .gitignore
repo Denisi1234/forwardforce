@@ -1,0 +1,8 @@
+# Local company profile source; not part of the deployable website
+/forward force.pdf
+
+# Generated page previews exported from the company profile
+/assets/images/ff_page_*.png
+
+# Legacy PHP mail handlers with deployment-specific SMTP settings; unused by current pages
+/assets/inc/
