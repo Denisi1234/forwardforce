@@ -6,6 +6,10 @@ Professional printing and branding services in Kijitonyama, Dar es Salaam. The w
 
 Serve this folder with any static web server and open `index.html`. Product browsing, search, and the quote basket use the browser; project inquiries are sent through WhatsApp or email.
 
+## Search indexing
+
+`sitemap.xml` lists the public site pages, and `robots.txt` points crawlers to the sitemap. After deploying, submit `https://www.forwardforce.co.tz/sitemap.xml` in Google Search Console.
+
 ## Main pages
 
 - `index.html` - homepage and featured products
