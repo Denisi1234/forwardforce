@@ -1143,6 +1143,11 @@ body {
 .up-newsletter-inner {
   max-width: 600px;
   margin: 0 auto;
+  padding: 28px 32px;
+  background: #fff;
+  border: 1px solid #e2e8ee;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(3, 68, 127, 0.08);
 }
 
 .up-newsletter-inner h4 {
@@ -1168,10 +1173,17 @@ body {
   flex: 1;
   padding: 12px 16px;
   font-size: 14px;
+  color: #202b36;
+  background: #fff;
   border: 1px solid #cbd2d8;
-  border-right: none;
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
   outline: none;
+}
+.up-newsletter-form input:focus {
+  position: relative;
+  z-index: 1;
+  border-color: #0757A6;
+  box-shadow: 0 0 0 3px rgba(7, 87, 166, 0.12);
 }
 
 .up-newsletter-form button {
@@ -1179,7 +1191,7 @@ body {
   background: #0757A6;
   color: #fff;
   border: 1px solid #0757A6;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -1189,6 +1201,49 @@ body {
 
 .up-newsletter-form button:hover {
   background: #03447F;
+}
+
+@media (max-width: 576px) {
+  .up-newsletter-section {
+    padding: 32px 16px;
+  }
+
+  .up-newsletter-inner {
+    width: 100%;
+    padding: 24px 18px;
+    border-radius: 9px;
+  }
+
+  .up-newsletter-inner h4 {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .up-newsletter-inner p {
+    max-width: 340px;
+    margin: 0 auto 16px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .up-newsletter-form {
+    width: 100%;
+    max-width: 420px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .up-newsletter-form input,
+  .up-newsletter-form button {
+    width: 100%;
+    min-height: 46px;
+    border: 1px solid #cbd2d8;
+    border-radius: 4px;
+  }
+
+  .up-newsletter-form button {
+    border-color: #0757A6;
+  }
 }
 
 .global-footer-container {

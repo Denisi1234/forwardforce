@@ -38,6 +38,14 @@
   margin: 0 0 10px;
   line-height: 1.25;
 }
+.ff-page-title .hero-highlight,
+.ab-hero-title .hero-highlight,
+.ff-prod-title .hero-highlight,
+.up-hero-title .hero-highlight,
+.up-hero-subtitle .hero-highlight {
+  color: #0757A6;
+  font-weight: 900;
+}
 .ff-page-lead {
   font-size: 14.5px;
   line-height: 1.6;
