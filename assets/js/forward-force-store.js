@@ -10,7 +10,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Premium 350gsm matte or gloss coated cards with crisp double-sided printing.",
-      image: "assets/images/menu-bc.jpg",
+      image: "https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900",
       imageAlt: "Standard Business Cards"
     },
     {
@@ -54,7 +54,7 @@
       priceTzs: 40000,
       baseQty: 1,
       description: "Vibrant full-color A5 or A4 flyers on 150gsm gloss art paper.",
-      image: "assets/images/menu-flyers.jpg",
+      image: "https://staticecp.uprinting.com/19240/250x250/UP_Flyers_PLA_Image_1.jpg",
       imageAlt: "Flyers"
     },
     {
@@ -65,7 +65,7 @@
       priceTzs: 55000,
       baseQty: 1,
       description: "Professional tri-fold or bi-fold corporate brochures with precision machine creasing.",
-      image: "https://staticecp.uprinting.com/19240/250x250/UP_Flyers_PLA_Image_1.jpg",
+      image: "https://staticecp.uprinting.com/19242/250x250/UP_Booklets_PLA_Image_1.jpg",
       imageAlt: "Brochures"
     },
     {
@@ -76,7 +76,7 @@
       priceTzs: 95000,
       baseQty: 1,
       description: "Saddle-stitched multi-page company profiles and product catalogs.",
-      image: "assets/images/menu-booklets.jpg",
+      image: "https://staticecp.uprinting.com/19242/250x250/UP_Booklets_PLA_Image_1.jpg",
       imageAlt: "Booklets"
     },
     {
@@ -98,7 +98,7 @@
       priceTzs: 25000,
       baseQty: 1,
       description: "Waterproof, UV-resistant custom shape die-cut stickers for branding.",
-      image: "assets/images/coaster-sticker.jpg",
+      image: "https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg",
       imageAlt: "Die Cut Stickers"
     },
     {
@@ -120,7 +120,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Eco-friendly textured rustic brown kraft stickers with strong adhesive.",
-      image: "assets/images/products/kraft-paper-labels.webp",
+      image: "assets/logo_forward_force/kraftsticker.jpeg",
       imageAlt: "Kraft Stickers"
     },
     {
@@ -142,7 +142,7 @@
       priceTzs: 80000,
       baseQty: 1,
       description: "Heavy-duty corrugated cardboard shipping boxes with vibrant custom exterior printing.",
-      image: "assets/images/products/custom-mailer-boxes.webp",
+      image: "assets/logo_forward_force/mailboxes.jpeg",
       imageAlt: "Custom Mailer Boxes"
     },
     {
@@ -153,7 +153,7 @@
       priceTzs: 70000,
       baseQty: 1,
       description: "Resealable ziplock barrier pouches for coffee, dry foods, and consumer products.",
-      image: "assets/images/take-a-break-card.jpg",
+      image: "https://staticecp.uprinting.com/16760/250x250/UP%20Home%20Page%20Prod%20Images%20April%20-%20Pouches.jpg",
       imageAlt: "Stand-Up Pouches"
     },
     {
@@ -197,7 +197,7 @@
       priceTzs: 90000,
       baseQty: 1,
       description: "Retractable 85x200cm aluminium stand with carrying bag and full-color banner.",
-      image: "https://staticecp.uprinting.com/19250/250x250/UP_Foam_Board_Signs_PLA_Image_1.jpg",
+      image: "https://staticecp.uprinting.com/19248/250x250/UP_Vinyl_Banner_PLA_Image_1.jpg",
       imageAlt: "Roll-Up Banner"
     },
     {
@@ -208,7 +208,7 @@
       priceTzs: 60000,
       baseQty: 1,
       description: "Weatherproof 4mm fluted plastic signs with metal H-stakes for outdoor display.",
-      image: "assets/images/products/yard-signs.webp",
+      image: "assets/logo_forward_force/yard%20sign.jpeg",
       imageAlt: "Yard Signs"
     },
     {
@@ -230,7 +230,7 @@
       priceTzs: 45000,
       baseQty: 1,
       description: "Plush 320gsm cotton-poly fleece hoodie with premium DTF print or embroidery.",
-      image: "assets/images/green-hoodie.jpg",
+      image: "https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg",
       imageAlt: "Custom Fleece Hoodie"
     },
     {
@@ -241,7 +241,7 @@
       priceTzs: 20000,
       baseQty: 1,
       description: "100% combed cotton 180gsm t-shirt with vibrant high-density direct-to-film print.",
-      image: "assets/images/ff-dtf-tshirts.jpg",
+      image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
       imageAlt: "Branded DTF T-Shirt"
     },
     {
@@ -252,7 +252,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Classic corporate 220gsm polo shirt with high-stitch-count chest embroidery.",
-      image: "assets/images/ff-polo-shirts.jpg",
+      image: "https://assets.pens.com/image/upload/products/prd-va7p9gemd/055bbe3373f94574a87a762fc90fbc5e",
       imageAlt: "Embroidered Polo Shirt"
     },
     {
@@ -263,7 +263,7 @@
       priceTzs: 18000,
       baseQty: 1,
       description: "Structured 6-panel twill cap with 3D puff embroidery and adjustable closure.",
-      image: "assets/images/ff-embroidery-caps.jpg",
+      image: "https://images.unsplash.com/photo-1622445275576-721325763afe?auto=format&fit=crop&w=1200&q=80",
       imageAlt: "Embroidered Caps"
     },
     {
@@ -274,7 +274,7 @@
       priceTzs: 12000,
       baseQty: 1,
       description: "Eco-friendly reusable 10oz canvas shopping tote with reinforced handles.",
-      image: "assets/images/tote-bag.jpg",
+      image: "https://images.unsplash.com/photo-1572966059657-6e8910c8c3c0?auto=format&fit=crop&w=1200&q=80",
       imageAlt: "Canvas Tote Bag"
     },
     {
@@ -350,7 +350,7 @@
       category: (details && details.category) || 'Custom Print',
       unitPrice: (details && details.price) || 15.00,
       priceTzs: (details && details.priceTzs) || 38000,
-      image: (details && details.image) || 'assets/images/menu-bc.jpg'
+      image: (details && details.image) || 'https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900'
     };
 
     details = details || {};

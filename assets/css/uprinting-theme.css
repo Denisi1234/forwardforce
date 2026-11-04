@@ -51,7 +51,7 @@ body {
 .up-header-container {
   max-width: 1380px;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 7px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,8 +65,8 @@ body {
 }
 
 .up-brand-logo img {
-  height: 112px;
-  max-width: 300px;
+  height: 82px;
+  max-width: 260px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -229,7 +229,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 48px;
+  height: 42px;
   overflow-x: auto;
 }
 
@@ -257,11 +257,12 @@ body {
 .up-hero-banner {
   position: relative;
   width: 100%;
-  height: 480px;
-  min-height: 440px;
+  height: 380px;
+  min-height: 360px;
   background-color: var(--up-blue-dark);
-  background-image: url('../images/clean-banner-desktop.webp');
+  background-image: none;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center right;
   display: flex;
   align-items: center;
@@ -269,11 +270,49 @@ body {
 }
 
 .up-hero-banner::before {
-  content: "";
+  content: none;
+}
+
+.up-hero-slide {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(3, 33, 61, 0.82) 0%, rgba(3, 68, 127, 0.58) 46%, rgba(3, 68, 127, 0.08) 100%);
-  pointer-events: none;
+  overflow: hidden;
+  background: #f3f6f8;
+  animation: up-hero-slide-fade 12s infinite;
+  will-change: opacity;
+}
+
+.up-hero-slide-one { opacity: 1; }
+.up-hero-slide-two { opacity: 0; }
+.up-hero-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.up-hero-content {
+  z-index: 2;
+}
+
+@keyframes up-hero-slide-fade {
+  0%, 42% { opacity: 0; }
+  50%, 92% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.up-hero-slide-one { animation-name: up-hero-slide-one-fade; }
+@keyframes up-hero-slide-one-fade {
+  0%, 42% { opacity: 1; }
+  50%, 92% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .up-hero-slide { animation: none; }
+  .up-hero-slide-one { opacity: 1; }
+  .up-hero-slide-two { opacity: 0; }
 }
 
 .up-hero-content {
@@ -290,22 +329,22 @@ body {
 }
 
 .up-hero-title {
-  color: #ffffff;
+  color: #123247;
   font-size: 44px;
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -0.5px;
   margin: 0 0 14px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.65);
 }
 
 .up-hero-subtitle {
-  color: #f7f7f7;
+  color: #183247;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
   margin: 0 0 28px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
 }
 
 .up-shop-now-btn {
@@ -1323,8 +1362,8 @@ body {
 
 @media (max-width: 600px) {
   .up-hero-banner {
-    height: 360px;
-    min-height: 360px;
+    height: 300px;
+    min-height: 300px;
   }
   .up-hero-title {
     font-size: 30px;
@@ -1511,11 +1550,11 @@ body {
 
 @media (max-width: 992px) {
   .up-header-container {
-    padding: 10px 16px;
-    gap: 12px;
+    padding: 7px 16px;
+    gap: 10px;
   }
   .up-brand-logo img {
-    height: 86px;
+    height: 68px;
   }
   .up-service-phone {
     min-width: auto;
@@ -1632,10 +1671,10 @@ body {
 
   /* Hero Section */
   .up-hero-banner {
-    height: 380px;
-    min-height: 380px;
+    height: 320px;
+    min-height: 320px;
     padding: 0 16px;
-    background-image: url('../images/clean-banner-tablet.webp');
+    background-image: none;
     background-position: 70% center;
   }
   .up-hero-title {
@@ -1696,10 +1735,10 @@ body {
 
 @media (max-width: 576px) {
   .up-header-container {
-    padding: 8px 12px;
+    padding: 6px 12px;
   }
   .up-brand-logo img {
-    height: 72px;
+    height: 56px;
   }
   .up-service-phone {
     display: none;
@@ -1758,9 +1797,9 @@ body {
 
   /* Hero Banner */
   .up-hero-banner {
-    height: 320px;
-    min-height: 320px;
-    background-image: url('../images/clean-banner-mobile.webp');
+    height: 260px;
+    min-height: 260px;
+    background-image: none;
     background-position: center center;
   }
   .up-hero-title {
@@ -2066,8 +2105,8 @@ body {
     border-top-width: 2px;
   }
   .up-header-container {
-    padding: 10px 14px;
-    gap: 10px;
+    padding: 6px 12px;
+    gap: 8px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -2129,15 +2168,15 @@ body {
     order: 4;
     width: 100%;
     max-width: 100%;
-    margin-top: 4px;
+    margin-top: 0;
   }
   .up-search-input {
-    height: 40px;
+    height: 36px;
     font-size: 13.5px;
   }
   .up-search-btn {
-    height: 40px;
-    width: 44px;
+    height: 36px;
+    width: 40px;
   }
   .up-service-phone {
     display: flex;
@@ -2157,10 +2196,10 @@ body {
 
 @media (max-width: 420px) {
   .up-header-container {
-    padding: 8px 10px;
+    padding: 5px 10px;
   }
   .up-brand-logo img {
-    height: 64px;
+    height: 50px;
   }
   .up-service-phone .phone-email { font-size: 9.5px; }
   .up-service-phone .phone-num { font-size: 10.5px; }

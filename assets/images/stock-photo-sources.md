@@ -50,3 +50,22 @@ These Unsplash images are used as illustrative website photography. They are not
 - Direct image URL: https://images.unsplash.com/photo-1666358777235-f74b570c532a?auto=format&fit=crop&w=1400&q=85
 - Use: Studio-style apparel image, distinct from the homepage banner and product images.
 - License: Unsplash License (free commercial use; attribution appreciated).
+
+## online service photography
+
+These remotely hosted Pexels photos are illustrative stock, not photos of Forward Force staff or completed orders. See each photo page for its current license and details.
+
+- T-shirt heat-press printing: https://www.pexels.com/photo/man-printing-t-shirt-in-workshop-with-heat-press-33650428/
+- Printing machine in a workshop: https://www.pexels.com/photo/printing-machine-in-workshop-19316522/
+- Graphic designer working at a computer: https://www.pexels.com/photo/graphic-designer-working-on-computer-13451104/
+- Business card product photo: https://www.pexels.com/photo/a-stack-of-blank-business-cards-10932011/
+
+Product gallery images are loaded remotely from UPrinting product image URLs already used by the site's catalog. Their availability and usage terms are controlled by that provider.
+
+## Forward Force product photos
+
+These product images were supplied in `assets/logo_forward_force/` and are used across the catalog, navigation galleries, and cart for their matching products:
+
+- Kraft labels: `../logo_forward_force/kraftsticker.jpeg`
+- Mailer boxes: `../logo_forward_force/mailboxes.jpeg`
+- Yard signs: `../logo_forward_force/yard sign.jpeg`
