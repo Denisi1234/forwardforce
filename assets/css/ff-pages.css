@@ -52,7 +52,8 @@
   padding: 0;
   border: 0;
   background-image: url('../logo_forward_force/banner1.webp');
-  background-size: cover;
+  background-color: #f3f6f8;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -97,7 +98,8 @@
   padding: 0;
   border: 0;
   background-image: url('../logo_forward_force/banner1.webp');
-  background-size: cover;
+  background-color: #f3f6f8;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -397,10 +399,10 @@
   .ff-card-grid, .ff-card-grid.cols-4, .ff-card-grid.cols-2, .ff-steps, .ff-form-grid { grid-template-columns: 1fr; }
   .ff-cta-band { flex-direction: column; text-align: center; }
   .ff-page-title { font-size: 24px; }
-  .ff-reseller-hero { height: auto; min-height: 430px; padding: 48px 0; background-image: url('../logo_forward_force/banner1.webp'); background-position: 62% center; }
+  .ff-reseller-hero { height: auto; min-height: 430px; padding: 48px 0; background-image: url('../logo_forward_force/banner1.webp'); background-position: center center; background-size: contain; background-color: #f3f6f8; }
   .ff-reseller-hero .up-section-container { padding: 0 22px; }
   .ff-reseller-hero .ff-page-title { font-size: 32px; }
-  .ff-home-style-hero { height: auto; min-height: 430px; padding: 48px 0; background-image: url('../logo_forward_force/banner1.webp'); background-position: 62% center; }
+  .ff-home-style-hero { height: auto; min-height: 430px; padding: 48px 0; background-image: url('../logo_forward_force/banner1.webp'); background-position: center center; background-size: contain; background-color: #f3f6f8; }
   .ff-home-style-hero .up-section-container { padding: 0 22px; }
   .ff-home-style-hero .ff-page-title { font-size: 32px; }
   .ff-template-gallery { grid-template-columns: 1fr; }
