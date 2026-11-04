@@ -413,6 +413,10 @@ body {
   align-items: start;
 }
 
+.up-layout-grid.products-grid-only {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .up-sidebar-card {
   background: #ffffff;
   border: 1px solid #e2e5e8;
@@ -2474,4 +2478,33 @@ body {
   .up-main-panel { min-width: 0; }
   .up-main-panel .up-section-title { font-size: 23px; }
   .up-main-panel .up-section-view-all { font-size: 12px; white-space: nowrap; }
+}
+
+/* Keep the strong home-banner typography consistent across phone layouts. */
+@media (max-width: 767px) {
+  body {
+    -webkit-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .up-section-title, .up-product-name,
+  .ct-hero-title, .sv-hero-title, .ab-hero-title,
+  .ff-page-title, .ff-section-title {
+    font-weight: 800 !important;
+  }
+
+  p, li, label,
+  .up-hero-subtitle, .up-product-desc,
+  .ct-hero-subtitle, .sv-hero-subtitle, .ab-hero-subtitle {
+    font-weight: 600 !important;
+  }
+
+  section a, section button, section .btn, section [type="submit"] {
+    font-weight: 700;
+  }
+
+  button, .btn, [type="submit"] {
+    font-weight: 800 !important;
+  }
 }
