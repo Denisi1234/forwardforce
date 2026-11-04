@@ -2309,8 +2309,8 @@ body {
 
 /* Hero proportions and readable text panel for the two rotating photos. */
 .up-hero-banner {
-  height: 560px;
-  min-height: 520px;
+  height: 500px;
+  min-height: 480px;
 }
 .up-hero-inner {
   max-width: 520px;
@@ -2357,16 +2357,16 @@ body {
 
 @media (max-width: 768px) {
   .up-hero-banner {
-    height: 500px;
-    min-height: 500px;
+    height: 460px;
+    min-height: 460px;
   }
 }
 @media (max-width: 576px) {
   .up-hero-banner {
-    height: calc(100vh - 180px);
-    height: calc(100svh - 180px);
-    min-height: 440px;
-    max-height: 680px;
+    height: calc(100vh - 230px);
+    height: calc(100svh - 230px);
+    min-height: 390px;
+    max-height: 600px;
   }
   .up-hero-slide img { object-fit: cover; object-position: center 42%; }
   .up-hero-content {
@@ -2482,6 +2482,10 @@ body {
 
 /* Keep the strong home-banner typography consistent across phone layouts. */
 @media (max-width: 767px) {
+  .up-header-container > .up-service-phone {
+    display: none !important;
+  }
+
   body {
     -webkit-font-smoothing: auto;
     text-rendering: optimizeLegibility;

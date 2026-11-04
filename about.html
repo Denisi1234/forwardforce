@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: #f3f6f8 url('assets/logo_forward_force/banner1.webp') right center / auto 100% no-repeat;
+  background: linear-gradient(90deg, rgba(243,249,252,.98) 0%, rgba(243,249,252,.94) 42%, rgba(243,249,252,.42) 76%, rgba(243,249,252,.12) 100%), url('assets/logo_forward_force/banner1.webp') center / cover no-repeat;
 }
 .ab-hero-banner::before {
   content: none;
@@ -299,18 +299,12 @@
 }
 
 @media (max-width: 991px) {
-  .ab-hero-banner { min-height: 400px; padding: 70px 0; background-position: center center; background-size: contain; background-color: #f3f6f8; }
+  .ab-hero-banner { min-height: 400px; padding: 54px 0; background-position: center; background-size: cover; background-color: #f3f6f8; }
   .ab-hero-title { font-size: 36px; }
   .ab-easy-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .ab-support-grid { grid-template-columns: 1fr; }
   .ab-check-grid { grid-template-columns: 1fr; }
   .ab-growth-grid { grid-template-columns: 1fr; }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .ab-hero-banner { background-image: url('assets/logo_forward_force/banner1.webp'); }
-}
-@media (max-width: 767px) {
-  .ab-hero-banner { background-image: url('assets/logo_forward_force/banner1.webp'); }
 }
 </style>
 <meta name="author" content="Forward Force Co. Ltd"/>

@@ -33,7 +33,7 @@
   min-height: 440px;
   padding: 0;
   border: 0;
-  background: #f3f6f8 url('assets/logo_forward_force/banner1.webp') right center / auto 100% no-repeat;
+  background: linear-gradient(90deg, rgba(243,249,252,.98) 0%, rgba(243,249,252,.94) 42%, rgba(243,249,252,.42) 76%, rgba(243,249,252,.12) 100%), url('assets/logo_forward_force/banner1.webp') center / cover no-repeat;
 }
 .ff-prod-hero::before {
   content: none;
@@ -136,12 +136,12 @@
   text-decoration: underline;
 }
 @media (max-width: 767px) {
-  .ff-prod-hero { min-height: 390px; background-image: url('assets/logo_forward_force/banner1.webp'); background-position: center center; background-size: contain; background-color: #f3f6f8; }
+  .ff-prod-hero { min-height: 390px; background-position: center; background-size: cover; background-color: #f3f6f8; }
   .ff-prod-title { font-size: 32px; }
   .ff-prod-desc { font-size: 15px; }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .ff-prod-hero { background-image: url('assets/logo_forward_force/banner1.webp'); }
+  .ff-prod-hero { background-position: center right; background-size: cover; }
 }
 </style>
 <meta name="author" content="Forward Force Co. Ltd"/>
