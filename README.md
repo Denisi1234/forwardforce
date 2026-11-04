@@ -1,4 +1,4 @@
-﻿# Forward Force Co. Ltd website
+# Forward Force Co. Ltd website
 
 Professional printing and branding services in Kijitonyama, Dar es Salaam. The website presents Forward Force's DTF printing, embroidery, corporate branding, custom products, and project inquiry options.
 
@@ -34,6 +34,6 @@ One-time setup: after the site is online, submit any form once. FormSubmit email
 
 ## Contact
 
-Phone / WhatsApp: +255 672 009 990  
+Phone / WhatsApp: +255 710 217 583  
 Email: info@forwardforce.co.tz  
 Location: Kijitonyama, Dar es Salaam, Tanzania

@@ -746,7 +746,7 @@
         msgLines.push('');
         msgLines.push('Please confirm artwork and production timeline.');
 
-        var waUrl = 'https://wa.me/255672009990?text=' + encodeURIComponent(msgLines.join('\n'));
+        var waUrl = 'https://wa.me/255710217583?text=' + encodeURIComponent(msgLines.join('\n'));
 
         // Clear cart
         saveBasket([]);

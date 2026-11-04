@@ -14,7 +14,7 @@
 
   var FF_INBOX = 'info@forwardforce.co.tz';
   var ENDPOINT = 'https://formsubmit.co/ajax/' + FF_INBOX;
-  var WHATSAPP = 'https://wa.me/255672009990';
+  var WHATSAPP = 'https://wa.me/255710217583';
 
   var SUBJECTS = {
     newsletter: 'New newsletter subscriber - Forward Force website',
