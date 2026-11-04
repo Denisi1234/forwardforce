@@ -58,10 +58,10 @@
 .single-fact-counter .count-box span {
     position: relative;
     display: inline-block;
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -73,10 +73,10 @@
     font-size: 45px;
     font-weight: 400;
     line-height: 40px;
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

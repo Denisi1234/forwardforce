@@ -70,9 +70,9 @@
     left: 0;
     bottom: 8px;
     width: 5px;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
 }
 
 .single-footer-widget .title.title--base-clr:before {
@@ -233,9 +233,9 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 300;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
 }
 
 .footer-widget-links ul li a:hover {
@@ -385,10 +385,10 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 600;
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;

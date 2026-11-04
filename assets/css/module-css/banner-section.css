@@ -383,9 +383,9 @@
     left: -2px;
     bottom: -2px;
     right: -2px;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     content: "";
     border-radius: 50%;
     z-index: -1;
@@ -413,9 +413,9 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     margin: 21px;
     z-index: -1;
     transition: all 500ms ease, background-image ease-in 2ms;
@@ -445,9 +445,9 @@
     left: -2px;
     bottom: -2px;
     right: -2px;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     content: "";
     border-radius: 50%;
     z-index: -1;
@@ -471,9 +471,9 @@
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     margin: 21px;
     z-index: -1;
     transition: all 500ms ease, background-image ease-in 2ms;
@@ -557,9 +557,9 @@
 }
 
 .main-slider .banner-carousel.owl-carousel button.owl-dot.active {
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
 }
 
 

@@ -6,8 +6,8 @@
 
 /* ---------- Page hero ---------- */
 .ff-page-hero {
-  background: #f7f9fa;
-  border-bottom: 1px solid #e2e5e8;
+  background: linear-gradient(135deg, #F3F9FC 0%, #E5F5FB 100%);
+  border-bottom: 1px solid #D9E8F0;
   padding: 40px 0 35px;
 }
 .ff-page-hero-content { max-width: 820px; }
@@ -16,12 +16,13 @@
   color: #777;
   margin-bottom: 12px;
 }
-.ff-breadcrumb a { color: #095079; text-decoration: none; }
+.ff-breadcrumb a { color: #0757A6; text-decoration: none; }
 .ff-breadcrumb a:hover { text-decoration: underline; }
 .ff-page-badge {
   display: inline-block;
-  background: #eef7f0;
-  color: #186f3b;
+  background: #EAF7FC;
+  color: #0757A6;
+  border: 1px solid #C6EAF5;
   font-weight: 700;
   font-size: 12px;
   padding: 4px 12px;
@@ -63,7 +64,7 @@
 .ff-reseller-hero .ff-page-hero-content { max-width: 560px; }
 .ff-reseller-hero .ff-breadcrumb { color: rgba(255,255,255,.8); }
 .ff-reseller-hero .ff-breadcrumb a { color: #fff; }
-.ff-reseller-hero .ff-page-badge { color: #fff; background: rgba(9,80,121,.8); }
+.ff-reseller-hero .ff-page-badge { color: #fff; background: rgba(7,87,166,.8); }
 .ff-reseller-hero .ff-page-title {
   color: #fff;
   font-size: 42px;
@@ -104,7 +105,7 @@
 .ff-home-style-hero .ff-page-hero-content { max-width: 560px; }
 .ff-home-style-hero .ff-breadcrumb { color: rgba(255,255,255,.8); }
 .ff-home-style-hero .ff-breadcrumb a { color: #fff; }
-.ff-home-style-hero .ff-page-badge { color: #fff; background: rgba(9,80,121,.8); }
+.ff-home-style-hero .ff-page-badge { color: #fff; background: rgba(7,87,166,.8); }
 .ff-home-style-hero .ff-page-title {
   color: #fff;
   font-size: 42px;
@@ -116,7 +117,7 @@
   text-shadow: 0 1px 4px rgba(0,0,0,.65);
 }
 .ff-template-hero-cta { margin-top: 22px; }
-.ff-template-gallery-section { background: #f7f9fa; border-block: 1px solid #edf0f3; }
+.ff-template-gallery-section { background: #f0f8fc; border-block: 1px solid #edf0f3; }
 .ff-template-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .ff-template-gallery figure {
   margin: 0;
@@ -131,7 +132,7 @@
 
 /* ---------- Generic sections ---------- */
 .ff-section { padding: 45px 0; background: #fff; }
-.ff-section.alt { background: #f7f9fa; border-top: 1px solid #edf0f3; border-bottom: 1px solid #edf0f3; }
+.ff-section.alt { background: #f0f8fc; border-top: 1px solid #edf0f3; border-bottom: 1px solid #edf0f3; }
 .ff-section-title {
   font-size: 22px;
   font-weight: 800;
@@ -169,7 +170,7 @@
   align-items: center;
   justify-content: center;
   background: #e8f1f7;
-  color: #095079;
+  color: #0757A6;
   font-size: 22px;
   border-radius: 50%;
   margin-bottom: 14px;
@@ -189,7 +190,7 @@
   justify-content: center;
   width: 34px;
   height: 34px;
-  background: #095079;
+  background: #0757A6;
   color: #fff;
   font-weight: 800;
   border-radius: 50%;
@@ -217,7 +218,7 @@
   text-decoration: none;
 }
 .ff-faq-nav a:last-child { border-bottom: none; }
-.ff-faq-nav a:hover { background: #f4f8fb; color: #095079; }
+.ff-faq-nav a:hover { background: #f4f8fb; color: #0757A6; }
 .ff-faq-group { margin-bottom: 30px; }
 .ff-faq-group h2 { font-size: 19px; font-weight: 800; color: #222; margin: 0 0 12px; }
 .ff-faq-item {
@@ -243,7 +244,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
-  color: #095079;
+  color: #0757A6;
   font-weight: 400;
 }
 .ff-faq-item[open] summary::after { content: "\2212"; }
@@ -284,7 +285,7 @@
 }
 .ff-field input:focus,
 .ff-field select:focus,
-.ff-field textarea:focus { border-color: #095079; box-shadow: 0 0 0 2px rgba(9, 80, 121, 0.12); }
+.ff-field textarea:focus { border-color: #0757A6; box-shadow: 0 0 0 3px rgba(19, 188, 229, 0.2); outline: none; }
 .ff-field textarea { min-height: 110px; resize: vertical; }
 .ff-form-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; align-items: center; }
 .ff-hp { position: absolute !important; left: -9999px !important; width: 1px; height: 1px; overflow: hidden; }
@@ -295,27 +296,29 @@
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background: #095079;
+  background: linear-gradient(135deg, #0757A6, #0A75C2);
   color: #fff !important;
-  border: 1px solid #095079;
-  border-radius: 3px;
+  border: 1px solid #0757A6;
+  border-radius: 6px;
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(3, 68, 127, 0.15);
 }
-.ff-btn:hover { background: #063c5b; }
+.ff-btn:hover { background: #03447F; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(3, 68, 127, 0.22); }
+.ff-btn:focus-visible { outline: 3px solid #13BCE5; outline-offset: 3px; }
 .ff-btn[disabled] { opacity: 0.65; cursor: wait; }
 .ff-btn.whatsapp { background: #1f9d55; border-color: #1f9d55; }
 .ff-btn.whatsapp:hover { background: #17803f; }
-.ff-btn.outline { background: #fff; color: #095079 !important; }
+.ff-btn.outline { background: #fff; color: #0757A6 !important; }
 .ff-btn.outline:hover { background: #f4f8fb; }
 
 /* ---------- Form status messages (shared with newsletter) ---------- */
 .ff-form-status { font-size: 13.5px; margin-top: 12px; display: none; }
 .ff-form-status.show { display: block; }
-.ff-form-status.success { color: #186f3b; }
+.ff-form-status.success { color: #0757A6; }
 .ff-form-status.error { color: #b42318; }
 
 /* ---------- CTA band ---------- */
@@ -342,7 +345,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #095079;
+  color: #0757A6;
   background: #e8f1f7;
   padding: 3px 10px;
   border-radius: 3px;
@@ -353,7 +356,7 @@
   padding-top: 14px;
   font-size: 13.5px;
   font-weight: 700;
-  color: #095079;
+  color: #0757A6;
   text-decoration: none;
 }
 .ff-article {
@@ -369,7 +372,7 @@
 .ff-article h3 { font-size: 16px; font-weight: 700; color: #222; margin: 20px 0 8px; }
 .ff-article p, .ff-article li { font-size: 14.5px; color: #555; line-height: 1.7; }
 .ff-article ul { padding-left: 20px; }
-.ff-back-top { font-size: 13px; color: #095079; text-decoration: none; }
+.ff-back-top { font-size: 13px; color: #0757A6; text-decoration: none; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 991px) {

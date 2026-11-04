@@ -29,10 +29,10 @@
     display: inline-block;
     font-size: 50px;
     line-height: 50px;
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fa-spin 5s ease infinite;
@@ -70,9 +70,9 @@
     right: 0;
     border-radius: 10px;
     opacity: 0.80;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     z-index: 2;
     transform: scale(0.0);
     transform-origin: bottom;
@@ -243,10 +243,10 @@
     display: inline-block;
     font-size: 50px;
     line-height: 50px;
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fa-spin 5s ease infinite;
@@ -309,9 +309,9 @@
     right: 0;
     border-radius: 10px;
     opacity: 0.80;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     z-index: 2;
     transform: scale(0.0);
     transform-origin: bottom;
@@ -369,10 +369,10 @@
     line-height: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -437,9 +437,9 @@
     bottom: 0;
     right: 0;
     border-radius: 50%;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     transition: all 500ms linear;
     transition-delay: 0.1s;
     z-index: -1;
@@ -499,9 +499,9 @@
     bottom: 0;
     right: 0;
     opacity: 0.80;
-    background-image: -moz-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(128, 183, 87) 0%, rgb(147, 188, 48) 40%, rgb(165, 193, 9) 100%);
+    background-image: -moz-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(7, 87, 166) 0%, rgb(19, 188, 229) 40%, rgb(19, 188, 229) 100%);
     transform: scale(0.0);
     transform-origin: bottom;
     transform-style: preserve-3d;
@@ -629,10 +629,10 @@
 }
 
 .single-service-style4:hover .title-holder h3 a {
-    background: #81b754;
-    background: -webkit-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: -moz-linear-gradient(to right, #81b754 0%, #a4c10a 100%);
-    background: linear-gradient(to right, #81b754 0%, #a4c10a 100%);
+    background: #0757A6;
+    background: -webkit-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: -moz-linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
+    background: linear-gradient(to right, #0757A6 0%, #13BCE5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -34,7 +34,7 @@
   margin-bottom: 20px;
 }
 .pd-breadcrumb a {
-  color: #186f3b;
+  color: #0757A6;
   text-decoration: none;
 }
 .pd-breadcrumb a:hover {
@@ -53,7 +53,7 @@
 .pd-image-box {
   width: 100%;
   aspect-ratio: 1/1;
-  background: #f7f9fa;
+  background: #f0f8fc;
   border: 1px solid #eaedf0;
   border-radius: 6px;
   overflow: hidden;
@@ -68,8 +68,8 @@
 }
 .pd-category {
   display: inline-block;
-  background: #eef7f0;
-  color: #186f3b;
+  background: #eaf7fc;
+  color: #0757A6;
   font-size: 11.5px;
   font-weight: 700;
   padding: 3px 8px;
@@ -87,7 +87,7 @@
 .pd-price {
   font-size: 20px;
   font-weight: 800;
-  color: #186f3b;
+  color: #0757A6;
   margin-bottom: 14px;
 }
 .pd-price-sub {
@@ -128,7 +128,7 @@
 .pd-form-group select:focus,
 .pd-form-group input:focus,
 .pd-form-group textarea:focus {
-  border-color: #186f3b;
+  border-color: #0757A6;
 }
 .pd-btn-row {
   display: flex;
@@ -138,7 +138,7 @@
 .pd-add-btn {
   flex: 1;
   padding: 12px 18px;
-  background: #186f3b;
+  background: #0757A6;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -148,13 +148,13 @@
   transition: background 0.15s;
 }
 .pd-add-btn:hover {
-  background: #11522b;
+  background: #03447F;
 }
 .pd-wa-btn {
   padding: 12px 18px;
   background: #ffffff;
-  color: #186f3b;
-  border: 1px solid #186f3b;
+  color: #0757A6;
+  border: 1px solid #0757A6;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 700;
@@ -166,8 +166,8 @@
   transition: all 0.15s;
 }
 .pd-wa-btn:hover {
-  background: #eef7f0;
-  color: #11522b;
+  background: #eaf7fc;
+  color: #03447F;
 }
 
 @media (max-width: 768px) {
@@ -185,10 +185,11 @@
   <header class="ff-market-header">
     <div class="up-header-container">
       <a class="up-brand-logo" href="index.html">
-        <img alt="Forward Force Printing & Branding" src="assets/logo_forward_force/forward_force_logo.png"/>
+        <img alt="Forward Force Printing & Branding" src="assets/logo_forward_force/forward_force_logo.webp"/>
       </a>
 
       <div class="up-service-phone">
+        <a class="phone-email" href="mailto:info@forwardforce.co.tz">info@forwardforce.co.tz</a>
         <a class="phone-num" href="tel:+255672009990">+255 672 009 990</a>
         <span class="phone-sub">Printing &amp; Branding</span>
       </div>
@@ -269,7 +270,7 @@
             <div class="up-mega-content">
               <div class="up-mega-col">
                 <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="assets/images/mailer-box-custom.jpg" alt="Mailer Boxes" loading="lazy">
+                  <img src="assets/images/products/custom-mailer-boxes.webp" alt="Mailer Boxes" loading="lazy">
                 </a>
                 <h4 class="up-mega-col-title">Shipping &amp; Mailers</h4>
                 <ul class="up-mega-list">
@@ -493,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var old = addBtn.innerHTML;
         addBtn.innerHTML = '<i class="fa fa-check"></i> Added to Cart!';
-        addBtn.style.background = '#12572d';
+        addBtn.style.background = '#03447F';
         setTimeout(function () {
           addBtn.innerHTML = old;
           addBtn.style.background = '';

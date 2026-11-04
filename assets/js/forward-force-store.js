@@ -120,7 +120,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Eco-friendly textured rustic brown kraft stickers with strong adhesive.",
-      image: "https://staticecp.uprinting.com/19245/250x250/UP_Kraft_Stickers_PLA_Image_1.jpg",
+      image: "assets/images/products/kraft-paper-labels.webp",
       imageAlt: "Kraft Stickers"
     },
     {
@@ -142,7 +142,7 @@
       priceTzs: 80000,
       baseQty: 1,
       description: "Heavy-duty corrugated cardboard shipping boxes with vibrant custom exterior printing.",
-      image: "assets/images/mailer-box-custom.jpg",
+      image: "assets/images/products/custom-mailer-boxes.webp",
       imageAlt: "Custom Mailer Boxes"
     },
     {
@@ -208,7 +208,7 @@
       priceTzs: 60000,
       baseQty: 1,
       description: "Weatherproof 4mm fluted plastic signs with metal H-stakes for outdoor display.",
-      image: "https://staticecp.uprinting.com/19237/250x250/UP_Yard_Signs_PLA_Image_2.jpg",
+      image: "assets/images/products/yard-signs.webp",
       imageAlt: "Yard Signs"
     },
     {
