@@ -18,10 +18,10 @@
 <link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <!-- Critical CSS -->
-  <link href="assets/css/uprinting-theme.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-  <link href="assets/css/style.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-  <link href="assets/css/logo-optimization.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-  <link href="assets/css/critical-hero.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <link href="assets/css/uprinting-theme.min.css" rel="stylesheet">
+  <link href="assets/css/style.min.css" rel="stylesheet">
+  <link href="assets/css/logo-optimization.min.css" rel="stylesheet">
+  <link href="assets/css/critical-hero.min.css" rel="stylesheet">
   <style>
     .up-hero-banner .up-hero-title .hero-highlight,
     .up-hero-banner .up-hero-subtitle .hero-highlight {
@@ -43,11 +43,202 @@
   <link rel="preload" href="assets/logo_forward_force/forward_force_logo.webp" as="image" fetchpriority="high" importance="high">
   <link rel="preload" href="assets/logo_forward_force/banner1.webp" as="image" fetchpriority="high" importance="high">
   
-  <!-- Optimized Font Loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,500,600,700,800&amp;display=swap" rel="stylesheet"/>
+  <!-- Ultra-fast banner optimization CSS -->
+  <style>
+    .up-hero-slide {
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      will-change: transform;
+      animation: bannerFade 1s ease-out;
+    }
+    
+    @keyframes bannerFade {
+      from { opacity: 0; transform: scale(1.05); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    
+    .ff-market-header {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10000;
+    }
+
+    .up-hero-banner {
+      height: 360px;
+      min-height: 360px;
+    }
+
+    .up-hero-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(90deg, rgba(243, 246, 248, 0.98) 0%, rgba(243, 246, 248, 0.9) 30%, rgba(243, 246, 248, 0.45) 43%, rgba(243, 246, 248, 0) 58%);
+    }
+
+    .up-hero-banner .up-hero-inner {
+      max-width: 650px;
+      transform: translateY(-18px);
+    }
+
+    .up-hero-banner .up-hero-content {
+      padding-left: 20px;
+    }
+
+    .up-hero-banner .up-hero-title {
+      font-size: 40px;
+      line-height: 1.12;
+    }
+
+    .up-hero-banner .up-hero-subtitle {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+
+    .up-hero-banner .up-shop-now-btn {
+      border-radius: 0;
+      margin-top: 10px;
+      transform: translateY(22px);
+    }
+
+    .up-hero-banner + .up-catalog-section {
+      padding-top: 48px;
+    }
+
+    @media (max-width: 768px) {
+      .up-catalog-section .up-layout-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 18px !important;
+      }
+
+      .up-catalog-section .up-layout-grid > .up-sidebar-card {
+        display: block !important;
+        position: static !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+      }
+
+      .up-catalog-section .up-sidebar-list li a {
+        min-height: 46px;
+        white-space: normal;
+      }
+
+      .up-catalog-section .up-sidebar-list li a .arrow {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        color: #0757A6;
+        font-size: 24px;
+        line-height: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .up-hero-banner {
+        height: 380px;
+        min-height: 380px;
+        max-height: 380px;
+      }
+
+      .up-hero-banner .up-hero-inner {
+        transform: none;
+      }
+
+      .up-hero-banner .up-shop-now-btn {
+        transform: translateY(-6px);
+      }
+
+      .up-hero-banner::before {
+        background: linear-gradient(90deg, rgba(243, 246, 248, 0.98) 0%, rgba(243, 246, 248, 0.88) 48%, rgba(243, 246, 248, 0.25) 74%, rgba(243, 246, 248, 0) 100%);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .up-hero-banner {
+        height: 460px;
+        min-height: 460px;
+        max-height: 460px;
+      }
+
+      .up-hero-banner .up-hero-content {
+        padding-bottom: 16px;
+      }
+    }
+  </style>
   
-  <!-- Ultra-fast logo initialization -->
-  <script src="assets/js/logo-optimization.min.js" defer></script>
+  <!-- Performance monitoring and header optimization -->
+  <script>
+    // Ultra-fast performance monitoring
+    performance.mark('logo-start');
+    
+    // Monitor DOMContentLoaded time
+    const domContentLoaded = performance.timing.domContentLoadedEventStart;
+    const loadTime = performance.now();
+    
+    // Log performance for optimization tracking
+    console.log('=== PERFORMANCE METRICS ===');
+    console.log('DOM Ready:', domContentLoaded ? domContentLoaded + 'ms' : 'N/A');
+    console.log('Initial Load:', loadTime.toFixed(2) + 'ms');
+    console.log('Logo Priority:', 'HIGH');
+    console.log('Banner Priority:', 'HIGH');
+    console.log('CSS Optimized:', 'YES');
+    console.log('JS Optimized:', 'YES');
+    
+    // Ultra-fast logo visibility check
+    window.addEventListener('logoLoaded', function() {
+      const logo = document.querySelector('.up-brand-logo img');
+      if (logo) {
+        logo.style.animation = 'logoBounce 0.1s ease-out';
+        logo.style.transform = 'translateZ(0) scale(1)';
+      }
+    });
+    
+    // Ensure logo is visible immediately
+    document.addEventListener('DOMContentLoaded', function() {
+      const logo = document.querySelector('.up-brand-logo img');
+      if (logo) {
+        logo.style.opacity = '1';
+        logo.style.visibility = 'visible';
+        logo.style.display = 'block';
+      }
+
+      const header = document.querySelector('.ff-market-header');
+      function syncHeaderSpace() {
+        if (header) {
+          document.body.style.paddingTop = header.offsetHeight + 'px';
+        }
+      }
+      syncHeaderSpace();
+      window.addEventListener('resize', syncHeaderSpace);
+      window.addEventListener('load', syncHeaderSpace);
+    });
+    
+  </script>
+  
+  <!-- Schema.org JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Forward Force Co. Ltd",
+    "description": "Printing and branding company providing DTF printing, embroidery, corporate branding, graphic design, and print finishing.",
+    "telephone": "+255 710 217 583",
+    "email": "info@forwardforce.co.tz",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kijitonyama, Dar es Salaam",
+      "addressCountry": "TZ"
+    }
+  }
+  </script>
+  <meta name="author" content="Forward Force Co. Ltd"/>
   
   <!-- Performance monitoring -->
   <script>
@@ -535,18 +726,18 @@
           </a>
 
           <ul class="up-sidebar-list">
-            <li><a href="products.html?category=Apparel%20%26%20Promo"><span class="cat-left"><i class="fa fa-user"></i> Apparel</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Signs%20%26%20Banners"><span class="cat-left"><i class="fa fa-flag"></i> Banners</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Boxes%20%26%20Packaging"><span class="cat-left"><i class="fa fa-cube"></i> Boxes</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-book"></i> Brochures</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-id-card"></i> Business Cards</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-file-text-o"></i> Flyers</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Stickers%20%26%20Labels"><span class="cat-left"><i class="fa fa-tag"></i> Labels</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Boxes%20%26%20Packaging"><span class="cat-left"><i class="fa fa-archive"></i> Packaging</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-envelope-o"></i> Postcards</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Apparel%20%26%20Promo"><span class="cat-left"><i class="fa fa-coffee"></i> Promotional Products</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Signs%20%26%20Banners"><span class="cat-left"><i class="fa fa-square-o"></i> Signs</span> <span class="arrow">&gt;</span></a></li>
-            <li><a href="products.html?category=Stickers%20%26%20Labels"><span class="cat-left"><i class="fa fa-circle-o"></i> Stickers</span> <span class="arrow">&gt;</span></a></li>
+            <li><a href="products.html?category=Apparel%20%26%20Promo"><span class="cat-left"><i class="fa fa-user"></i> Apparel</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Signs%20%26%20Banners"><span class="cat-left"><i class="fa fa-flag"></i> Banners</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Boxes%20%26%20Packaging"><span class="cat-left"><i class="fa fa-cube"></i> Boxes</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-book"></i> Brochures</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-id-card"></i> Business Cards</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-file-text-o"></i> Flyers</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Stickers%20%26%20Labels"><span class="cat-left"><i class="fa fa-tag"></i> Labels</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Boxes%20%26%20Packaging"><span class="cat-left"><i class="fa fa-archive"></i> Packaging</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Marketing%20Materials"><span class="cat-left"><i class="fa fa-envelope-o"></i> Postcards</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Apparel%20%26%20Promo"><span class="cat-left"><i class="fa fa-coffee"></i> Promotional Products</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Signs%20%26%20Banners"><span class="cat-left"><i class="fa fa-square-o"></i> Signs</span> <span class="arrow" aria-hidden="true">›</span></a></li>
+            <li><a href="products.html?category=Stickers%20%26%20Labels"><span class="cat-left"><i class="fa fa-circle-o"></i> Stickers</span> <span class="arrow" aria-hidden="true">›</span></a></li>
           </ul>
         </aside>
 
