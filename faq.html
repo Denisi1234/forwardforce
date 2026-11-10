@@ -18,29 +18,146 @@
 <link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <!-- Fonts & Core Styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
 <link href="assets/css/ff-pages.css" rel="stylesheet"/>
+<link href="assets/css/storefront.css" rel="stylesheet"/>
 <link href="assets/css/ff-unified.css" rel="stylesheet"/>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Forward Force Co. Ltd",
-  "description": "Printing and branding company providing DTF printing, embroidery, corporate branding, graphic design, and print finishing.",
-  "telephone": "+255 710 217 583",
-  "email": "info@forwardforce.co.tz",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Kijitonyama, Dar es Salaam",
-    "addressCountry": "TZ"
-  }
-}
-</script>
-<meta name="author" content="Forward Force Co. Ltd"/>
-<link href="assets/css/storefront.css" rel="stylesheet"/>`n<link href="assets/css/ff-unified.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/ff-header-footer.css"/>
+<link href="assets/css/ff-header-footer.css" rel="stylesheet"/>
+  <style>
+    .ff-faq-hero {
+      background: #fff;
+      border-bottom: none;
+      padding: 56px 0 12px;
+    }
+    .ff-faq-hero .up-section-container,
+    .ff-faq-section .up-section-container,
+    .ff-faq-cta-section .up-section-container {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    .ff-faq-hero .ff-page-hero-content { max-width: 100%; margin: 0 auto; text-align: center; }
+    .ff-faq-hero .ff-breadcrumb { display: none; }
+    .ff-faq-hero .ff-page-title {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: #1d1d1f;
+      margin: 0 0 8px;
+      line-height: 1.08;
+    }
+    .ff-faq-hero .ff-page-lead {
+      font-size: 17px;
+      line-height: 1.5;
+      color: #86868b;
+      margin: 0 auto;
+      font-weight: 400;
+      max-width: 560px;
+    }
+    .ff-faq-section { padding: 24px 0 56px; background: #fff; }
+    .ff-faq-layout { display: block; }
+    .ff-faq-nav { display: none; }
+    .ff-faq-group { margin-bottom: 40px; }
+    .ff-faq-group h2 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #86868b;
+      margin: 0 0 4px;
+      text-align: left;
+    }
+    .ff-faq-item {
+      border: none;
+      border-bottom: 1px solid #e5e5e7;
+      border-radius: 0;
+      margin-bottom: 0;
+      background: transparent;
+    }
+    .ff-faq-group .ff-faq-item:last-child { border-bottom: none; }
+    .ff-faq-item summary {
+      padding: 18px 28px 18px 0;
+      font-size: 17px;
+      font-weight: 500;
+      color: #1d1d1f;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+    }
+    .ff-faq-item[open] summary { border-bottom: none; }
+    .ff-faq-item summary::after {
+      right: 0;
+      font-size: 18px;
+      color: #86868b;
+      font-weight: 300;
+    }
+    .ff-faq-answer {
+      padding: 0 0 20px;
+      font-size: 15px;
+      color: #6e6e73;
+      line-height: 1.65;
+    }
+    .ff-faq-answer a { color: #0071e3; text-decoration: none; }
+    .ff-faq-answer a:hover { text-decoration: underline; }
+    .ff-faq-cta-section { padding: 0 0 64px; background: #fff; }
+    .ff-faq-cta {
+      border-top: 1px solid #e5e5e7;
+      padding-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .ff-faq-cta h2 {
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #1d1d1f;
+      margin: 0 0 2px;
+    }
+    .ff-faq-cta p { font-size: 15px; color: #86868b; margin: 0; }
+    .ff-faq-cta .ff-cta-actions { display: flex; gap: 18px; flex-wrap: wrap; }
+    .ff-faq-cta .ff-btn {
+      background: transparent;
+      color: #0071e3 !important;
+      border: none;
+      padding: 0;
+      box-shadow: none;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .ff-faq-cta .ff-btn:hover { background: transparent; transform: none; box-shadow: none; text-decoration: underline; }
+    .ff-faq-cta .ff-btn.whatsapp { color: #0071e3 !important; }
+    @media (max-width: 767px) {
+      .ff-faq-hero { padding: 32px 0 8px; }
+      .ff-faq-hero .up-section-container,
+      .ff-faq-section .up-section-container,
+      .ff-faq-cta-section .up-section-container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .ff-faq-hero .ff-page-hero-content { text-align: left; }
+      .ff-faq-hero .ff-page-title { font-size: 30px; line-height: 1.1; }
+      .ff-faq-hero .ff-page-lead { font-size: 16px; line-height: 1.5; max-width: none; }
+      .ff-faq-section { padding: 16px 0 40px; }
+      .ff-faq-group { margin-bottom: 32px; }
+      .ff-faq-group h2 { margin-bottom: 2px; }
+      .ff-faq-item summary { font-size: 16px; line-height: 1.4; padding: 16px 28px 16px 0; }
+      .ff-faq-answer { font-size: 15px; line-height: 1.6; padding: 0 0 16px; }
+      .ff-faq-cta-section { padding: 0 0 48px; }
+      .ff-faq-cta { flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 24px; }
+      .ff-faq-cta .ff-cta-actions { gap: 14px 18px; }
+    }
+    @media (max-width: 420px) {
+      .ff-faq-hero .ff-page-title { font-size: 26px; }
+      .ff-faq-item summary { font-size: 15px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -101,28 +218,19 @@
   <!-- ==========================================
        PAGE HERO
        ========================================== -->
-  <section class="ff-page-hero up-hero-banner ff-home-style-hero">
+  <section class="ff-faq-hero">
     <div class="up-section-container">
       <div class="ff-page-hero-content">
         <div class="ff-breadcrumb"><a href="index.html">Home</a> &rsaquo; Help &amp; FAQs</div>
-
-        <h1 class="ff-page-title"><span class="hero-highlight">Help</span> &amp; Frequently Asked Questions</h1>
-        <p class="ff-page-lead">Answers to common questions about ordering, artwork, production, payment and delivery. Can't find what you need? Call, WhatsApp or email us.</p>
-        <a class="up-shop-now-btn" href="contact.html" style="margin-top:24px;">CONTACT OUR TEAM</a>
+        <h1 class="ff-page-title">Help &amp; FAQs</h1>
+        <p class="ff-page-lead">Answers to common questions about ordering, artwork, production, payment and delivery.</p>
       </div>
     </div>
   </section>
 
-  <section class="ff-section">
+  <section class="ff-faq-section">
     <div class="up-section-container">
       <div class="ff-faq-layout">
-        <nav class="ff-faq-nav" aria-label="FAQ topics">
-          <a href="#ordering">Ordering &amp; Quotes</a>
-          <a href="#artwork">Artwork &amp; Design</a>
-          <a href="#production">Production &amp; Turnaround</a>
-          <a href="#payment">Payment</a>
-          <a href="#delivery">Delivery &amp; Collection</a>
-        </nav>
         <div>
         <div class="ff-faq-group" id="ordering">
           <h2>Ordering &amp; Quotes</h2>
@@ -166,7 +274,7 @@
           </details>
           <details class="ff-faq-item">
             <summary>What is the difference between DTF printing and embroidery?</summary>
-            <div class="ff-faq-answer"><p>DTF (direct-to-film) printing transfers full-colour designs, including photos and gradients, onto fabric with a soft, durable finish. Embroidery stitches your logo with thread for a premium, long-lasting look, which is ideal for polos, caps and uniforms. Read our <a href="blog.html#dtf-vs-embroidery">guide</a> for more.</p></div>
+            <div class="ff-faq-answer"><p>DTF (direct-to-film) printing transfers full-colour designs, including photos and gradients, onto fabric with a soft, durable finish. Embroidery stitches your logo with thread for a premium, long-lasting look, which is ideal for polos, caps and uniforms. Read our guide for more.</p></div>
           </details>
           <details class="ff-faq-item">
             <summary>Can I see samples of your work before ordering?</summary>
@@ -181,7 +289,7 @@
           </details>
           <details class="ff-faq-item">
             <summary>Do you offer business or bulk pricing?</summary>
-            <div class="ff-faq-answer"><p>Yes. Larger quantities usually reduce the unit price. Agencies, designers and businesses that resell print can also apply for our <a href="resellers.html">reseller programme</a>.</p></div>
+            <div class="ff-faq-answer"><p>Yes. Larger quantities usually reduce the unit price. Agencies, designers and businesses that resell print can also apply for our reseller programme.</p></div>
           </details>
         </div>
         <div class="ff-faq-group" id="delivery">
@@ -204,16 +312,17 @@
     </div>
   </section>
 
-  <section class="ff-section">
+  <section class="ff-faq-cta-section">
     <div class="up-section-container">
-      <div class="ff-cta-band">
+      <div class="ff-faq-cta">
         <div>
           <h2>Still have a question?</h2>
-          <p>Our team is happy to help on WhatsApp, phone or email.</p>
+          <p>Reach us on WhatsApp, phone or email.</p>
         </div>
         <div class="ff-cta-actions">
-          <a class="ff-btn whatsapp" href="https://wa.me/255710217583" target="_blank" rel="noopener"><i class="fa fa-whatsapp"></i> WhatsApp Us</a>
-          <a class="ff-btn outline" href="mailto:info@forwardforce.co.tz"><i class="fa fa-envelope-o"></i> info@forwardforce.co.tz</a>
+          <a class="ff-btn whatsapp" href="https://wa.me/255710217583" target="_blank" rel="noopener">WhatsApp &rsaquo;</a>
+          <a class="ff-btn outline" href="tel:+255710217583">Call &rsaquo;</a>
+          <a class="ff-btn outline" href="mailto:info@forwardforce.co.tz">Email &rsaquo;</a>
         </div>
       </div>
     </div>
@@ -229,8 +338,6 @@
       <li><a href="faq.html">Help &amp; FAQs</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="resellers.html">Resellers</a></li>
-      <li><a href="blog.html">Blog</a></li>
     </ul>
 
     <ul class="social-container">
@@ -248,10 +355,10 @@
 </footer>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/forward-force-store.js"></script>
-<script src="assets/js/ff-forms.js"></script>
+<script src="assets/js/jquery.js" defer></script>
+<script src="assets/js/bootstrap.bundle.min.js" defer></script>
+<script src="assets/js/forward-force-store.js" defer></script>
+<script src="assets/js/ff-forms.js" defer></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I place an order?","acceptedAnswer":{"@type":"Answer","text":"Browse our products, add the items you need to your cart and press checkout. Your order details are sent to our team on WhatsApp, where we confirm specifications, artwork, price and timeline before production starts.You can also call or WhatsApp us on +255 710 217 583, or email info@forwardforce.co.tz."}},{"@type":"Question","name":"Are the prices on the website final?","acceptedAnswer":{"@type":"Answer","text":"Website prices are guide prices for standard specifications. The final price is confirmed in your quotation and depends on quantity, size, material, number of print colours or stitches, and finishing."}},{"@type":"Question","name":"Is there a minimum order quantity?","acceptedAnswer":{"@type":"Answer","text":"Minimums depend on the product. Many items, such as DTF-printed T-shirts, can be produced in small quantities, while items such as roll labels and packaging are more economical in larger runs. Ask us and we will advise the best quantity for your budget."}},{"@type":"Question","name":"Can I order a product that is not listed on the website?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle custom printing and branding projects. Send us your idea, quantity and deadline through the contact page and we will advise what is possible."}},{"@type":"Question","name":"What file formats do you accept?","acceptedAnswer":{"@type":"Answer","text":"Print-ready PDF, AI, EPS or SVG files are best. High-resolution PNG or JPG files (300 dpi at the final print size) are also accepted. See our artwork templates & guidelines for sizes, bleed and safe zones."}},{"@type":"Question","name":"I don't have a design. Can you help?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our team provides graphic design support, from simple layout adjustments to complete artwork for uniforms, events and marketing materials. Design charges, if any, are included in your quotation."}},{"@type":"Question","name":"Will I see a proof before printing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We send a digital proof (PDF or image) on WhatsApp or email for your approval. Production only starts after you approve the proof."}},{"@type":"Question","name":"How long does production take?","acceptedAnswer":{"@type":"Answer","text":"Turnaround depends on the product, quantity and finishing. We confirm a production timeline with your quotation, before you pay. If you have an event date, tell us early so we can plan around it."}},{"@type":"Question","name":"What is the difference between DTF printing and embroidery?","acceptedAnswer":{"@type":"Answer","text":"DTF (direct-to-film) printing transfers full-colour designs, including photos and gradients, onto fabric with a soft, durable finish. Embroidery stitches your logo with thread for a premium, long-lasting look, which is ideal for polos, caps and uniforms. Read our guide for more."}},{"@type":"Question","name":"Can I see samples of your work before ordering?","acceptedAnswer":{"@type":"Answer","text":"Yes. Ask us for photos and videos of recent work on WhatsApp, or visit our office in Kijitonyama to see samples."}},{"@type":"Question","name":"How do I pay?","acceptedAnswer":{"@type":"Answer","text":"Accepted payment methods and any deposit requirements are confirmed together with your quotation on WhatsApp or email. We never ask for payment before the order details have been agreed."}},{"@type":"Question","name":"Do you offer business or bulk pricing?","acceptedAnswer":{"@type":"Answer","text":"Yes. Larger quantities usually reduce the unit price. Agencies, designers and businesses that resell print can also apply for our reseller programme."}},{"@type":"Question","name":"Do you deliver?","acceptedAnswer":{"@type":"Answer","text":"Yes. Delivery within Dar es Salaam is free for confirmed orders. Delivery to other regions can be arranged, and the cost is quoted separately."}},{"@type":"Question","name":"Can I collect my order?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can collect from our office in Kijitonyama, Dar es Salaam. We will notify you as soon as your order is ready."}},{"@type":"Question","name":"What if there is a problem with my order?","acceptedAnswer":{"@type":"Answer","text":"Contact us within a reasonable time after receiving your order with photos of the issue. If the error is ours, we will reprint or correct it."}}]}
 </script>

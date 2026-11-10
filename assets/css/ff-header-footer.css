@@ -14,13 +14,13 @@
 }
 
 /* ------------------------------------------
-   Apple Sticky Header (76px Pro Height & Doubled Logo)
+   Apple Sticky Header (88px Pro Height & Doubled Logo)
    ------------------------------------------ */
 .ap-nav {
   position: sticky;
   top: 0;
   z-index: 9999;
-  height: 76px;
+  height: 88px;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -38,16 +38,16 @@
 .ap-nav-brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   color: var(--ap-ink);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   text-decoration: none;
   opacity: 0.98;
 }
 .ap-nav-brand img {
-  height: 64px;
+  height: 74px;
   width: auto;
   display: block;
 }
@@ -121,7 +121,7 @@
    ------------------------------------------ */
 .ap-mobile-drawer {
   position: fixed;
-  top: 76px;
+  top: 96px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -245,22 +245,22 @@
 }
 
 @media (max-width: 768px) {
-  .ap-nav { height: 60px; }
-  .ap-nav-inner { padding: 0 14px; }
-  .ap-nav-brand { gap: 8px; }
-  .ap-nav-brand img { height: 38px; }
-  .ap-nav-brand span { font-size: 15px; }
+  .ap-nav { height: 72px; }
+  .ap-nav-inner { padding: 0 16px; }
+  .ap-nav-brand { gap: 10px; }
+  .ap-nav-brand img { height: 56px; }
+  .ap-nav-brand span { font-size: 16px; }
   .ap-nav-menu { display: none; }
-  .ap-nav-right { gap: 8px; }
+  .ap-nav-right { gap: 10px; }
   .ap-nav-cart {
     display: inline-flex !important;
     align-items: center !important;
     gap: 4px !important;
-    font-size: 13px !important;
+    font-size: 13.5px !important;
     white-space: nowrap !important;
   }
   .ap-nav-cart i.fa {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
   .ap-nav-cart span.cart-label {
     display: none !important;
@@ -272,10 +272,10 @@
     padding: 6px;
   }
   .ap-menu-toggle svg {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
   }
-  .ap-mobile-drawer { top: 60px; padding: 20px; }
+  .ap-mobile-drawer { top: 72px; padding: 20px; }
   .ap-mobile-drawer-links a { font-size: 16px; padding: 12px 0; }
   .links-container { gap: 14px 18px; }
 }

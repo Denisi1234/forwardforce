@@ -12,6 +12,10 @@
 <!-- Favicon -->
 <link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" href="assets/css/uprinting-theme.min.css" as="style"/>
+<link rel="preload" as="image" href="assets/images/hero-forward-force-polo-apple.jpg" fetchpriority="high"/>
 <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="assets/css/uprinting-theme.min.css"/>
 <style>
@@ -49,14 +53,14 @@
   }
 
   /* ------------------------------------------
-     Apple Sticky Header (76px Pro Height & Doubled Logo)
+     Apple Sticky Header (96px Pro Height & Doubled Logo)
      ------------------------------------------ */
   .ap-nav {
     position: sticky;
     top: 0;
     z-index: 9999;
-    height: 76px;
-    background: rgba(255, 255, 255, 0.92);
+    height: 96px;
+    background: rgba(255, 255, 255, 0.94);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     border-bottom: 1px solid var(--ap-border);
@@ -73,16 +77,16 @@
   .ap-nav-brand {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     color: var(--ap-ink);
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     text-decoration: none;
     opacity: 0.98;
   }
   .ap-nav-brand img {
-    height: 52px;
+    height: 82px;
     width: auto;
     display: block;
   }
@@ -159,7 +163,7 @@
      ------------------------------------------ */
   .ap-mobile-drawer {
     position: fixed;
-    top: 76px;
+    top: 96px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -425,14 +429,14 @@
      Polished Mobile Responsive Specifications
      ------------------------------------------ */
   @media (max-width: 768px) {
-    .ap-nav { height: 60px; }
+    .ap-nav { height: 72px; }
     .ap-nav-inner { padding: 0 16px; }
     .ap-nav-brand { gap: 10px; }
-    .ap-nav-brand img { height: 42px; }
+    .ap-nav-brand img { height: 56px; }
     .ap-nav-brand span { font-size: 16px; }
     .ap-nav-menu { display: none; }
     .ap-menu-toggle { display: block; }
-    .ap-mobile-drawer { top: 60px; padding: 20px; }
+    .ap-mobile-drawer { top: 72px; padding: 20px; }
     .ap-mobile-drawer-links a { font-size: 16px; padding: 12px 0; }
     .ap-billboard { padding-top: 36px; border-bottom: 8px solid #ffffff; }
     .ap-headline { font-size: clamp(32px, 8.5vw, 44px); }
@@ -508,10 +512,6 @@
     <div class="ap-billboard-header">
       <h1 class="ap-headline">Custom Apparel.</h1>
       <p class="ap-subhead">Precision embroidery and high-density DTF printing.</p>
-      <div class="ap-cta-group">
-        <a class="ap-btn-pill" href="apparel.html">Shop Apparel</a>
-        <a class="ap-link-arrow" href="contact.html">Request a Quote &gt;</a>
-      </div>
     </div>
     <div class="ap-billboard-stage">
       <img src="assets/images/hero-forward-force-polo-apple.jpg" alt="Forward Force custom branded polo shirt" width="1280" height="802" fetchpriority="high"/>
@@ -526,12 +526,12 @@
         <h3>Custom Mailer Boxes</h3>
         <p>Premium fluted cardboard with full-exterior edge-to-edge printing.</p>
         <div class="ap-cta-group" style="margin-bottom: 0;">
-          <a class="ap-btn-pill" href="product-details.html?item=mailer-box">Configure</a>
+          <a class="ap-btn-pill" href="boxes-packaging.html">Shop</a>
           <a class="ap-link-arrow" href="boxes-packaging.html">All Packaging &gt;</a>
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/products/custom-mailer-boxes-clean.png" alt="Custom mailer boxes" loading="lazy"/>
+        <img src="assets/images/products/custom-mailer-boxes.webp" alt="Custom mailer boxes" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
@@ -541,12 +541,12 @@
         <h3>Standard Business Cards</h3>
         <p>350gsm silk board with soft-touch matte lamination.</p>
         <div class="ap-cta-group" style="margin-bottom: 0;">
-          <a class="ap-btn-pill" href="product-details.html?item=standard-business-cards">Configure</a>
+          <a class="ap-btn-pill" href="cards-flyers.html">Shop</a>
           <a class="ap-link-arrow" href="cards-flyers.html">Cards &amp; Flyers &gt;</a>
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/business-cards-clean.png" alt="Luxury raised business cards" loading="lazy"/>
+        <img src="assets/images/business-cards-clean.jpg" alt="Luxury raised business cards" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
@@ -556,12 +556,12 @@
         <h3>Embroidered Polo</h3>
         <p>Dense multi-head crests on heavyweight pique cotton.</p>
         <div class="ap-cta-group" style="margin-bottom: 0;">
-          <a class="ap-btn-pill" href="product-details.html?item=polo-shirts">Configure</a>
+          <a class="ap-btn-pill" href="apparel.html">Shop</a>
           <a class="ap-link-arrow" href="apparel.html">All Apparel &gt;</a>
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/ff-polo-shirts-clean.png" alt="Embroidered polo shirt" loading="lazy"/>
+        <img src="assets/images/ff-polo-shirts.jpg" alt="Embroidered polo shirt" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
@@ -571,12 +571,12 @@
         <h3>Kraft Paper Labels</h3>
         <p>Natural earthy texture for jars, pouches and boxes.</p>
         <div class="ap-cta-group" style="margin-bottom: 0;">
-          <a class="ap-btn-pill" href="product-details.html?item=kraft-stickers">Configure</a>
+          <a class="ap-btn-pill" href="stickers-labels.html">Shop</a>
           <a class="ap-link-arrow" href="stickers-labels.html">All Labels &gt;</a>
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/products/kraft-paper-labels-clean.png" alt="Kraft paper labels" loading="lazy"/>
+        <img src="assets/images/products/kraft-paper-labels.webp" alt="Kraft paper labels" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
@@ -586,12 +586,12 @@
         <h3>DTF Transfers</h3>
         <p>Vibrant colors tested to withstand 50+ wash cycles.</p>
         <div class="ap-cta-group" style="margin-bottom: 0;">
-          <a class="ap-btn-pill" href="apparel.html">Apparel</a>
+          <a class="ap-btn-pill" href="apparel.html">Shop</a>
           <a class="ap-link-arrow" href="apparel.html">Apparel &gt;</a>
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/ff-dtf-tshirts-clean.png" alt="DTF printed t-shirts" loading="lazy"/>
+        <img src="assets/images/ff-dtf-tshirts.jpg" alt="DTF printed t-shirts" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
@@ -601,12 +601,12 @@
         <h3>Corporate Gifts</h3>
         <p>Laser-engraved thermal drinkware and executive items.</p>
         <div class="ap-cta-group" style="margin-bottom: 0;">
-          <a class="ap-btn-pill" href="apparel.html">Explore Gifts</a>
+          <a class="ap-btn-pill" href="apparel.html">Shop</a>
           <a class="ap-link-arrow" href="contact.html">Bulk orders &gt;</a>
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/water-bottle-clean.png" alt="Laser-engraved thermal water bottles" loading="lazy"/>
+        <img src="assets/images/water-bottle-clean.png" alt="Laser-engraved thermal water bottles" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
   </section>
@@ -619,8 +619,6 @@
       <li><a href="faq.html">Help &amp; FAQs</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html">Contact Us</a></li>
-      <li><a href="resellers.html">Resellers</a></li>
-      <li><a href="blog.html">Blog</a></li>
     </ul>
 
     <ul class="social-container">
