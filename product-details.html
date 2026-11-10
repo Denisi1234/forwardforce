@@ -5,460 +5,657 @@
 <title>Product Details &amp; Customization | Forward Force Co. Ltd</title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="Configure and order custom print products with Forward Force Co. Ltd in Dar es Salaam." name="description"/>
+<meta content="Configure specifications, select finishes, calculate pricing, and order custom print products with Forward Force Co. Ltd in Dar es Salaam." name="description"/>
+<meta property="og:title" content="Product Details &amp; Customization | Forward Force Co. Ltd"/>
+<meta property="og:description" content="Configure specifications, select finishes, calculate pricing, and order custom print products with Forward Force Co. Ltd in Dar es Salaam."/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Forward Force Co. Ltd"/>
+<meta property="og:locale" content="en_TZ"/>
 <!-- Favicon -->
 <link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <!-- Fonts & Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-<link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
-<link href="assets/css/ff-pages.css" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="assets/css/ff-header-footer.css"/>
+<meta name="author" content="Forward Force Co. Ltd"/>
 <style>
-/* Clean & Professional Product Detail Styles */
-.pd-section {
-  background: #fdfdfd;
-  min-height: 65vh;
-  padding: 35px 0 60px;
-}
-.pd-container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-.pd-breadcrumb {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 20px;
-}
-.pd-breadcrumb a {
-  color: #0757A6;
-  text-decoration: none;
-}
-.pd-breadcrumb a:hover {
-  text-decoration: underline;
-}
-.pd-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
-  align-items: start;
-  background: #ffffff;
-  border: 1px solid #eaedf0;
-  border-radius: 8px;
-  padding: 28px;
-}
-.pd-image-box {
-  width: 100%;
-  aspect-ratio: 1/1;
-  background: #f0f8fc;
-  border: 1px solid #eaedf0;
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pd-image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.pd-category {
-  display: inline-block;
-  background: #eaf7fc;
-  color: #0757A6;
-  font-size: 11.5px;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-.pd-title {
-  font-size: 24px;
-  font-weight: 800;
-  color: #1a1a1a;
-  margin: 0 0 10px;
-  line-height: 1.25;
-}
-.pd-price {
-  font-size: 20px;
-  font-weight: 800;
-  color: #0757A6;
-  margin-bottom: 14px;
-}
-.pd-price-sub {
-  font-size: 13px;
-  color: #718096;
-  font-weight: 500;
-}
-.pd-desc {
-  font-size: 13.5px;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #eaedf0;
-}
-.pd-form-group {
-  margin-bottom: 14px;
-}
-.pd-form-group label {
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  color: #374151;
-  margin-bottom: 5px;
-}
-.pd-form-group select,
-.pd-form-group input,
-.pd-form-group textarea {
-  width: 100%;
-  padding: 8px 12px;
-  font-size: 13px;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
-  outline: none;
-  background: #ffffff;
-  transition: border-color 0.15s;
-}
-.pd-form-group select:focus,
-.pd-form-group input:focus,
-.pd-form-group textarea:focus {
-  border-color: #0757A6;
-}
-.pd-btn-row {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-}
-.pd-add-btn {
-  flex: 1;
-  padding: 12px 18px;
-  background: #0757A6;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-.pd-add-btn:hover {
-  background: #03447F;
-}
-.pd-wa-btn {
-  padding: 12px 18px;
-  background: #ffffff;
-  color: #0757A6;
-  border: 1px solid #0757A6;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  text-decoration: none;
-  transition: all 0.15s;
-}
-.pd-wa-btn:hover {
-  background: #eaf7fc;
-  color: #03447F;
-}
+  :root {
+    --ap-bg: #fbfbfd;
+    --ap-wash: #f5f5f7;
+    --ap-ink: #1d1d1f;
+    --ap-subtext: #86868b;
+    --ap-link: #0071e3;
+    --ap-link-hover: #0077ed;
+    --ap-border: rgba(0, 0, 0, 0.08);
+    --ap-card-border: rgba(0, 0, 0, 0.06);
+    --font-apple: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 
-@media (max-width: 768px) {
-  .pd-grid { grid-template-columns: 1fr; gap: 20px; padding: 18px; }
-  .pd-btn-row { flex-direction: column; }
-}
+  body {
+    background-color: var(--ap-bg);
+    color: var(--ap-ink);
+    font-family: var(--font-apple);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Breadcrumb & Top Bar */
+  .pd-topbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 28px 0;
+  }
+  .pd-breadcrumb {
+    font-size: 13.5px;
+    color: var(--ap-subtext);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .pd-breadcrumb a {
+    color: var(--ap-ink);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.15s ease;
+  }
+  .pd-breadcrumb a:hover {
+    opacity: 1;
+    color: var(--ap-link);
+  }
+  .pd-breadcrumb span.sep {
+    opacity: 0.4;
+  }
+  .pd-breadcrumb span.curr {
+    opacity: 0.9;
+    font-weight: 500;
+  }
+
+  /* Main Product Grid Stage */
+  .pd-stage-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 28px 80px;
+  }
+  .pd-stage-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  /* Left Column: Clean Floating Isolated Artwork Display */
+  .pd-display-column {
+    position: sticky;
+    top: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pd-image-stage {
+    width: 100%;
+    min-height: 480px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+  }
+  .pd-image-stage img {
+    max-width: 100%;
+    max-height: 460px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 20px 36px rgba(0, 0, 0, 0.08));
+    transition: transform 0.35s ease;
+  }
+  .pd-image-stage:hover img {
+    transform: scale(1.02);
+  }
+  .pd-badge-floating {
+    margin-top: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ap-subtext);
+    background: #ffffff;
+    border: 1px solid var(--ap-border);
+    padding: 6px 16px;
+    border-radius: 980px;
+  }
+
+  /* Right Column: Clean Apple Customization Form */
+  .pd-config-column {
+    background: #ffffff;
+    border: 1px solid var(--ap-card-border);
+    border-radius: 24px;
+    padding: 44px 38px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  }
+  .pd-cat-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--ap-link);
+    margin-bottom: 8px;
+  }
+  .pd-title {
+    font-size: clamp(28px, 3vw, 36px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: var(--ap-ink);
+    margin: 0 0 10px;
+  }
+  .pd-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--ap-border);
+  }
+  .pd-price {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ap-ink);
+  }
+  .pd-price-note {
+    font-size: 14px;
+    color: var(--ap-subtext);
+  }
+  .pd-desc {
+    font-size: 15px;
+    color: var(--ap-subtext);
+    line-height: 1.5;
+    margin: 0 0 28px;
+  }
+
+  /* Form Fields */
+  .pd-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
+  .pd-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+  .pd-field label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ap-ink);
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+  .pd-field select,
+  .pd-field input {
+    width: 100%;
+    height: 46px;
+    padding: 0 16px;
+    font-size: 14.5px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 12px;
+    background: #ffffff;
+    font-family: inherit;
+    box-sizing: border-box;
+    color: var(--ap-ink);
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .pd-field select:focus,
+  .pd-field input:focus {
+    border-color: var(--ap-link);
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.14);
+  }
+
+  /* Action Buttons */
+  .pd-action-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .pd-btn-add {
+    flex: 1.2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 48px;
+    padding: 0 24px;
+    border-radius: 980px;
+    background: var(--ap-link);
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .pd-btn-add:hover {
+    background: var(--ap-link-hover);
+    color: #ffffff;
+  }
+  .pd-btn-wa {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 48px;
+    padding: 0 20px;
+    border-radius: 980px;
+    background: #ffffff;
+    color: var(--ap-ink);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .pd-btn-wa:hover {
+    background: var(--ap-wash);
+    border-color: rgba(0, 0, 0, 0.28);
+    color: var(--ap-ink);
+  }
+
+  .pd-status-pill {
+    margin-top: 16px;
+    background: #ecfdf3;
+    border: 1px solid #d1fadf;
+    color: #027a48;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pd-status-pill a {
+    color: #027a48;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  .pd-workshop-note {
+    margin-top: 18px;
+    font-size: 12.5px;
+    color: var(--ap-subtext);
+    line-height: 1.45;
+  }
+
+  /* Responsive Breakpoints & Mobile Polish */
+  @media (max-width: 960px) {
+    .pd-stage-grid {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    .pd-display-column {
+      position: static;
+    }
+    .pd-image-stage {
+      min-height: 320px;
+      padding: 10px;
+    }
+    .pd-image-stage img {
+      max-height: 340px;
+    }
+    .pd-config-column {
+      padding: 32px 24px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .pd-topbar {
+      padding: 14px 16px 0;
+    }
+    .pd-breadcrumb {
+      font-size: 12.5px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .pd-stage-section {
+      padding: 14px 16px 48px;
+    }
+    .pd-display-column {
+      margin-bottom: 0;
+    }
+    .pd-image-stage {
+      min-height: 250px;
+      max-height: 300px;
+      padding: 8px 4px;
+    }
+    .pd-image-stage img {
+      max-height: 250px;
+    }
+    .pd-badge-floating {
+      font-size: 12px;
+      padding: 5px 14px;
+      margin-top: 10px;
+    }
+    .pd-config-column {
+      padding: 24px 18px;
+      border-radius: 20px;
+    }
+    .pd-cat-badge {
+      font-size: 11px;
+    }
+    .pd-title {
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .pd-price-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+    }
+    .pd-price {
+      font-size: 24px;
+    }
+    .pd-price-note {
+      font-size: 12.5px;
+    }
+    .pd-desc {
+      font-size: 14px;
+      line-height: 1.45;
+      margin-bottom: 22px;
+    }
+    .pd-form-grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-bottom: 0;
+    }
+    .pd-field {
+      margin-bottom: 14px;
+    }
+    .pd-field label {
+      font-size: 12.5px;
+      margin-bottom: 6px;
+    }
+    .pd-field select,
+    .pd-field input {
+      height: 48px;
+      font-size: 15px;
+      padding: 0 14px;
+      border-radius: 12px;
+    }
+    .pd-action-row {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 14px !important;
+      margin-top: 24px !important;
+      width: 100% !important;
+    }
+    .pd-btn-add,
+    #pdAddToCartBtn {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      width: 100% !important;
+      min-height: 56px !important;
+      padding: 14px 20px !important;
+      font-size: 16.5px !important;
+      font-weight: 700 !important;
+      letter-spacing: -0.01em !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      background: var(--ap-link) !important;
+      color: #ffffff !important;
+      border: none !important;
+      border-radius: 980px !important;
+      cursor: pointer !important;
+      box-sizing: border-box !important;
+      box-shadow: 0 4px 14px rgba(0, 113, 227, 0.28) !important;
+    }
+    .pd-btn-add i,
+    #pdAddToCartBtn i {
+      font-size: 19px !important;
+    }
+    .pd-btn-wa,
+    #pdDirectWaBtn {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      width: 100% !important;
+      min-height: 54px !important;
+      padding: 14px 20px !important;
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      background: #25D366 !important;
+      color: #ffffff !important;
+      border: none !important;
+      border-radius: 980px !important;
+      text-decoration: none !important;
+      box-sizing: border-box !important;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25) !important;
+    }
+    .pd-btn-wa i,
+    #pdDirectWaBtn i {
+      font-size: 21px !important;
+      color: #ffffff !important;
+    }
+    .pd-status-pill {
+      font-size: 13px;
+      padding: 10px 14px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .pd-workshop-note {
+      font-size: 12px;
+      margin-top: 14px;
+    }
+  }
 </style>
 </head>
 <body>
-<div class="boxed_wrapper ltr">
 
-  <!-- ==========================================
-       TOP MAIN HEADER (Consistent Forward Force Header)
-       ========================================== -->
-  <header class="ff-market-header">
-    <div class="up-header-container">
-      <a class="up-brand-logo" href="index.html">
-        <img alt="Forward Force Printing & Branding" src="assets/logo_forward_force/forward_force_logo.webp"/>
+<!-- Apple Sticky Header (76px Pro Height & Doubled Logo) -->
+<header class="ap-nav">
+  <div class="ap-nav-inner">
+    <a class="ap-nav-brand" href="index.html">
+      <img src="assets/logo_forward_force/forward_force_logo.webp" alt="Forward Force" width="64" height="64"/>
+      <span>Forward Force</span>
+    </a>
+    <nav aria-label="Global">
+      <ul class="ap-nav-menu">
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="apparel.html">Apparel</a></li>
+        <li><a href="cards-flyers.html">Cards &amp; Flyers</a></li>
+        <li><a href="boxes-packaging.html">Packaging</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="ap-nav-right">
+      <a class="ap-nav-cart" href="cart.html">
+        <i class="fa fa-shopping-bag"></i>
+        <span class="cart-label">Quote Basket</span> (<b data-cart-count>0</b>)
       </a>
-
-      <div class="up-service-phone">
-        <a class="phone-email" href="mailto:info@forwardforce.co.tz">info@forwardforce.co.tz</a>
-        <a class="phone-num" href="tel:+255710217583">+255 710 217 583</a>
-        <span class="phone-sub">Printing &amp; Branding</span>
-      </div>
-
-      <form action="products.html" class="up-search-box" method="get" role="search">
-        <input aria-label="Search" class="up-search-input" name="q" placeholder="Search (e.g. stickers, hoodies, cards)" type="search"/>
-        <button aria-label="Search" class="up-search-btn" type="submit">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
-
-      <div class="up-header-actions">
-        <a class="up-cart-block" href="cart.html">
-          <i class="fa fa-shopping-cart"></i>
-          <span class="cart-label">Cart</span>
-          <span class="cart-count">(<b data-cart-count="">0</b>)</span>
-        </a>
-      </div>
+      <button class="ap-menu-toggle" id="apMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
+  </div>
+</header>
 
-    <div class="up-navbar-wrap">
-      <nav aria-label="Primary Categories" class="up-nav-container">
-        
-        <!-- Dropdown 1: Marketing Materials -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Marketing%20Materials">Marketing Materials</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Business Cards" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Business Cards</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Standard Business Cards</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Square Business Cards</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Rounded Corner Cards</a></li>
-                </ul>
-              </div>
-
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/19240/250x250/UP_Flyers_PLA_Image_1.jpg" alt="Brochures & Flyers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Brochures &amp; Flyers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Promotional Flyers</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Tri-Fold Brochures</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 2: Stickers & Labels -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Stickers%20%26%20Labels">Stickers &amp; Labels</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg" alt="Custom Stickers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Custom Stickers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Die-Cut Vinyl Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Kraft Paper Labels</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 3: Boxes & Packaging -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Boxes%20%26%20Packaging">Boxes &amp; Packaging</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="assets/logo_forward_force/mailboxes.jpeg" alt="Mailer Boxes" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Shipping &amp; Mailers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Mailer Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Stand-Up Pouches</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 4: Signs & Banners -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Signs%20%26%20Banners">Signs &amp; Banners</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19248/250x250/UP_Vinyl_Banner_PLA_Image_1.jpg" alt="Vinyl Banners" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Banners</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Vinyl Banners</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Roll-Up Banners</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 5: Apparel & Promo -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Apparel%20%26%20Promo">Apparel &amp; Promo</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg" alt="Custom Hoodies" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Custom Apparel</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Custom Fleece Hoodies</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Branded DTF T-Shirts</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Embroidered Polo Shirts</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </nav>
-    </div>
-  </header>
-
-  <!-- ==========================================
-       PRODUCT DETAIL MAIN CONTENT
-       ========================================== -->
-  <main class="pd-section">
-    <div class="pd-container">
-      
-      <div class="pd-breadcrumb">
-        <a href="index.html">Home</a> &rsaquo; <a href="products.html">Products</a> &rsaquo; <span id="pdCrumbTitle">Product Details</span>
-      </div>
-
-      <div class="pd-grid">
-        <div class="pd-image-box">
-          <img id="pdImage" alt="Product Preview" src="https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg"/>
-        </div>
-
-        <div class="pd-info-box">
-          <span class="pd-category" id="pdCategory">Apparel &amp; Promo</span>
-          <h1 class="pd-title" id="pdTitle">Custom Heavyweight Fleece Hoodie</h1>
-          <div class="pd-price" id="pdPrice">TZS 45,000 <span class="pd-price-sub">($18.00 USD)</span></div>
-          <p class="pd-desc" id="pdDesc">
-            Plush 320gsm cotton-poly fleece hoodie with premium DTF print or high-density embroidery in Dar es Salaam.
-          </p>
-
-          <form id="pdForm">
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-              <div class="pd-form-group">
-                <label>Quantity</label>
-                <input id="pdQty" min="1" type="number" value="1"/>
-              </div>
-              <div class="pd-form-group">
-                <label>Size / Specification</label>
-                <select id="pdSize">
-                  <option value="Standard Size">Standard Specification</option>
-                  <option value="Small (S)">Small (S)</option>
-                  <option value="Medium (M)">Medium (M)</option>
-                  <option value="Large (L)">Large (L)</option>
-                  <option value="Extra Large (XL)">Extra Large (XL)</option>
-                  <option value="Custom Size">Custom Dimension</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="pd-form-group">
-              <label>Finish / Stock Option</label>
-              <select id="pdPaper">
-                <option value="Standard Finish">Standard Quality Finish</option>
-                <option value="Matte Finish">Matte Finish</option>
-                <option value="Gloss UV Coating">Gloss UV Coating</option>
-                <option value="Embroidered Stitch">Industrial Embroidered Stitch</option>
-                <option value="DTF Full Color">DTF Full Color Print</option>
-              </select>
-            </div>
-
-            <div class="pd-btn-row">
-              <button class="pd-add-btn" id="pdAddToCartBtn" type="button">
-                <i class="fa fa-shopping-cart"></i> Add to Cart
-              </button>
-              <a class="pd-wa-btn" id="pdDirectWaBtn" href="#" target="_blank" rel="noopener">
-                <i class="fa fa-whatsapp"></i> Inquire via WhatsApp
-              </a>
-            </div>
-          </form>
-
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-
-  <!-- ==========================================
-       SECTION: NEWSLETTER SUBSCRIBE
-       ========================================== -->
-  <section class="up-newsletter-section">
-    <div class="up-newsletter-inner">
-      <h4>Don't Miss Out</h4>
-      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
-      <form class="up-newsletter-form" data-ff-form="newsletter">
-        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
-        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
-        <button type="submit">SUBSCRIBE</button>
-      </form>
-    </div>
-  </section>
-  <!-- ==========================================
-       GLOBAL FOOTER
-       ========================================== -->
-  <footer class="global-footer-container">
-    <div class="footer-contents-container">
-      <ul class="links-container">
-        <li><a href="faq.html">Help &amp; FAQs</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="resellers.html">Resellers</a></li>
-        <li><a href="templates.html">Templates</a></li>
-        
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-
-      <ul class="social-container">
-        <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-        <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-      </ul>
-
-      <ul class="legal-container">
-        <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
-        <li><a href="about.html">Terms of Service</a></li>
-        <li><a href="about.html">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </footer>
-
+<!-- Mobile Clean Drawer Menu -->
+<div class="ap-mobile-drawer" id="apMobileDrawer">
+  <ul class="ap-mobile-drawer-links">
+    <li><a href="products.html"><span>Shop All Products</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="apparel.html"><span>Apparel &amp; Uniforms</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="cards-flyers.html"><span>Cards &amp; Flyers</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="boxes-packaging.html"><span>Custom Packaging</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="stickers-labels.html"><span>Stickers &amp; Labels</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="about.html"><span>About Us</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="contact.html"><span>Contact Workshop</span> <span class="chevron">&gt;</span></a></li>
+  </ul>
+  <div class="ap-mobile-drawer-footer">
+    <a href="cart.html"><i class="fa fa-shopping-bag"></i> View Quote Basket (<span data-cart-count>0</span>)</a>
+    <a href="tel:+255710217583"><i class="fa fa-phone"></i> +255 710 217 583</a>
+  </div>
 </div>
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<main>
+  <!-- Breadcrumb -->
+  <div class="pd-topbar">
+    <div class="pd-breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">&rsaquo;</span>
+      <a href="products.html">Products</a>
+      <span class="sep">&rsaquo;</span>
+      <span class="curr" id="pdCrumbTitle">Product Details</span>
+    </div>
+  </div>
+
+  <!-- Stage Grid: Display Image (Left) + Clean Form (Right) -->
+  <section class="pd-stage-section">
+    <div class="pd-stage-grid">
+      
+      <!-- Left Column: Isolated Product Display -->
+      <div class="pd-display-column">
+        <div class="pd-image-stage">
+          <img id="pdImage" alt="Product Preview" src="assets/images/ff-polo-shirts-clean.png"/>
+        </div>
+        <div class="pd-badge-floating">
+          <i class="fa fa-check-circle" style="color:var(--ap-link);"></i> Workshop Verified &bull; Precision Inspected
+        </div>
+      </div>
+
+      <!-- Right Column: Product Customizer -->
+      <div class="pd-config-column">
+        <span class="pd-cat-badge" id="pdCategory">Apparel &amp; Promo</span>
+        <h1 class="pd-title" id="pdTitle">Embroidered Pique Polo Shirt</h1>
+        
+        <div class="pd-price-row">
+          <div class="pd-price" id="pdPrice">From TZS 30,000</div>
+          <span class="pd-price-note">starting base unit price</span>
+        </div>
+
+        <p class="pd-desc" id="pdDesc">
+          Classic corporate 220gsm honeycomb pique cotton polo shirt with high-stitch-count crest embroidery.
+        </p>
+
+        <form id="pdForm">
+          <div class="pd-form-grid">
+            <div class="pd-field">
+              <label for="pdQty">Quantity</label>
+              <input id="pdQty" min="1" step="1" required type="number" value="1"/>
+            </div>
+            <div class="pd-field">
+              <label for="pdSize">Size / Cut</label>
+              <select id="pdSize">
+                <option value="Standard Specification">Standard Specification</option>
+                <option value="Small (S)">Small (S)</option>
+                <option value="Medium (M)" selected>Medium (M)</option>
+                <option value="Large (L)">Large (L)</option>
+                <option value="Extra Large (XL)">Extra Large (XL)</option>
+                <option value="XXL">XXL</option>
+                <option value="Custom Size Distribution">Mixed Sizes (Enter in Notes)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="pd-field">
+            <label for="pdPaper">Branding &amp; Finish Method</label>
+            <select id="pdPaper">
+              <option value="High-Density Chest Embroidery" selected>High-Density Chest Embroidery (Stitched)</option>
+              <option value="Full Color Direct-to-Film (DTF)">Full Color Direct-to-Film (DTF)</option>
+              <option value="Dual-Position (Chest + Sleeve/Back)">Dual-Position (Chest + Sleeve or Back)</option>
+              <option value="3D Puff Embroidery">3D Puff Raised Embroidery</option>
+              <option value="Standard Production Finish">Standard Workshop Finish</option>
+            </select>
+          </div>
+
+          <div class="pd-action-row">
+            <button class="pd-btn-add" id="pdAddToCartBtn" type="submit">
+              <i class="fa fa-shopping-bag"></i> Add to Quote Basket
+            </button>
+            <a class="pd-btn-wa" id="pdDirectWaBtn" href="#" target="_blank" rel="noopener">
+              <i class="fa fa-whatsapp"></i> Inquire via WhatsApp
+            </a>
+          </div>
+
+          <div class="pd-status-pill" id="pdAdded" role="status" hidden>
+            <span><i class="fa fa-check-circle"></i> Added to your quote basket.</span>
+            <a href="cart.html">View Quote Basket &rsaquo;</a>
+          </div>
+
+          <p class="pd-workshop-note">
+            <i class="fa fa-info-circle"></i> Our workshop confirms your digital proofs, pantone codes, and delivery schedules before production commences.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- EXACT ORIGINAL CLEAN FOOTER -->
+<footer class="global-footer-container">
+  <div class="footer-contents-container">
+    <ul class="links-container">
+      <li><a href="faq.html">Help &amp; FAQs</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="resellers.html">Resellers</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <ul class="social-container">
+      <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+
+    <ul class="legal-container">
+      <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
+    </ul>
+  </div>
+</footer>
+
 <script src="assets/js/forward-force-store.js"></script>
-<script src="assets/js/ff-forms.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var params = new URLSearchParams(window.location.search);
-  var itemId = params.get('item') || 'custom-hoodie';
+  var itemId = params.get('item') || 'polo-shirts';
 
   var prod = (window.UPCart && window.UPCart.findProduct(itemId)) || {
     id: itemId,
     title: itemId.replace(/-/g, ' ').replace(/\b\w/g, function(l){return l.toUpperCase();}),
-    category: 'Custom Print',
-    unitPrice: 15.00,
-    priceTzs: 38000,
+    category: 'Apparel & Promo',
+    unitPrice: 12.00,
+    priceTzs: 30000,
     description: 'Custom printing and branding with premium finishing in Dar es Salaam.',
-    image: 'https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg'
+    image: 'assets/images/ff-polo-shirts-clean.png'
   };
 
   // Populate UI
@@ -469,53 +666,93 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('pdImage').src = prod.image;
   document.getElementById('pdImage').alt = prod.title;
 
-  var tzsVal = prod.priceTzs || (prod.unitPrice ? prod.unitPrice * 2500 : 38000);
-  document.getElementById('pdPrice').innerHTML = 'TZS ' + tzsVal.toLocaleString() + ' <span class="pd-price-sub">($' + (prod.unitPrice || 15).toFixed(2) + ' USD)</span>';
+  var tzsVal = prod.priceTzs || (prod.unitPrice ? prod.unitPrice * 2500 : 30000);
+  document.getElementById('pdPrice').textContent = 'From TZS ' + tzsVal.toLocaleString();
 
-  // Add to cart click
-  var addBtn = document.getElementById('pdAddToCartBtn');
-  if (addBtn) {
-    addBtn.addEventListener('click', function () {
-      var qty = parseInt(document.getElementById('pdQty').value, 10) || 1;
-      var size = document.getElementById('pdSize').value;
-      var paper = document.getElementById('pdPaper').value;
+  document.getElementById('pdForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!window.UPCart) return;
 
-      if (window.UPCart) {
-        window.UPCart.addItem(prod.id, {
-          title: prod.title,
-          category: prod.category,
-          price: prod.unitPrice,
-          priceTzs: prod.priceTzs,
-          quantity: qty,
-          size: size,
-          paper: paper,
-          image: prod.image
-        });
-
-        var old = addBtn.innerHTML;
-        addBtn.innerHTML = '<i class="fa fa-check"></i> Added to Cart!';
-        addBtn.style.background = '#03447F';
-        setTimeout(function () {
-          addBtn.innerHTML = old;
-          addBtn.style.background = '';
-        }, 1500);
-      }
+    window.UPCart.addItem(prod.id, {
+      title: prod.title,
+      category: prod.category,
+      price: prod.unitPrice,
+      priceTzs: prod.priceTzs,
+      quantity: Number(document.getElementById('pdQty').value),
+      size: document.getElementById('pdSize').value,
+      paper: document.getElementById('pdPaper').value,
+      image: prod.image
     });
-  }
+
+    document.getElementById('pdAdded').hidden = false;
+  });
 
   // Direct WhatsApp click
   var waBtn = document.getElementById('pdDirectWaBtn');
   if (waBtn) {
     var waMsg = [
-      'Hello Forward Force, I am interested in ordering:',
+      '*FORWARD FORCE - PRODUCT CUSTOMIZATION INQUIRY*',
       'Product: ' + prod.title,
-      'Price: TZS ' + tzsVal.toLocaleString(),
-      'Please let me know how to send my artwork.'
+      'Category: ' + prod.category,
+      'Base Price: TZS ' + tzsVal.toLocaleString(),
+      'Quantity: ' + document.getElementById('pdQty').value,
+      'Finishing: ' + document.getElementById('pdPaper').value,
+      '',
+      'Hello Forward Force, please let me know turnaround time and how to send our artwork logo.'
     ].join('\n');
-    waBtn.href = 'https://wa.me/255710217583?text=' + encodeURIComponent(waMsg);
+
+    // Update dynamically when inputs change
+    function refreshWa() {
+      var lines = [
+        '*FORWARD FORCE - PRODUCT CUSTOMIZATION INQUIRY*',
+        'Product: ' + prod.title,
+        'Category: ' + prod.category,
+        'Base Price: TZS ' + tzsVal.toLocaleString(),
+        'Quantity: ' + document.getElementById('pdQty').value,
+        'Size: ' + document.getElementById('pdSize').value,
+        'Finishing: ' + document.getElementById('pdPaper').value,
+        '',
+        'Hello Forward Force, please let me know turnaround time and how to send our artwork logo.'
+      ].join('\n');
+      waBtn.href = 'https://wa.me/255710217583?text=' + encodeURIComponent(lines);
+    }
+
+    refreshWa();
+    document.getElementById('pdQty').addEventListener('input', refreshWa);
+    document.getElementById('pdSize').addEventListener('change', refreshWa);
+    document.getElementById('pdPaper').addEventListener('change', refreshWa);
   }
 });
 </script>
-  <script src="assets/js/mobile-nav.js"></script>
+<script>
+  // Clean Mobile Drawer Toggle
+  (function() {
+    var toggle = document.getElementById('apMenuBtn');
+    var drawer = document.getElementById('apMobileDrawer');
+    if (!toggle || !drawer) return;
+
+    toggle.addEventListener('click', function() {
+      var isOpen = drawer.classList.contains('active');
+      if (isOpen) {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        drawer.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    // Close on any link click
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  })();
+</script>
 </body>
 </html>

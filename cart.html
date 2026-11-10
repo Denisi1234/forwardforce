@@ -2,1205 +2,799 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Print Order Inquiry | Forward Force Co. Ltd</title>
+<title>Quote Basket | Forward Force Co. Ltd</title>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="Review your selected print items and prepare an order inquiry with Forward Force Co. Ltd in Dar es Salaam." name="description"/>
-<meta property="og:title" content="Print Order Inquiry | Forward Force Co. Ltd"/>
-<meta property="og:description" content="Review your selected print items and prepare an order inquiry with Forward Force Co. Ltd in Dar es Salaam."/>
+<meta content="Review your selected print items, adjust quantities and finishes, and submit a direct quote inquiry with Forward Force Co. Ltd in Dar es Salaam." name="description"/>
+<meta property="og:title" content="Quote Basket | Forward Force Co. Ltd"/>
+<meta property="og:description" content="Review your selected print items and submit a direct quote inquiry with Forward Force Co. Ltd in Dar es Salaam."/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Forward Force Co. Ltd"/>
 <meta property="og:locale" content="en_TZ"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Print Order Inquiry | Forward Force Co. Ltd"/>
-<meta name="twitter:description" content="Review your selected print items and prepare an order inquiry with Forward Force Co. Ltd in Dar es Salaam."/> 
 <!-- Favicon -->
 <link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <!-- Fonts & Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-<link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
-<link href="assets/css/ff-pages.css" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="assets/css/ff-header-footer.css"/>
+<meta name="author" content="Forward Force Co. Ltd"/>
 <style>
-/* ========================================================
-   FORWARD FORCE COMPACT, CLEAN & PROFESSIONAL CART
-   ======================================================== */
-.up-cart-page-sec {
-  background: #fdfdfd;
-  min-height: 60vh;
-  padding: 30px 0 50px;
-}
-.up-cart-container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-.up-cart-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #eaedf0;
-}
-.up-cart-title {
-  font-size: 22px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0;
-  letter-spacing: -0.2px;
-}
-.up-continue-shopping {
-  font-size: 13px;
-  font-weight: 600;
-  color: #0757A6;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: color 0.15s;
-}
-.up-continue-shopping:hover {
-  color: #03447F;
-  text-decoration: underline;
-}
-
-/* 2-Column Responsive Layout */
-.up-cart-grid {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 24px;
-  align-items: start;
-}
-
-/* Left Panel: Cart Table & Items */
-.up-cart-main {
-  background: #ffffff;
-  border: 1px solid #e5e8ec;
-  border-radius: 6px;
-  padding: 20px;
-}
-
-/* Empty State */
-.up-empty-cart-state {
-  text-align: center;
-  padding: 45px 16px;
-}
-.up-empty-cart-icon {
-  font-size: 40px;
-  color: #9aa5b1;
-  margin-bottom: 14px;
-}
-.up-empty-cart-state h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 8px;
-}
-.up-empty-cart-state p {
-  font-size: 13.5px;
-  color: #666;
-  max-width: 380px;
-  margin: 0 auto 18px;
-  line-height: 1.5;
-}
-.up-browse-catalog-btn {
-  display: inline-block;
-  background: #0757A6;
-  color: #ffffff !important;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 9px 22px;
-  border-radius: 4px;
-  text-decoration: none !important;
-  transition: background 0.15s;
-}
-.up-browse-catalog-btn:hover {
-  background: #03447F;
-}
-
-/* Compact Table Design */
-.up-cart-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.up-cart-table thead th {
-  padding: 8px 10px;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #7b8794;
-  text-transform: uppercase;
-  border-bottom: 1px solid #eaedf0;
-  letter-spacing: 0.5px;
-}
-.up-cart-row {
-  border-bottom: 1px solid #f0f2f5;
-}
-.up-cart-row td {
-  padding: 14px 10px;
-  vertical-align: middle;
-}
-.up-cart-prod-flex {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-.up-cart-thumb {
-  width: 58px;
-  height: 58px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid #eaedf0;
-  background: #f0f8fc;
-  flex-shrink: 0;
-}
-.up-cart-prod-info {
-  flex: 1;
-}
-.up-cart-item-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0 0 2px;
-  line-height: 1.3;
-}
-.up-cart-item-cat {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 600;
-  color: #0757A6;
-  background: #eaf7fc;
-  padding: 1px 6px;
-  border-radius: 3px;
-  margin-bottom: 4px;
-}
-.up-cart-item-specs {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 4px;
-  font-size: 11.5px;
-  color: #666;
-  line-height: 1.4;
-}
-.up-cart-item-specs li b {
-  color: #444;
-}
-.up-remove-link {
-  background: none;
-  border: none;
-  color: #a0aec0;
-  font-size: 11.5px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: color 0.15s;
-}
-.up-remove-link:hover {
-  color: #e53e3e;
-}
-
-/* Compact Quantity Control */
-.up-qty-control {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid #d2d6dc;
-  border-radius: 4px;
-  overflow: hidden;
-  background: #ffffff;
-}
-.up-qty-btn {
-  background: #f7fafc;
-  border: none;
-  width: 28px;
-  height: 28px;
-  font-size: 14px;
-  font-weight: 700;
-  color: #4a5568;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.15s;
-}
-.up-qty-btn:hover {
-  background: #edf2f7;
-}
-.up-qty-input {
-  width: 36px;
-  height: 28px;
-  border: none;
-  border-left: 1px solid #e2e8f0;
-  border-right: 1px solid #e2e8f0;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  color: #2d3748;
-}
-.up-unit-price {
-  display: block;
-  font-size: 11.5px;
-  color: #718096;
-  margin-top: 4px;
-}
-
-/* Total Column */
-.up-row-price {
-  font-size: 14.5px;
-  font-weight: 700;
-  color: #0757A6;
-  display: block;
-}
-
-/* Cart Footer Bar */
-.up-cart-footer-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid #eaedf0;
-}
-.up-clear-cart-link {
-  background: none;
-  border: none;
-  color: #a0aec0;
-  font-size: 12px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 0;
-  transition: color 0.15s;
-}
-.up-clear-cart-link:hover {
-  color: #e53e3e;
-}
-
-/* Right Summary Panel */
-.up-summary-panel {
-  background: #ffffff;
-  border: 1px solid #e5e8ec;
-  border-radius: 6px;
-  padding: 18px;
-}
-.up-summary-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0 0 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eaedf0;
-}
-.up-summary-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 13px;
-  color: #4a5568;
-  margin-bottom: 10px;
-}
-.up-summary-row b {
-  color: #1a1a1a;
-}
-.up-summary-row.total-row {
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid #eaedf0;
-  font-size: 14.5px;
-  font-weight: 700;
-  color: #1a1a1a;
-}
-.up-summary-row.total-row span:last-child {
-  font-size: 16px;
-  font-weight: 800;
-}
-
-/* Promo Box */
-.up-promo-box {
-  background: #f8fafc;
-  border: 1px dashed #cbd5e0;
-  border-radius: 4px;
-  padding: 10px;
-  margin: 12px 0;
-}
-.up-promo-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 600;
-  color: #4a5568;
-  margin-bottom: 5px;
-}
-.up-promo-input-group {
-  display: flex;
-  gap: 4px;
-}
-.up-promo-input-group input {
-  flex: 1;
-  height: 30px;
-  padding: 0 8px;
-  font-size: 12px;
-  border: 1px solid #cbd5e0;
-  border-radius: 3px;
-  text-transform: uppercase;
-}
-.up-promo-input-group button {
-  height: 30px;
-  padding: 0 12px;
-  background: #0757A6;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-.up-promo-input-group button:hover {
-  background: #03447F;
-}
-.up-promo-success {
-  font-size: 11px;
-  color: #0757A6;
-  margin-top: 4px;
-  font-weight: 600;
-}
-.up-promo-error {
-  font-size: 11px;
-  color: #e53e3e;
-  margin-top: 4px;
-  font-weight: 600;
-}
-
-/* Checkout CTA */
-.up-checkout-cta {
-  display: block;
-  width: 100%;
-  padding: 11px 14px;
-  background: #0757A6;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  font-size: 13.5px;
-  font-weight: 700;
-  text-align: center;
-  cursor: pointer;
-  letter-spacing: 0.3px;
-  transition: background 0.15s;
-}
-.up-checkout-cta:hover {
-  background: #03447F;
-}
-.up-guarantee-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  color: #718096;
-  margin-top: 12px;
-  line-height: 1.35;
-}
-.up-guarantee-badge i {
-  color: #0757A6;
-  font-size: 15px;
-  flex-shrink: 0;
-}
-
-/* Clean, Modern Checkout Modal */
-.up-modal-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.55);
-  backdrop-filter: blur(2px);
-  z-index: 99999;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-.up-modal-card {
-  background: #ffffff;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 440px;
-  overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.06);
-  border: 1px solid #e2e8f0;
-  animation: upCleanFade 0.2s ease;
-}
-@keyframes upCleanFade {
-  from { opacity: 0; transform: scale(0.98); }
-  to { opacity: 1; transform: scale(1); }
-}
-.up-modal-header {
-  background: #ffffff;
-  border-bottom: 1px solid #eaedf0;
-  padding: 14px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.up-modal-header h3 {
-  margin: 0;
-  font-size: 15px;
-  font-weight: 700;
-  color: #1a1a1a;
-}
-.up-modal-close {
-  background: none;
-  border: none;
-  color: #718096;
-  font-size: 20px;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0;
-  transition: color 0.15s;
-}
-.up-modal-close:hover {
-  color: #1a1a1a;
-}
-.up-modal-body {
-  padding: 18px;
-  max-height: 82vh;
-  overflow-y: auto;
-}
-.up-form-group {
-  margin-bottom: 11px;
-}
-.up-form-group label {
-  display: block;
-  font-size: 11.5px;
-  font-weight: 600;
-  color: #374151;
-  margin-bottom: 4px;
-}
-.up-form-group input {
-  width: 100%;
-  height: 36px;
-  padding: 0 10px;
-  font-size: 13px;
-  border: 1px solid #d1d5db;
-  border-radius: 4px;
-  background: #ffffff;
-  outline: none;
-  transition: border-color 0.15s;
-}
-.up-form-group input:focus {
-  border-color: #0757A6;
-  box-shadow: 0 0 0 2px rgba(7, 87, 166, 0.12);
-}
-.up-confirm-btn {
-  width: 100%;
-  padding: 10px 14px;
-  border: none;
-  border-radius: 4px;
-  color: #ffffff;
-  font-size: 13.5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-.up-confirm-btn:hover {
-  opacity: 0.95;
-}
-
-/* Responsiveness */
-@media (max-width: 860px) {
-  .up-cart-grid {
-    grid-template-columns: 1fr;
+  :root {
+    --ap-bg: #fbfbfd;
+    --ap-wash: #f5f5f7;
+    --ap-ink: #1d1d1f;
+    --ap-subtext: #86868b;
+    --ap-link: #0071e3;
+    --ap-link-hover: #0077ed;
+    --ap-border: rgba(0, 0, 0, 0.08);
+    --ap-card-border: rgba(0, 0, 0, 0.06);
+    --font-apple: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
-}
-@media (max-width: 540px) {
-  .up-cart-main {
-    padding: 14px 10px;
-  }
-  .up-cart-table thead {
-    display: none;
-  }
-  .up-cart-row {
-    display: flex;
-    flex-direction: column;
-    padding: 12px 0;
-    gap: 8px;
-  }
-  .up-cart-row td {
+
+  body {
+    background-color: var(--ap-bg);
+    color: var(--ap-ink);
+    font-family: var(--font-apple);
+    margin: 0;
     padding: 0;
-    width: 100% !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  .up-cart-col-qty {
+
+  /* Cart Layout Wrap */
+  .up-cart-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 44px 24px 80px;
+  }
+
+  .up-cart-header {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--ap-border);
+  }
+  .up-cart-title {
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: var(--ap-ink);
+    margin: 0 0 6px;
+  }
+  .up-cart-subtitle {
+    font-size: 15.5px;
+    color: var(--ap-subtext);
+    margin: 0;
+  }
+
+  /* Grid Layout: Items List (Left) + Sticky Summary (Right) */
+  .up-cart-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 40px;
+    align-items: start;
+  }
+
+  /* Items Table Container */
+  .up-cart-main {
+    background: #ffffff;
+    border: 1px solid var(--ap-card-border);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+  }
+
+  .up-cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .up-cart-table thead th {
+    padding: 16px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ap-subtext);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--ap-border);
+    text-align: left;
+    background: var(--ap-bg);
+  }
+
+  .up-cart-row td {
+    padding: 24px 20px;
+    border-bottom: 1px solid var(--ap-border);
+    vertical-align: middle;
+  }
+  .up-cart-row:last-child td {
+    border-bottom: none;
+  }
+
+  /* Product Flex Cell */
+  .up-cart-prod-flex {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .up-cart-thumb {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    border-radius: 14px;
+    background: var(--ap-bg);
+    border: 1px solid var(--ap-border);
+    padding: 6px;
+    flex-shrink: 0;
+  }
+  .up-cart-prod-info {
+    flex: 1;
+    min-width: 0;
+  }
+  .up-cart-item-title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ap-ink);
+    margin: 0 0 5px;
+    line-height: 1.3;
+  }
+  .up-cart-item-cat {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ap-link);
+    margin-bottom: 6px;
+  }
+  .up-cart-item-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: var(--ap-subtext);
+    line-height: 1.45;
+  }
+  .up-cart-item-specs li b {
+    color: var(--ap-ink);
+    font-weight: 600;
+  }
+  .up-remove-link {
+    background: none;
+    border: none;
+    color: #b42318;
+    font-size: 12.5px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    opacity: 0.85;
+    transition: opacity 0.15s ease;
+  }
+  .up-remove-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  /* Quantity Control */
+  .up-qty-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 980px;
+    overflow: hidden;
+    background: #ffffff;
+    height: 38px;
+  }
+  .up-qty-btn {
+    background: transparent;
+    border: none;
+    width: 36px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ap-ink);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease;
+  }
+  .up-qty-btn:hover {
+    background: var(--ap-wash);
+  }
+  .up-qty-input {
+    width: 44px;
+    height: 38px;
+    border: none;
+    text-align: center;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--ap-ink);
+    font-family: inherit;
+    outline: none;
+  }
+  .up-unit-price {
+    display: block;
+    margin-top: 6px;
+    font-size: 12.5px;
+    color: var(--ap-subtext);
+  }
+  .up-row-price {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ap-ink);
+  }
+
+  /* Summary Panel (Right Column) */
+  .up-summary-panel {
+    background: #ffffff;
+    border: 1px solid var(--ap-card-border);
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02);
+    position: sticky;
+    top: 96px;
+  }
+  .up-summary-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ap-ink);
+    margin: 0 0 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--ap-border);
+  }
+  .up-summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--ap-subtext);
+    margin-bottom: 14px;
+  }
+  .up-summary-row b {
+    color: var(--ap-ink);
+    font-weight: 600;
+  }
+  .up-summary-row.total-row {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--ap-border);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ap-ink);
+  }
+  .up-summary-row.total-row span:last-child {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--ap-link);
+  }
+  .up-checkout-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    padding: 0 24px;
+    background: var(--ap-link);
+    color: #ffffff;
+    border: none;
+    border-radius: 980px;
+    font-size: 15.5px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 22px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .up-checkout-cta:hover {
+    background: var(--ap-link-hover);
+    color: #ffffff;
+  }
+  .up-guarantee-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--ap-subtext);
+    margin-top: 16px;
+    line-height: 1.45;
+  }
+  .up-guarantee-badge i {
+    color: var(--ap-link);
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  /* Empty Cart State */
+  .up-empty-cart {
+    text-align: center;
+    padding: 80px 24px;
+  }
+  .up-empty-icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: var(--ap-wash);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: var(--ap-subtext);
+    margin-bottom: 20px;
+  }
+  .up-empty-cart h3 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ap-ink);
+    margin: 0 0 8px;
+  }
+  .up-empty-cart p {
+    font-size: 15px;
+    color: var(--ap-subtext);
+    margin: 0 auto 24px;
+    max-width: 360px;
+    line-height: 1.45;
+  }
+  .up-btn-browse {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 24px;
+    background: var(--ap-link);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 980px;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .up-btn-browse:hover {
+    background: var(--ap-link-hover);
+    color: #ffffff;
+  }
+
+  /* WhatsApp Checkout Modal Dialog */
+  .up-modal-overlay {
+    border: none;
+    border-radius: 24px;
+    padding: 0;
+    max-width: 520px;
+    width: 90%;
+    background: #ffffff;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  }
+  .up-modal-overlay::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+  }
+  .up-modal-card {
+    padding: 32px 28px;
+  }
+  .up-modal-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--ap-border);
   }
-  .up-cart-col-total {
-    text-align: left !important;
+  .up-modal-header h3 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ap-ink);
+    margin: 0;
   }
-  .up-cart-header-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
+  .up-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--ap-subtext);
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
   }
-}
-</style>
-<meta name="author" content="Forward Force Co. Ltd"/>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Print Order Inquiry | Forward Force Co. Ltd",
-  "description": "Review your selected print items and prepare an order inquiry with Forward Force Co. Ltd in Dar es Salaam.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Forward Force Co. Ltd",
-    "email": "info@forwardforce.co.tz",
-    "telephone": "+255 710 217 583",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Kijitonyama, Dar es Salaam",
-      "addressCountry": "TZ"
+  .up-modal-close:hover {
+    color: var(--ap-ink);
+  }
+
+  /* Responsive Adjustments & Mobile Polish */
+  @media (max-width: 960px) {
+    .up-cart-grid {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .up-summary-panel {
+      position: static;
     }
   }
-}
-</script>
+
+  @media (max-width: 640px) {
+    .up-cart-wrap {
+      padding: 24px 16px 60px;
+    }
+    .up-cart-title {
+      font-size: 26px;
+    }
+    .up-cart-subtitle {
+      font-size: 14px;
+    }
+    .up-cart-table thead {
+      display: none;
+    }
+    .up-cart-row {
+      display: flex;
+      flex-direction: column;
+      padding: 18px 16px;
+      border-bottom: 1px solid var(--ap-border);
+    }
+    .up-cart-row td {
+      padding: 0;
+      border: none;
+      width: 100% !important;
+    }
+    .up-cart-col-prod {
+      margin-bottom: 14px;
+    }
+    .up-cart-prod-flex {
+      gap: 14px;
+    }
+    .up-cart-thumb {
+      width: 72px;
+      height: 72px;
+    }
+    .up-cart-item-title {
+      font-size: 15.5px;
+    }
+    .up-cart-col-qty {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .up-unit-price {
+      margin-top: 0;
+      font-size: 13px;
+    }
+    .up-cart-col-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px !important;
+      border-top: 1px dashed var(--ap-border) !important;
+    }
+    .up-cart-col-total::before {
+      content: "Subtotal:";
+      font-size: 13.5px;
+      color: var(--ap-subtext);
+      font-weight: 500;
+    }
+    .up-row-price {
+      font-size: 16.5px;
+    }
+    .up-summary-panel {
+      padding: 24px 18px;
+    }
+    .up-checkout-cta {
+      height: 50px;
+      font-size: 15px;
+    }
+    .up-modal-card {
+      padding: 24px 18px;
+    }
+  }
+</style>
 </head>
 <body>
-<div class="boxed_wrapper ltr">
 
-  <!-- ==========================================
-       TOP MAIN HEADER (Shared Forward Force Header)
-       ========================================== -->
-  <header class="ff-market-header">
-    <div class="up-header-container">
-      <a class="up-brand-logo" href="index.html">
-        <img alt="Forward Force Printing & Branding" src="assets/logo_forward_force/forward_force_logo.webp"/>
+<!-- Apple Sticky Header (76px Pro Height & Doubled Logo) -->
+<header class="ap-nav">
+  <div class="ap-nav-inner">
+    <a class="ap-nav-brand" href="index.html">
+      <img src="assets/logo_forward_force/forward_force_logo.webp" alt="Forward Force" width="64" height="64"/>
+      <span>Forward Force</span>
+    </a>
+    <nav aria-label="Global">
+      <ul class="ap-nav-menu">
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="apparel.html">Apparel</a></li>
+        <li><a href="cards-flyers.html">Cards &amp; Flyers</a></li>
+        <li><a href="boxes-packaging.html">Packaging</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="ap-nav-right">
+      <a class="ap-nav-cart" href="cart.html" aria-current="page">
+        <i class="fa fa-shopping-bag"></i>
+        <span class="cart-label">Quote Basket</span> (<b data-cart-count>0</b>)
       </a>
+      <button class="ap-menu-toggle" id="apMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
 
-      <div class="up-service-phone">
-        <a class="phone-email" href="mailto:info@forwardforce.co.tz">info@forwardforce.co.tz</a>
-        <a class="phone-num" href="tel:+255710217583">+255 710 217 583</a>
-        <span class="phone-sub">Printing & Branding</span>
-      </div>
+<!-- Mobile Clean Drawer Menu -->
+<div class="ap-mobile-drawer" id="apMobileDrawer">
+  <ul class="ap-mobile-drawer-links">
+    <li><a href="products.html"><span>Shop All Products</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="apparel.html"><span>Apparel &amp; Uniforms</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="cards-flyers.html"><span>Cards &amp; Flyers</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="boxes-packaging.html"><span>Custom Packaging</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="stickers-labels.html"><span>Stickers &amp; Labels</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="about.html"><span>About Us</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="contact.html"><span>Contact Workshop</span> <span class="chevron">&gt;</span></a></li>
+  </ul>
+  <div class="ap-mobile-drawer-footer">
+    <a href="cart.html"><i class="fa fa-shopping-bag"></i> View Quote Basket (<span data-cart-count>0</span>)</a>
+    <a href="tel:+255710217583"><i class="fa fa-phone"></i> +255 710 217 583</a>
+  </div>
+</div>
 
-      <form action="products.html" class="up-search-box" method="get" role="search">
-        <input aria-label="Search" class="up-search-input" name="q" placeholder="Search products (e.g. T-shirts, embroidery, cards)" type="search"/>
-        <button aria-label="Search" class="up-search-btn" type="submit">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
-
-      <div class="up-header-actions">
-
-        <a class="up-cart-block" href="cart.html">
-          <i class="fa fa-shopping-cart"></i>
-          <span class="cart-label">Cart</span>
-          <span class="cart-count">(<b data-cart-count="">0</b>)</span>
-        </a>
-      </div>
+<main>
+  <div class="up-cart-wrap">
+    <div class="up-cart-header">
+      <h1 class="up-cart-title">Your Quote Basket</h1>
+      <p class="up-cart-subtitle">Review your selected items, adjust specifications, and submit a quote request to our workshop.</p>
     </div>
 
-            <div class="up-navbar-wrap">
-      <nav aria-label="Primary Categories" class="up-nav-container">
+    <div class="up-cart-grid">
+      <!-- Items Container (Left) -->
+      <div class="up-cart-main">
         
-        <!-- Dropdown 1: Marketing Materials (Exact Match to Visual Image) -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Marketing%20Materials">Marketing Materials</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              
-              <!-- Column 1: Business Cards -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Business Cards" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Business Cards</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Standard Business Cards <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html">Die-Cut Business Cards</a></li>
-                  <li><a href="products.html">Plastic Business Cards</a></li>
-                  <li><a href="products.html">Folded Business Cards</a></li>
-                  <li class="view-all"><a href="products.html">All Business Cards <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-
-              <!-- Column 2: Brochures & Flyers -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/19240/250x250/UP_Flyers_PLA_Image_1.jpg" alt="Brochures & Flyers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Brochures &amp; Flyers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Brochures</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Flyers <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Business Flyers</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Rack Cards</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Leaflets</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 3: Booklets and Catalogs -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/19242/250x250/UP_Booklets_PLA_Image_1.jpg" alt="Booklets and Catalogs" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Booklets and Catalogs</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Booklets <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Catalogs</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Newsletters</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Magazines</a></li>
-                  <li class="view-all"><a href="products.html?category=Marketing%20Materials">All Booklets &amp; Catalogs <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-
-              <!-- Column 4: Postcards -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/15075/UP_pantone-of-the-year_postcard.png" alt="Postcards" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Postcards</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Standard Postcards <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Die Cut Postcards</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">EDDM Postcards <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Foil Postcards</a></li>
-                  <li class="view-all"><a href="products.html?category=Marketing%20Materials">All Postcards <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
+        <!-- Empty State -->
+        <div class="up-empty-cart" id="up-empty-cart" style="display:none;">
+          <div class="up-empty-icon"><i class="fa fa-shopping-basket"></i></div>
+          <h3>Your quote basket is empty</h3>
+          <p>Explore our catalog to select products and customize specifications.</p>
+          <a class="up-btn-browse" href="products.html">Browse Products &rsaquo;</a>
         </div>
 
-        <!-- Dropdown 2: Stickers & Labels -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Stickers%20%26%20Labels">Stickers &amp; Labels</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg" alt="Custom Stickers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Custom Stickers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Die-Cut Stickers <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Kiss-Cut Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Clear Vinyl Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Metallic Foil Stickers</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/19249/250x250/UP_Roll_Labels_PLA_Image_2.jpg" alt="Roll Labels" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Roll Labels</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Product Labels <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Bottle &amp; Jar Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Waterproof Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Warning &amp; Shipping Labels</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="assets/logo_forward_force/kraftsticker.jpeg" alt="Specialty Labels" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Specialty Labels</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Kraft Paper Stickers <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Foil Stamped Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Embossed Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Holographic Stickers</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg" alt="Bulk Stickers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Bulk &amp; Sheet Stickers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Sticker Sheets <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Bulk Square Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Bumper Stickers</a></li>
-                  <li class="view-all"><a href="products.html?category=Stickers%20%26%20Labels">All Stickers &amp; Labels <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!-- Table Wrap -->
+        <div id="up-cart-table-wrap">
+          <table class="up-cart-table">
+            <thead>
+              <tr>
+                <th style="width:55%;">Product Details</th>
+                <th style="width:25%;">Quantity</th>
+                <th style="width:20%; text-align:right;">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody id="up-cart-items-list">
+              <!-- Dynamically rendered via forward-force-store.js -->
+            </tbody>
+          </table>
         </div>
-
-        <!-- Dropdown 3: Boxes & Packaging -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Boxes%20%26%20Packaging">Boxes &amp; Packaging</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="assets/logo_forward_force/mailboxes.jpeg" alt="Mailer Boxes" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Shipping &amp; Mailers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Mailer Boxes <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Corrugated Shipping Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Poly &amp; Bubble Mailers</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Rigid Heavyweight Boxes</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="https://staticecp.uprinting.com/5381/350x350/UP_Product_Box_Promotional_A.jpg" alt="Retail Product Boxes" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Retail Product Boxes</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Product Boxes <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Tuck-End Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Pillow Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Gable &amp; Handle Boxes</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="https://staticecp.uprinting.com/16760/250x250/UP%20Home%20Page%20Prod%20Images%20April%20-%20Pouches.jpg" alt="Pouches & Bags" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Pouches &amp; Bags</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Stand-Up Pouches <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Flat Barrier Pouches</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Coffee Valve Bags</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Printed Shopping Bags</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="https://staticecp.uprinting.com/6458/250x250/Poly_Packing_Tape_Updated.jpg" alt="Packaging Accessories" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Tape &amp; Unboxing</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Packing Tape <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Printed Tissue Paper</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Package Insert Cards</a></li>
-                  <li class="view-all"><a href="products.html?category=Boxes%20%26%20Packaging">All Boxes &amp; Packaging <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 4: Signs & Banners -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Signs%20%26%20Banners">Signs &amp; Banners</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19248/250x250/UP_Vinyl_Banner_PLA_Image_1.jpg" alt="Vinyl Banners" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Banners</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Vinyl Banners <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Retractable Banners</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Step &amp; Repeat Backdrops</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Mesh Outdoor Banners</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="assets/logo_forward_force/yard%20sign.jpeg" alt="Yard & Real Estate Signs" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Yard &amp; Outdoor Signs</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Yard Signs <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Aluminum &amp; Metal Signs</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">A-Frame Sidewalk Signs</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Feather &amp; Teardrop Flags</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19250/250x250/UP_Foam_Board_Signs_PLA_Image_1.jpg" alt="Rigid Boards & Posters" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Rigid Boards &amp; Posters</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Foam Board Signs <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Mounted Posters</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Acrylic &amp; PVC Signs</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Large Format Posters</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19251/250x250/UP_Window_Decals_PLA_Image_1.jpg" alt="Window & Wall Graphics" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Decals &amp; Graphics</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Window Clings &amp; Decals <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Wall &amp; Floor Decals</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Car Magnet Signs</a></li>
-                  <li class="view-all"><a href="products.html?category=Signs%20%26%20Banners">All Signs &amp; Banners <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 5: Apparel & Promo -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Apparel%20%26%20Promo">Apparel &amp; Promo</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg" alt="Custom Hoodies & Sweatshirts" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Custom Apparel</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Custom Hoodies <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">T-Shirts &amp; Polos</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Embroidered Jackets</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Workwear &amp; Uniforms</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19252/250x250/UP_Caps_PLA_Image_2.jpg" alt="Hats & Headwear" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Headwear</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Embroidered Hats <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Snapback Caps</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Warm Winter Beanies</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Trucker Mesh Hats</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19241/250x250/UP_Bags_PLA_Image_1.jpg" alt="Totes & Bags" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Bags &amp; Totes</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Canvas Tote Bags <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Drawstring Backpacks</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Insulated Lunch Coolers</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Conference Messenger Bags</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19246/250x250/UP_Notepad_PLA_Image_1.jpg" alt="Promotional Swag" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Promotional Giveaways</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Custom Drinkware &amp; Mugs</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Printed Pens &amp; Notepads</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Branded Lanyards</a></li>
-                  <li class="view-all"><a href="products.html?category=Apparel%20%26%20Promo">All Apparel &amp; Promo <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 6: Featured Collections -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Featured%20Collections">Featured Collections</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://images.unsplash.com/photo-1528048929606-66942bfedecb?auto=format&fit=crop&w=1400&q=80" alt="Seasonal Autumn Warmth" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Cozy Up Your Brand</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Fall Seasonal Essentials <span class="up-badge-bestseller">Featured</span></a></li>
-                  <li><a href="products.html">Kraft &amp; Textured Packaging</a></li>
-                  <li><a href="products.html">Warm Autumn Merch</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://staticecp.uprinting.com/16842/UP_Business_Card_Raised_Gallery_Image.png" alt="Luxury Print" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Luxury Finishes</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Raised Metallic Foil <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html">Soft-Touch Velvet Cards</a></li>
-                  <li><a href="products.html">Spot UV Elements</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://staticecp.uprinting.com/11472/Custom Product Builder.svg" alt="Builder" loading="lazy" style="object-fit:contain; padding:20px;">
-                </a>
-                <h4 class="up-mega-col-title">Custom Product Builder</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
-                  
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://staticecp.uprinting.com/15075/UP_pantone-of-the-year_postcard.png" alt="Event Marketing" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Tradeshow &amp; Events</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Booth Display Banners</a></li>
-                  <li><a href="products.html">Handout Flyers &amp; Folders</a></li>
-                  <li><a href="products.html">Custom Event Badges</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </nav>
-    </div>
-  </header>
-
-  <!-- ==========================================
-       CART & CHECKOUT MAIN SECTION
-       ========================================== -->
-  <main class="up-cart-page-sec">
-    <div class="up-cart-container">
-      
-      <div class="up-cart-header-row">
-        <h1 class="up-cart-title">Shopping Cart</h1>
-        <a class="up-continue-shopping" href="products.html">
-          <i class="fa fa-arrow-left"></i> Continue Shopping
-        </a>
       </div>
 
-      <div class="up-cart-grid">
-
-        <!-- Left Column: Cart Items Table -->
-        <div class="up-cart-main">
-
-          <!-- Empty State (Shown when cart is 0) -->
-          <div class="up-empty-cart-state" id="up-empty-cart" style="display:none;">
-            <div class="up-empty-cart-icon">
-              <i class="fa fa-shopping-basket"></i>
-            </div>
-            <h3>Your Shopping Cart is Empty</h3>
-            <p>You haven't added any custom print items yet. Explore our top sellers and start creating today!</p>
-            <a class="up-browse-catalog-btn" href="products.html">Browse Top Sellers</a>
-          </div>
-
-          <!-- Items Table (Shown when items exist) -->
-          <div id="up-cart-table-wrap">
-            <table class="up-cart-table">
-              <thead>
-                <tr>
-                  <th style="width:58%;">Product Details</th>
-                  <th style="width:24%;">Quantity</th>
-                  <th style="width:18%; text-align:right;">Total</th>
-                </tr>
-              </thead>
-              <tbody id="up-cart-items-list">
-                <!-- Dynamically generated rows via forward-force-store.js -->
-              </tbody>
-            </table>
-
-            <div class="up-cart-footer-bar">
-              <button class="up-clear-cart-link" id="up-clear-cart-btn" type="button">
-                <i class="fa fa-trash"></i> Empty entire cart
-              </button>
-              <div style="font-size:12.5px; color:#666;">
-                <i class="fa fa-check-circle" style="color:#15833b;"></i> Free online proofing included on all items
-              </div>
-            </div>
-          </div>
-
+      <!-- Sticky Quote Summary Panel (Right) -->
+      <aside class="up-summary-panel" id="up-order-summary-box">
+        <h2 class="up-summary-title">Quote Summary</h2>
+        <div class="up-summary-row"><span>Items Subtotal:</span><b id="up-subtotal-val">TZS 0</b></div>
+        <div class="up-summary-row" id="up-discount-row" style="display:none; color:#027a48;"><span>Promo Discount:</span><b id="up-discount-val">-TZS 0</b></div>
+        <div class="up-summary-row"><span>Delivery:</span><span>FREE (Dar es Salaam)</span></div>
+        <div class="up-summary-row"><span>Digital Proof via WhatsApp:</span><span style="color:#027a48; font-weight:700;">INCLUDED</span></div>
+        <div class="up-summary-row total-row"><span>Estimated Total:</span><span id="up-total-val">TZS 0</span></div>
+        
+        <button class="up-checkout-cta" id="up-checkout-btn" type="button">Request Quote via WhatsApp &rsaquo;</button>
+        
+        <div class="up-guarantee-badge">
+          <i class="fa fa-shield"></i>
+          <span>We verify artwork proofs and delivery schedules before finalizing production.</span>
         </div>
-
-        <!-- Right Column: Order Summary & Coupon -->
-        <aside class="up-summary-panel" id="up-order-summary-box">
-          <h2 class="up-summary-title">Order Summary</h2>
-
-          <div class="up-summary-row">
-            <span>Items Subtotal:</span>
-            <b id="up-subtotal-val">TZS 0</b>
-          </div>
-
-          <div class="up-summary-row" id="up-discount-row" style="display:none; color:#15833b;">
-            <span>Promo Discount:</span>
-            <b id="up-discount-val">-TZS 0</b>
-          </div>
-
-          <div class="up-summary-row">
-            <span>Delivery:</span>
-            <span id="up-shipping-val">FREE (Dar es Salaam)</span>
-          </div>
-
-          <div class="up-summary-row">
-            <span>Online PDF Proof:</span>
-            <span id="up-tax-val" style="color:#15833b; font-weight:700;">FREE</span>
-          </div>
-
-          <!-- Promo Code Box -->
-          <div class="up-promo-box">
-            <label class="up-promo-label" for="up-promo-input">Have a Promo Code?</label>
-            <form class="up-promo-input-group" id="up-promo-form">
-              <input id="up-promo-input" placeholder="e.g. FORWARD10" type="text"/>
-              <button type="submit">APPLY</button>
-            </form>
-            <div id="up-promo-msg"></div>
-          </div>
-
-          <div class="up-summary-row total-row">
-            <span>Estimated Total:</span>
-            <span id="up-total-val" style="color:#0757A6;">TZS 0</span>
-          </div>
-
-          <button class="up-checkout-cta" id="up-checkout-btn" type="button">
-            PROCEED TO CHECKOUT &rarr;
-          </button>
-
-          <div class="up-guarantee-badge">
-            <i class="fa fa-shield"></i>
-            <span>100% Quality Guarantee &bull; Free WhatsApp artwork check &bull; Fast turnaround</span>
-          </div>
-        </aside>
-
-      </div>
+      </aside>
     </div>
-  </main>
+  </div>
 
-  <!-- ==========================================
-       CHECKOUT MODAL
-       ========================================== -->
-  <div class="up-modal-overlay" id="up-checkout-modal">
+  <!-- WhatsApp Inquiry Modal Dialog -->
+  <dialog class="up-modal-overlay" id="up-checkout-modal" aria-labelledby="quote-dialog-title">
     <div class="up-modal-card">
       <div class="up-modal-header">
-        <h3>Complete Order via WhatsApp</h3>
-        <button class="up-modal-close" id="up-close-modal" type="button">&times;</button>
+        <h3 id="quote-dialog-title">Send Quote via WhatsApp</h3>
+        <button class="up-modal-close" id="up-close-modal" type="button" aria-label="Close quote form">&times;</button>
       </div>
-      
       <div class="up-modal-body">
         <form id="up-checkout-form">
           <div id="up-checkout-fields">
-            <p style="font-size:12.5px; color:#666; margin-bottom:14px; line-height:1.4;">
-              Enter your contact details below to send your itemized order directly to Forward Force via WhatsApp.
-            </p>
-
-            <div class="up-form-group">
-              <label>Full Name / Company *</label>
-              <input name="fullname" placeholder="e.g. Forward Group / John Doe" required="" type="text"/>
+            <p style="font-size:13.5px; color:var(--ap-subtext); margin-bottom:18px; line-height:1.45;">Enter your details below to prepare your complete product quote for our WhatsApp workshop team.</p>
+            
+            <div style="margin-bottom:16px;">
+              <label for="quote-fullname" style="display:block; font-size:12.5px; font-weight:600; color:var(--ap-ink); margin-bottom:6px;">Full Name or Company *</label>
+              <input id="quote-fullname" name="fullname" placeholder="e.g. Forward Group / John Doe" required type="text" style="width:100%; height:46px; padding:0 14px; font-size:14.5px; border:1px solid rgba(0,0,0,0.15); border-radius:12px; background:#fff; box-sizing:border-box;"/>
             </div>
 
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-              <div class="up-form-group">
-                <label>WhatsApp Number *</label>
-                <input name="phone" placeholder="+255 7XX XXX XXX" required="" type="tel"/>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px;">
+              <div>
+                <label for="quote-phone" style="display:block; font-size:12.5px; font-weight:600; color:var(--ap-ink); margin-bottom:6px;">WhatsApp Phone *</label>
+                <input id="quote-phone" name="phone" placeholder="+255 7XX XXX XXX" required type="tel" style="width:100%; height:46px; padding:0 14px; font-size:14.5px; border:1px solid rgba(0,0,0,0.15); border-radius:12px; background:#fff; box-sizing:border-box;"/>
               </div>
-              <div class="up-form-group">
-                <label>Email (Optional for PDF)</label>
-                <input name="email" placeholder="name@example.com" type="email"/>
+              <div>
+                <label for="quote-email" style="display:block; font-size:12.5px; font-weight:600; color:var(--ap-ink); margin-bottom:6px;">Email (Optional)</label>
+                <input id="quote-email" name="email" placeholder="name@example.com" type="email" style="width:100%; height:46px; padding:0 14px; font-size:14.5px; border:1px solid rgba(0,0,0,0.15); border-radius:12px; background:#fff; box-sizing:border-box;"/>
               </div>
             </div>
 
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
-              <div class="up-form-group">
-                <label>Delivery Area *</label>
-                <input name="zip" placeholder="e.g. Kijitonyama / Posta" required="" type="text"/>
-              </div>
-              <div class="up-form-group">
-                <label>City *</label>
-                <input name="city" value="Dar es Salaam" required="" type="text"/>
-              </div>
+            <div style="margin-bottom:16px;">
+              <label for="quote-address" style="display:block; font-size:12.5px; font-weight:600; color:var(--ap-ink); margin-bottom:6px;">Delivery Location / Area in Dar es Salaam *</label>
+              <input id="quote-address" name="address" placeholder="e.g. Kijitonyama, Sinza, Masaki, Posta" required type="text" style="width:100%; height:46px; padding:0 14px; font-size:14.5px; border:1px solid rgba(0,0,0,0.15); border-radius:12px; background:#fff; box-sizing:border-box;"/>
             </div>
 
-            <div class="up-form-group">
-              <label>Delivery Address / Street *</label>
-              <input name="address" placeholder="Physical location or building name" required="" type="text"/>
+            <div style="background:var(--ap-wash); border:1px solid var(--ap-border); padding:14px 18px; border-radius:14px; margin:20px 0; display:flex; justify-content:space-between; align-items:center;">
+              <span style="font-size:13.5px; color:var(--ap-subtext); font-weight:500;">Estimated Basket Total</span>
+              <span id="up-modal-total" style="font-size:17px; font-weight:800; color:var(--ap-link);">TZS 0</span>
             </div>
 
-            <div style="background:#f8fafc; border:1px solid #eaedf0; padding:10px 12px; border-radius:4px; margin:12px 0; display:flex; justify-content:space-between; align-items:center; font-size:13px; font-weight:700;">
-              <span style="color:#4a5568;">Total Estimated Due:</span>
-              <span id="up-modal-total" style="color:#0757A6; font-size:15px; font-weight:800;">TZS 0</span>
-            </div>
-
-            <button class="up-confirm-btn" type="submit" style="background:#0757A6; display:flex; align-items:center; justify-content:center; gap:8px;">
-              <i class="fa fa-whatsapp" style="font-size:16px;"></i> Send Order on WhatsApp
+            <button type="submit" style="width:100%; height:50px; background:#25D366; color:#fff; border:none; border-radius:980px; font-size:15px; font-weight:600; display:flex; align-items:center; justify-content:center; gap:8px; cursor:pointer;">
+              <i class="fa fa-whatsapp" style="font-size:18px;"></i> Open in WhatsApp
             </button>
           </div>
 
-          <!-- Confirmation Screen -->
-          <div id="up-order-confirmation" style="display:none; text-align:center; padding:14px 6px;">
-            <div style="font-size:42px; color:#0757A6; margin-bottom:10px;">
-              <i class="fa fa-whatsapp"></i>
-            </div>
-            <h3 style="font-size:18px; font-weight:700; color:#1a1a1a; margin-bottom:6px;">Order Ready!</h3>
-            <p style="font-size:13px; color:#666; line-height:1.5; margin-bottom:14px;">
-              Order Ref: <b id="up-conf-order-id" style="color:#0757A6;">FF-000000</b>.<br/>
-              Your order items and details have been formatted for instant WhatsApp checkout.
+          <!-- Order Confirmation Screen -->
+          <div id="up-order-confirmation" style="display:none; text-align:center; padding:24px 16px;">
+            <div style="font-size:48px; color:#25D366; margin-bottom:14px;"><i class="fa fa-whatsapp"></i></div>
+            <h3 style="font-size:20px; font-weight:700; color:var(--ap-ink); margin-bottom:8px;">Quote Request Ready</h3>
+            <p style="font-size:14px; color:var(--ap-subtext); line-height:1.5; margin-bottom:20px;">
+              Quote reference <b id="up-conf-order-id" style="color:var(--ap-link);"></b>.<br/>
+              Click the button below if WhatsApp did not open automatically.
             </p>
-            <a id="up-wa-direct-btn" href="#" target="_blank" rel="noopener" class="up-confirm-btn" style="background:#0757A6; display:inline-flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;">
-              <i class="fa fa-whatsapp"></i> Open WhatsApp Chat Now
+            <a id="up-wa-direct-btn" href="#" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; justify-content:center; gap:8px; height:48px; padding:0 28px; background:#25D366; color:#fff; border-radius:980px; text-decoration:none; font-weight:600; font-size:14.5px;">
+              Open WhatsApp Now
             </a>
-            <div style="margin-top:12px;">
-              <a class="up-browse-catalog-btn" href="products.html" style="padding:7px 16px; font-size:12px;">Add More Products</a>
+            <div style="margin-top:20px;">
+              <a href="products.html" style="font-size:14px; color:var(--ap-link); text-decoration:underline;">Add More Products</a>
             </div>
           </div>
         </form>
       </div>
     </div>
+  </dialog>
+</main>
+
+<!-- EXACT ORIGINAL CLEAN FOOTER -->
+<footer class="global-footer-container">
+  <div class="footer-contents-container">
+    <ul class="links-container">
+      <li><a href="faq.html">Help &amp; FAQs</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="resellers.html">Resellers</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <ul class="social-container">
+      <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+
+    <ul class="legal-container">
+      <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
+    </ul>
   </div>
+</footer>
 
-
-  <!-- ==========================================
-       SECTION: NEWSLETTER SUBSCRIBE
-       ========================================== -->
-  <section class="up-newsletter-section">
-    <div class="up-newsletter-inner">
-      <h4>Don't Miss Out</h4>
-      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
-      <form class="up-newsletter-form" data-ff-form="newsletter">
-        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
-        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
-        <button type="submit">SUBSCRIBE</button>
-      </form>
-    </div>
-  </section>
-  <!-- ==========================================
-       GLOBAL FOOTER (Shared Forward Force Footer)
-       ========================================== -->
-    <footer class="global-footer-container">
-    <div class="footer-contents-container">
-      <ul class="links-container">
-        <li><a href="faq.html">Help &amp; FAQs</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="resellers.html">Resellers</a></li>
-        <li><a href="templates.html">Templates</a></li>
-        
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-
-      <ul class="social-container">
-        <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-        <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-      </ul>
-
-      <ul class="legal-container">
-        <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
-      </ul>
-    </div>
-  </footer>
-
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
-<script src="assets/js/ff-forms.js"></script>
-  <script src="assets/js/mobile-nav.js"></script>
+<script>
+  (function() {
+    var modal = document.getElementById('up-checkout-modal');
+    var btn = document.getElementById('up-checkout-btn');
+    var closeBtn = document.getElementById('up-close-modal');
+    var form = document.getElementById('up-checkout-form');
+    var fields = document.getElementById('up-checkout-fields');
+    var confirmation = document.getElementById('up-order-confirmation');
+    var waBtn = document.getElementById('up-wa-direct-btn');
+    var totalSpan = document.getElementById('up-modal-total');
+    var confId = document.getElementById('up-conf-order-id');
+
+    function openModal() {
+      if (modal) {
+        var grandTotal = document.getElementById('up-total-val');
+        if (grandTotal && totalSpan) {
+          totalSpan.textContent = grandTotal.textContent;
+        }
+        modal.showModal();
+      }
+    }
+
+    function closeModal() {
+      if (modal) modal.close();
+    }
+
+    if (btn) btn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        var name = fd.get('fullname') || '';
+        var phone = fd.get('phone') || '';
+        var email = fd.get('email') || '';
+        var address = fd.get('address') || '';
+        var total = totalSpan ? totalSpan.textContent : 'TZS 0';
+        var ref = 'FF-' + Math.floor(Math.random() * 900000 + 100000);
+        if (confId) confId.textContent = ref;
+
+        // Build itemized list from basket
+        var items = (window.UPCart && window.UPCart.readBasket()) || [];
+        var itemLines = items.map(function(item, idx) {
+          var unitTzs = item.priceTzs || (item.unitPrice ? item.unitPrice * 2500 : 0);
+          return (idx + 1) + '. ' + item.title + ' (Qty: ' + item.quantity + ') - TZS ' + (unitTzs * item.quantity).toLocaleString() +
+                 '\n   Finish: ' + (item.paper || 'Standard') + ' | Size: ' + (item.size || 'Standard');
+        }).join('\n\n');
+
+        var lines = [
+          '*NEW QUOTE REQUEST - FORWARD FORCE*',
+          'Reference: ' + ref,
+          'Name: ' + name,
+          'WhatsApp: ' + phone,
+          (email ? ('Email: ' + email) : ''),
+          'Delivery Area: ' + address,
+          '',
+          '*ORDERED ITEMS:*',
+          itemLines,
+          '',
+          '*ESTIMATED TOTAL:* ' + total,
+          '',
+          'Hello Forward Force, please verify this quote request and advise on payment details and turnaround.'
+        ].filter(Boolean);
+
+        var url = 'https://wa.me/255710217583?text=' + encodeURIComponent(lines.join('\n'));
+        if (waBtn) waBtn.href = url;
+        window.open(url, '_blank');
+
+        if (fields) fields.style.display = 'none';
+        if (confirmation) confirmation.style.display = 'block';
+      });
+    }
+  })();
+</script>
+<script>
+  // Clean Mobile Drawer Toggle
+  (function() {
+    var toggle = document.getElementById('apMenuBtn');
+    var drawer = document.getElementById('apMobileDrawer');
+    if (!toggle || !drawer) return;
+
+    toggle.addEventListener('click', function() {
+      var isOpen = drawer.classList.contains('active');
+      if (isOpen) {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        drawer.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    // Close on any link click
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  })();
+</script>
 </body>
 </html>

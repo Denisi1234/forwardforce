@@ -19,11 +19,9 @@
 <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <!-- Fonts & Core Styles -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
-<link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
-<link href="assets/css/style.css" rel="stylesheet"/>
-<link href="assets/css/uprinting-theme.css" rel="stylesheet"/>
 <link href="assets/css/ff-pages.css" rel="stylesheet"/>
+<link href="assets/css/ff-unified.css" rel="stylesheet"/>
 
 <script type="application/ld+json">
 {
@@ -41,404 +39,64 @@
 }
 </script>
 <meta name="author" content="Forward Force Co. Ltd"/>
+<link href="assets/css/storefront.css" rel="stylesheet"/>`n<link href="assets/css/ff-unified.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/ff-header-footer.css"/>
 </head>
 <body>
-<div class="boxed_wrapper ltr">
+
 
   <!-- ==========================================
        TOP MAIN HEADER (Exact Forward Force Structure)
        ========================================== -->
-  <header class="ff-market-header">
-    <div class="up-header-container">
-      <!-- Forward Force Logo -->
-      <a class="up-brand-logo" href="index.html">
-        <img alt="Forward Force Printing & Branding" src="assets/logo_forward_force/forward_force_logo.webp"/>
+  <!-- Apple Sticky Header (76px Pro Height & Doubled Logo) -->
+<header class="ap-nav">
+  <div class="ap-nav-inner">
+    <a class="ap-nav-brand" href="index.html">
+      <img src="assets/logo_forward_force/forward_force_logo.webp" alt="Forward Force" width="64" height="64"/>
+      <span>Forward Force</span>
+    </a>
+    <nav aria-label="Global">
+      <ul class="ap-nav-menu">
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="apparel.html">Apparel</a></li>
+        <li><a href="cards-flyers.html">Cards &amp; Flyers</a></li>
+        <li><a href="boxes-packaging.html">Packaging</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="ap-nav-right">
+      <a class="ap-nav-cart" href="cart.html">
+        <i class="fa fa-shopping-bag"></i>
+        <span class="cart-label">Quote Basket</span> (<b data-cart-count>0</b>)
       </a>
-
-      <!-- Customer Service Contact -->
-      <div class="up-service-phone">
-        <a class="phone-email" href="mailto:info@forwardforce.co.tz">info@forwardforce.co.tz</a>
-        <a class="phone-num" href="tel:+255710217583">+255 710 217 583</a>
-        <span class="phone-sub">Printing & Branding</span>
-      </div>
-
-      <!-- Live Search Bar -->
-      <form action="products.html" class="up-search-box" method="get" role="search">
-        <input aria-label="Search" class="up-search-input" name="q" placeholder="Search products (e.g. T-shirts, embroidery, cards)" type="search"/>
-        <button aria-label="Search" class="up-search-btn" type="submit">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
-
-      <!-- Account & Cart Actions -->
-      <div class="up-header-actions">
-
-        <a class="up-cart-block" href="cart.html">
-          <i class="fa fa-shopping-cart"></i>
-          <span class="cart-label">Cart</span>
-          <span class="cart-count">(<b data-cart-count="">0</b>)</span>
-        </a>
-      </div>
+      <button class="ap-menu-toggle" id="apMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
+  </div>
+</header>
 
-    <!-- Category Navigation Bar -->
-            <div class="up-navbar-wrap">
-      <nav aria-label="Primary Categories" class="up-nav-container">
-        
-        <!-- Dropdown 1: Marketing Materials (Exact Match to Visual Image) -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Marketing%20Materials">Marketing Materials</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              
-              <!-- Column 1: Business Cards -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Business Cards" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Business Cards</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Standard Business Cards <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html">Die-Cut Business Cards</a></li>
-                  <li><a href="products.html">Plastic Business Cards</a></li>
-                  <li><a href="products.html">Folded Business Cards</a></li>
-                  <li class="view-all"><a href="products.html">All Business Cards <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-
-              <!-- Column 2: Brochures & Flyers -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/19240/250x250/UP_Flyers_PLA_Image_1.jpg" alt="Brochures & Flyers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Brochures &amp; Flyers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Brochures</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Flyers <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Business Flyers</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Rack Cards</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Leaflets</a></li>
-                </ul>
-              </div>
-
-              <!-- Column 3: Booklets and Catalogs -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/19242/250x250/UP_Booklets_PLA_Image_1.jpg" alt="Booklets and Catalogs" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Booklets and Catalogs</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Booklets <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Catalogs</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Newsletters</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Magazines</a></li>
-                  <li class="view-all"><a href="products.html?category=Marketing%20Materials">All Booklets &amp; Catalogs <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-
-              <!-- Column 4: Postcards -->
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Marketing%20Materials">
-                  <img src="https://staticecp.uprinting.com/15075/UP_pantone-of-the-year_postcard.png" alt="Postcards" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Postcards</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Marketing%20Materials">Standard Postcards <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Die Cut Postcards</a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">EDDM Postcards <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Marketing%20Materials">Foil Postcards</a></li>
-                  <li class="view-all"><a href="products.html?category=Marketing%20Materials">All Postcards <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 2: Stickers & Labels -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Stickers%20%26%20Labels">Stickers &amp; Labels</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg" alt="Custom Stickers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Custom Stickers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Die-Cut Stickers <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Kiss-Cut Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Clear Vinyl Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Metallic Foil Stickers</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/19249/250x250/UP_Roll_Labels_PLA_Image_2.jpg" alt="Roll Labels" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Roll Labels</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Product Labels <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Bottle &amp; Jar Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Waterproof Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Warning &amp; Shipping Labels</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="assets/logo_forward_force/kraftsticker.jpeg" alt="Specialty Labels" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Specialty Labels</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Kraft Paper Stickers <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Foil Stamped Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Embossed Labels</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Holographic Stickers</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Stickers%20%26%20Labels">
-                  <img src="https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg" alt="Bulk Stickers" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Bulk &amp; Sheet Stickers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Sticker Sheets <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Bulk Square Stickers</a></li>
-                  <li><a href="products.html?category=Stickers%20%26%20Labels">Bumper Stickers</a></li>
-                  <li class="view-all"><a href="products.html?category=Stickers%20%26%20Labels">All Stickers &amp; Labels <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 3: Boxes & Packaging -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Boxes%20%26%20Packaging">Boxes &amp; Packaging</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="assets/logo_forward_force/mailboxes.jpeg" alt="Mailer Boxes" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Shipping &amp; Mailers</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Mailer Boxes <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Corrugated Shipping Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Poly &amp; Bubble Mailers</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Rigid Heavyweight Boxes</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="https://staticecp.uprinting.com/5381/350x350/UP_Product_Box_Promotional_A.jpg" alt="Retail Product Boxes" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Retail Product Boxes</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Product Boxes <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Tuck-End Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Pillow Boxes</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Gable &amp; Handle Boxes</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="https://staticecp.uprinting.com/16760/250x250/UP%20Home%20Page%20Prod%20Images%20April%20-%20Pouches.jpg" alt="Pouches & Bags" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Pouches &amp; Bags</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Stand-Up Pouches <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Flat Barrier Pouches</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Coffee Valve Bags</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Printed Shopping Bags</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Boxes%20%26%20Packaging">
-                  <img src="https://staticecp.uprinting.com/6458/250x250/Poly_Packing_Tape_Updated.jpg" alt="Packaging Accessories" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Tape &amp; Unboxing</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Custom Packing Tape <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Printed Tissue Paper</a></li>
-                  <li><a href="products.html?category=Boxes%20%26%20Packaging">Package Insert Cards</a></li>
-                  <li class="view-all"><a href="products.html?category=Boxes%20%26%20Packaging">All Boxes &amp; Packaging <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 4: Signs & Banners -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Signs%20%26%20Banners">Signs &amp; Banners</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19248/250x250/UP_Vinyl_Banner_PLA_Image_1.jpg" alt="Vinyl Banners" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Banners</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Vinyl Banners <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Retractable Banners</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Step &amp; Repeat Backdrops</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Mesh Outdoor Banners</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="assets/logo_forward_force/yard%20sign.jpeg" alt="Yard & Real Estate Signs" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Yard &amp; Outdoor Signs</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Yard Signs <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Aluminum &amp; Metal Signs</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">A-Frame Sidewalk Signs</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Feather &amp; Teardrop Flags</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19250/250x250/UP_Foam_Board_Signs_PLA_Image_1.jpg" alt="Rigid Boards & Posters" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Rigid Boards &amp; Posters</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Foam Board Signs <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Mounted Posters</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Acrylic &amp; PVC Signs</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Large Format Posters</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Signs%20%26%20Banners">
-                  <img src="https://staticecp.uprinting.com/19251/250x250/UP_Window_Decals_PLA_Image_1.jpg" alt="Window & Wall Graphics" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Decals &amp; Graphics</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Window Clings &amp; Decals <span class="up-badge-new">New</span></a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Wall &amp; Floor Decals</a></li>
-                  <li><a href="products.html?category=Signs%20%26%20Banners">Car Magnet Signs</a></li>
-                  <li class="view-all"><a href="products.html?category=Signs%20%26%20Banners">All Signs &amp; Banners <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 5: Apparel & Promo -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Apparel%20%26%20Promo">Apparel &amp; Promo</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg" alt="Custom Hoodies & Sweatshirts" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Custom Apparel</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Custom Hoodies <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">T-Shirts &amp; Polos</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Embroidered Jackets</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Workwear &amp; Uniforms</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19252/250x250/UP_Caps_PLA_Image_2.jpg" alt="Hats & Headwear" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Headwear</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Embroidered Hats <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Snapback Caps</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Warm Winter Beanies</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Trucker Mesh Hats</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19241/250x250/UP_Bags_PLA_Image_1.jpg" alt="Totes & Bags" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Bags &amp; Totes</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Canvas Tote Bags <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Drawstring Backpacks</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Insulated Lunch Coolers</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Conference Messenger Bags</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html?category=Apparel%20%26%20Promo">
-                  <img src="https://staticecp.uprinting.com/19246/250x250/UP_Notepad_PLA_Image_1.jpg" alt="Promotional Swag" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Promotional Giveaways</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Custom Drinkware &amp; Mugs</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Printed Pens &amp; Notepads</a></li>
-                  <li><a href="products.html?category=Apparel%20%26%20Promo">Branded Lanyards</a></li>
-                  <li class="view-all"><a href="products.html?category=Apparel%20%26%20Promo">All Apparel &amp; Promo <i class="fa fa-angle-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Dropdown 6: Featured Collections -->
-        <div class="up-nav-dropdown-wrapper">
-          <a class="up-nav-item" href="products.html?category=Featured%20Collections">Featured Collections</a>
-          <div class="up-mega-dropdown">
-            <div class="up-mega-content">
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://images.unsplash.com/photo-1528048929606-66942bfedecb?auto=format&fit=crop&w=1400&q=80" alt="Seasonal Autumn Warmth" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Cozy Up Your Brand</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Fall Seasonal Essentials <span class="up-badge-bestseller">Featured</span></a></li>
-                  <li><a href="products.html">Kraft &amp; Textured Packaging</a></li>
-                  <li><a href="products.html">Warm Autumn Merch</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://staticecp.uprinting.com/16842/UP_Business_Card_Raised_Gallery_Image.png" alt="Luxury Print" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Luxury Finishes</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Raised Metallic Foil <span class="up-badge-bestseller">Best Seller</span></a></li>
-                  <li><a href="products.html">Soft-Touch Velvet Cards</a></li>
-                  <li><a href="products.html">Spot UV Elements</a></li>
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://staticecp.uprinting.com/11472/Custom Product Builder.svg" alt="Builder" loading="lazy" style="object-fit:contain; padding:20px;">
-                </a>
-                <h4 class="up-mega-col-title">Custom Product Builder</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Configure Any Size &amp; Shape</a></li>
-                  <li><a href="templates.html">Artwork Templates &amp; Free Proof</a></li>
-                  
-                </ul>
-              </div>
-              <div class="up-mega-col">
-                <a class="up-mega-img-link" href="products.html">
-                  <img src="https://staticecp.uprinting.com/15075/UP_pantone-of-the-year_postcard.png" alt="Event Marketing" loading="lazy">
-                </a>
-                <h4 class="up-mega-col-title">Tradeshow &amp; Events</h4>
-                <ul class="up-mega-list">
-                  <li><a href="products.html">Booth Display Banners</a></li>
-                  <li><a href="products.html">Handout Flyers &amp; Folders</a></li>
-                  <li><a href="products.html">Custom Event Badges</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </nav>
-    </div>
-  </header>
+<!-- Mobile Clean Drawer Menu -->
+<div class="ap-mobile-drawer" id="apMobileDrawer">
+  <ul class="ap-mobile-drawer-links">
+    <li><a href="products.html"><span>Shop All Products</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="apparel.html"><span>Apparel &amp; Uniforms</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="cards-flyers.html"><span>Cards &amp; Flyers</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="boxes-packaging.html"><span>Custom Packaging</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="stickers-labels.html"><span>Stickers &amp; Labels</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="about.html"><span>About Us</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="contact.html"><span>Contact Workshop</span> <span class="chevron">&gt;</span></a></li>
+  </ul>
+  <div class="ap-mobile-drawer-footer">
+    <a href="cart.html"><i class="fa fa-shopping-bag"></i> View Quote Basket (<span data-cart-count>0</span>)</a>
+    <a href="tel:+255710217583"><i class="fa fa-phone"></i> +255 710 217 583</a>
+  </div>
+</div>
 
   <!-- ==========================================
        PAGE HERO
@@ -447,7 +105,7 @@
     <div class="up-section-container">
       <div class="ff-page-hero-content">
         <div class="ff-breadcrumb"><a href="index.html">Home</a> &rsaquo; Blog</div>
-        <span class="ff-page-badge">Blog &amp; Printing Guides</span>
+
         <h1 class="ff-page-title">Forward Force Blog: <span class="hero-highlight">Printing</span> &amp; <span class="hero-highlight">Branding</span> Guides</h1>
         <p class="ff-page-lead">Practical advice from our production team to help you choose the right products, prepare artwork and get better results from your printing and branding.</p>
         <a class="up-shop-now-btn" href="products.html" style="margin-top:24px;">BROWSE PRODUCTS</a>
@@ -483,7 +141,7 @@
       <article class="ff-article" id="print-ready-artwork"><span class="ff-article-tag">Artwork</span><h2>How to prepare print-ready artwork in 6 steps</h2>
 <p>The most common cause of printing delays is artwork that is not ready for print. Follow these steps before you send your file.</p>
 <ul><li><strong>Set the correct size</strong> and add 3 mm bleed on every side.</li><li><strong>Keep important content</strong> 3-5 mm inside the trim line.</li><li><strong>Use 300 dpi images</strong> at the final print size.</li><li><strong>Convert to CMYK</strong> to avoid colour shifts between screen and print.</li><li><strong>Outline or embed fonts</strong> so text prints exactly as designed.</li><li><strong>Export as PDF</strong> (or send AI/EPS/SVG) with crop marks if possible.</li></ul>
-<p>See the full size chart on our <a href="templates.html">templates page</a>, or request a template file for your product. Not sure? Send us your file and we will check it before printing.</p>
+<p>See the full size chart on our <a href="products.html">templates page</a>, or request a template file for your product. Not sure? Send us your file and we will check it before printing.</p>
 <p style="margin-top:18px;"><a class="ff-back-top" href="#guides">&uarr; Back to all guides</a></p></article>
       <article class="ff-article" id="branded-uniforms"><span class="ff-article-tag">Corporate Branding</span><h2>Planning branded staff uniforms: a simple checklist</h2>
 <p>Well-branded uniforms make your team easy to recognise and present a consistent image to customers. Before you order, work through this checklist.</p>
@@ -500,12 +158,12 @@
 <p>Tall, eye-catching and visible from a distance, flags are excellent for roadside promotions, launches and outdoor activations.</p>
 <h3>Design tips</h3>
 <ul><li>Keep the message short: a logo, one headline and a contact detail.</li><li>Use large, bold text that can be read from several metres away.</li><li>Use high contrast between text and background.</li></ul>
-<p>Browse our <a href="products.html?category=Signs%20%26%20Banners">signs &amp; banners</a> or ask us for advice.</p>
+<p>Browse our <a href="signs-banners.html">signs &amp; banners</a> or ask us for advice.</p>
 <p style="margin-top:18px;"><a class="ff-back-top" href="#guides">&uarr; Back to all guides</a></p></article>
       <article class="ff-article" id="business-card-finishes"><span class="ff-article-tag">Marketing Materials</span><h2>Make your business cards stand out</h2>
 <p>A business card is often the first physical item a client receives from you. Small upgrades make a big difference.</p>
 <ul><li><strong>Thicker stock:</strong> a heavier card (around 350gsm) feels more professional.</li><li><strong>Matte or gloss:</strong> matte looks elegant and is easy to write on; gloss makes colours pop.</li><li><strong>Soft-touch lamination:</strong> a velvety finish that people remember.</li><li><strong>Foil accents:</strong> gold or silver foil on your logo adds a premium touch.</li><li><strong>Rounded corners or square cards:</strong> a different shape helps you stand out from the pile.</li></ul>
-<p>Want to feel the difference? <a href="contact.html">ask about business card samples</a> or view our <a href="products.html?category=Marketing%20Materials">marketing materials</a>.</p>
+<p>Want to feel the difference? <a href="contact.html">ask about business card samples</a> or view our <a href="cards-flyers.html">marketing materials</a>.</p>
 <p style="margin-top:18px;"><a class="ff-back-top" href="#guides">&uarr; Back to all guides</a></p></article>
     </div>
   </section>
@@ -528,54 +186,63 @@
   <!-- ==========================================
        SECTION: NEWSLETTER SUBSCRIBE
        ========================================== -->
-  <section class="up-newsletter-section">
-    <div class="up-newsletter-inner">
-      <h4>Don't Miss Out</h4>
-      <p>Get the latest product updates, exciting promotions, and exclusive discounts in your inbox.</p>
-      <form class="up-newsletter-form" data-ff-form="newsletter">
-        <input class="ff-hp" name="_honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true"/>
-        <input aria-label="Newsletter email" name="email" placeholder="Enter your email" required="" type="email"/>
-        <button type="submit">SUBSCRIBE</button>
-      </form>
-    </div>
-  </section>
+<!-- EXACT ORIGINAL CLEAN FOOTER -->
+<footer class="global-footer-container">
+  <div class="footer-contents-container">
+    <ul class="links-container">
+      <li><a href="faq.html">Help &amp; FAQs</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="resellers.html">Resellers</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
 
-  <!-- ==========================================
-       GLOBAL FOOTER (Official Forward Force Layout)
-       ========================================== -->
-    <footer class="global-footer-container">
-    <div class="footer-contents-container">
-      <ul class="links-container">
-        <li><a href="faq.html">Help &amp; FAQs</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="resellers.html">Resellers</a></li>
-        <li><a href="templates.html">Templates</a></li>
-        
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
+    <ul class="social-container">
+      <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
 
-      <ul class="social-container">
-        <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-        <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
-      </ul>
-
-      <ul class="legal-container">
-        <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
-      </ul>
-    </div>
-  </footer>
-
-</div>
+    <ul class="legal-container">
+      <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
+    </ul>
+  </div>
+</footer>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/forward-force-store.js"></script>
 <script src="assets/js/ff-forms.js"></script>
-  <script src="assets/js/mobile-nav.js"></script>
+<script>
+  // Clean Mobile Drawer Toggle
+  (function() {
+    var toggle = document.getElementById('apMenuBtn');
+    var drawer = document.getElementById('apMobileDrawer');
+    if (!toggle || !drawer) return;
+
+    toggle.addEventListener('click', function() {
+      var isOpen = drawer.classList.contains('active');
+      if (isOpen) {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        drawer.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    // Close on any link click
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  })();
+</script>
 </body>
 </html>

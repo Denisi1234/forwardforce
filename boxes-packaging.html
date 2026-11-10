@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Custom Boxes & Packaging | Forward Force Co. Ltd</title>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="Order custom mailer boxes, stand-up pouches, printed tissue paper, and branded packing tape in Dar es Salaam." name="description"/>
+<meta property="og:title" content="Custom Boxes & Packaging | Forward Force Co. Ltd"/>
+<meta property="og:description" content="Order custom mailer boxes, stand-up pouches, printed tissue paper, and branded packing tape in Dar es Salaam."/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Forward Force Co. Ltd"/>
+<meta property="og:locale" content="en_TZ"/>
+<!-- Favicon -->
+<link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="assets/css/ff-header-footer.css"/>
+<meta name="author" content="Forward Force Co. Ltd"/>
+<style>
+  :root {
+    --ap-bg: #fbfbfd;
+    --ap-wash: #f5f5f7;
+    --ap-ink: #1d1d1f;
+    --ap-subtext: #86868b;
+    --ap-link: #0071e3;
+    --ap-link-hover: #0077ed;
+    --ap-border: rgba(0, 0, 0, 0.08);
+    --ap-card-border: rgba(0, 0, 0, 0.06);
+    --font-apple: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    background-color: var(--ap-bg);
+    color: var(--ap-ink);
+    font-family: var(--font-apple);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Sticky Clean Category Navigation Bar */
+  .ap-category-strip {
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid var(--ap-border);
+    position: sticky;
+    top: 76px;
+    z-index: 100;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+  }
+  .ap-category-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    height: 56px;
+  }
+  .ap-category-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .ap-cat-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 16px;
+    border-radius: 980px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--ap-ink);
+    text-decoration: none;
+    white-space: nowrap;
+    opacity: 0.75;
+    transition: all 0.15s ease;
+  }
+  .ap-cat-pill:hover {
+    opacity: 1;
+    background: var(--ap-wash);
+    color: var(--ap-ink);
+  }
+  .ap-cat-pill[aria-current="page"] {
+    opacity: 1;
+    background: var(--ap-ink);
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  /* Page Intro Header (Clean & Bannerless) */
+  .ap-page-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 44px 24px 20px;
+    text-align: center;
+  }
+  .ap-page-intro-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ap-link);
+    margin-bottom: 8px;
+  }
+  .ap-page-intro h1 {
+    font-size: clamp(34px, 4.4vw, 50px);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+    color: var(--ap-ink);
+    margin: 0 0 10px;
+  }
+  .ap-page-intro p {
+    font-size: clamp(16px, 1.8vw, 19px);
+    color: var(--ap-subtext);
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.4;
+  }
+
+  /* Clean Product Grid Section */
+  .ap-store-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 44px 24px 72px;
+  }
+  .ap-section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--ap-border);
+  }
+  .ap-section-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ap-ink);
+    margin: 0;
+  }
+  .ap-product-count {
+    font-size: 13.5px;
+    color: var(--ap-subtext);
+    font-weight: 400;
+  }
+
+  .ap-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+  }
+
+  /* Clean Product Tile (Well-Presented, Borderless floating card) */
+  .ap-product-tile {
+    background: #ffffff;
+    border: 1px solid var(--ap-card-border);
+    border-radius: 18px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+  }
+  .ap-product-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.05);
+  }
+  
+  .ap-tile-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 230px;
+    margin-bottom: 20px;
+  }
+  .ap-tile-media a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+  .ap-tile-media img {
+    max-width: 100%;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.06));
+    transition: transform 0.3s ease;
+  }
+  .ap-product-tile:hover .ap-tile-media img {
+    transform: scale(1.035);
+  }
+
+  .ap-tile-header {
+    margin-bottom: 22px;
+  }
+  .ap-tile-cat {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ap-subtext);
+    margin-bottom: 6px;
+  }
+  .ap-tile-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    color: var(--ap-ink);
+    margin: 0 0 8px;
+  }
+  .ap-tile-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+  }
+  .ap-tile-title a:hover {
+    color: var(--ap-link);
+  }
+  .ap-tile-desc {
+    font-size: 13.5px;
+    color: var(--ap-subtext);
+    line-height: 1.4;
+    margin: 0 auto 12px;
+    max-width: 310px;
+  }
+  .ap-tile-price {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ap-ink);
+    letter-spacing: -0.01em;
+  }
+
+  /* Shop Buttons (High-End Apple Action Buttons) */
+  .ap-tile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: auto;
+  }
+  .ap-btn-shop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 980px;
+    background: var(--ap-link);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .ap-btn-shop:hover {
+    background: var(--ap-link-hover);
+    color: #ffffff;
+  }
+  .ap-btn-quote {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    padding: 0 18px;
+    border-radius: 980px;
+    background: transparent;
+    color: var(--ap-ink);
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    font-size: 13.5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .ap-btn-quote:hover {
+    background: var(--ap-wash);
+    border-color: rgba(0, 0, 0, 0.24);
+    color: var(--ap-ink);
+  }
+
+  .ap-custom-project {
+    background: var(--ap-wash);
+    padding: 56px 24px;
+    text-align: center;
+    border-top: 1px solid var(--ap-border);
+  }
+  .ap-custom-project h3 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--ap-ink);
+    margin: 0 0 8px;
+  }
+  .ap-custom-project p {
+    font-size: 15px;
+    color: var(--ap-subtext);
+    max-width: 520px;
+    margin: 0 auto 20px;
+    line-height: 1.45;
+  }
+  .ap-btn-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ap-ink);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 980px;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .ap-btn-pill:hover {
+    background: #333336;
+    color: #ffffff;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 980px) {
+    .ap-product-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px 20px;
+    }
+  }
+  @media (max-width: 640px) {
+    .ap-page-intro {
+      padding: 30px 16px 10px;
+    }
+    .ap-category-nav {
+      justify-content: flex-start;
+      padding: 0 16px;
+      height: 50px;
+    }
+    .ap-product-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .ap-product-tile {
+      padding: 22px 18px;
+    }
+    .ap-tile-media {
+      min-height: 190px;
+    }
+    .ap-tile-media img {
+      max-height: 180px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Apple Sticky Header (76px Pro Height & Doubled Logo) -->
+<header class="ap-nav">
+  <div class="ap-nav-inner">
+    <a class="ap-nav-brand" href="index.html">
+      <img src="assets/logo_forward_force/forward_force_logo.webp" alt="Forward Force" width="64" height="64"/>
+      <span>Forward Force</span>
+    </a>
+    <nav aria-label="Global">
+      <ul class="ap-nav-menu">
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="apparel.html">Apparel</a></li>
+        <li><a href="cards-flyers.html">Cards &amp; Flyers</a></li>
+        <li><a href="boxes-packaging.html" aria-current="page">Packaging</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="ap-nav-right">
+      <a class="ap-nav-cart" href="cart.html">
+        <i class="fa fa-shopping-bag"></i>
+        <span class="cart-label">Quote Basket</span> (<b data-cart-count>0</b>)
+      </a>
+      <button class="ap-menu-toggle" id="apMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Clean Drawer Menu -->
+<div class="ap-mobile-drawer" id="apMobileDrawer">
+  <ul class="ap-mobile-drawer-links">
+    <li><a href="products.html"><span>Shop All Products</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="apparel.html"><span>Apparel &amp; Uniforms</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="cards-flyers.html"><span>Cards &amp; Flyers</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="boxes-packaging.html"><span>Custom Packaging</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="stickers-labels.html"><span>Stickers &amp; Labels</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="signs-banners.html"><span>Signs &amp; Banners</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="about.html"><span>About Us</span> <span class="chevron">&gt;</span></a></li>
+    <li><a href="contact.html"><span>Contact Workshop</span> <span class="chevron">&gt;</span></a></li>
+  </ul>
+  <div class="ap-mobile-drawer-footer">
+    <a href="cart.html"><i class="fa fa-shopping-bag"></i> View Quote Basket (<span data-cart-count>0</span>)</a>
+    <a href="tel:+255710217583"><i class="fa fa-phone"></i> +255 710 217 583</a>
+  </div>
+</div>
+
+<main>
+    <!-- Sticky Clean Category Pills Navigation -->
+  <nav class="ap-category-strip" aria-label="Product categories">
+    <div class="ap-category-nav">
+      <a class="ap-cat-pill" href="products.html">All Products</a>
+      <a class="ap-cat-pill" href="boxes-packaging.html" aria-current="page">Boxes &amp; Packaging</a>
+      <a class="ap-cat-pill" href="apparel.html">Apparel</a>
+      <a class="ap-cat-pill" href="cards-flyers.html">Cards &amp; Flyers</a>
+      <a class="ap-cat-pill" href="stickers-labels.html">Stickers &amp; Labels</a>
+      <a class="ap-cat-pill" href="signs-banners.html">Signs &amp; Banners</a>
+    </div>
+  </nav>
+
+<section class="ap-store-section" id="catalog">
+    <div class="ap-section-header">
+      <h2>Boxes & Packaging</h2>
+      <span class="ap-product-count">4 products</span>
+    </div>
+
+    <div class="ap-product-grid" id="ffProductsGrid">
+      <article class="ap-product-tile" data-category="Boxes & Packaging" data-product-id="mailer-box">
+        <div class="ap-tile-media">
+          <a href="product-details.html?item=mailer-box" aria-label="Custom Mailer Boxes">
+            <img src="assets/images/products/custom-mailer-boxes-clean.png" alt="Custom Mailer Boxes" width="380" height="260" loading="lazy"/>
+          </a>
+        </div>
+        <div class="ap-tile-header">
+          <span class="ap-tile-cat">Boxes & Packaging</span>
+          <h3 class="ap-tile-title"><a href="product-details.html?item=mailer-box">Custom Mailer Boxes</a></h3>
+          <p class="ap-tile-desc">Heavy-duty corrugated cardboard shipping boxes with vibrant custom exterior printing.</p>
+          <div class="ap-tile-price">From TZS 80,000 / 25 pk</div>
+        </div>
+        <div class="ap-tile-actions">
+          <a class="ap-btn-shop" href="product-details.html?item=mailer-box">Shop</a>
+        </div>
+      </article>
+
+      <article class="ap-product-tile" data-category="Boxes & Packaging" data-product-id="standup-pouches">
+        <div class="ap-tile-media">
+          <a href="product-details.html?item=standup-pouches" aria-label="Custom Stand-Up Pouches">
+            <img src="assets/images/pouch-packaging-clean.png" alt="Custom Stand-Up Pouches" width="380" height="260" loading="lazy"/>
+          </a>
+        </div>
+        <div class="ap-tile-header">
+          <span class="ap-tile-cat">Boxes & Packaging</span>
+          <h3 class="ap-tile-title"><a href="product-details.html?item=standup-pouches">Custom Stand-Up Pouches</a></h3>
+          <p class="ap-tile-desc">Resealable ziplock barrier pouches for coffee, dry goods, and retail consumer products.</p>
+          <div class="ap-tile-price">From TZS 70,000 / 100 pk</div>
+        </div>
+        <div class="ap-tile-actions">
+          <a class="ap-btn-shop" href="product-details.html?item=standup-pouches">Shop</a>
+        </div>
+      </article>
+
+      <article class="ap-product-tile" data-category="Boxes & Packaging" data-product-id="tissue-paper">
+        <div class="ap-tile-media">
+          <a href="product-details.html?item=tissue-paper" aria-label="Custom Printed Tissue Paper">
+            <img src="assets/images/tissue-paper-clean.png" alt="Custom Printed Tissue Paper" width="380" height="260" loading="lazy"/>
+          </a>
+        </div>
+        <div class="ap-tile-header">
+          <span class="ap-tile-cat">Boxes & Packaging</span>
+          <h3 class="ap-tile-title"><a href="product-details.html?item=tissue-paper">Custom Printed Tissue Paper</a></h3>
+          <p class="ap-tile-desc">Premium unboxing experience with all-over repeat logo pattern on soft tissue.</p>
+          <div class="ap-tile-price">From TZS 65,000 / 500 sheets</div>
+        </div>
+        <div class="ap-tile-actions">
+          <a class="ap-btn-shop" href="product-details.html?item=tissue-paper">Shop</a>
+        </div>
+      </article>
+
+      <article class="ap-product-tile" data-category="Boxes & Packaging" data-product-id="custom-tape">
+        <div class="ap-tile-media">
+          <a href="product-details.html?item=custom-tape" aria-label="Branded Packing Tape">
+            <img src="assets/images/custom-tape-clean.png" alt="Branded Packing Tape" width="380" height="260" loading="lazy"/>
+          </a>
+        </div>
+        <div class="ap-tile-header">
+          <span class="ap-tile-cat">Boxes & Packaging</span>
+          <h3 class="ap-tile-title"><a href="product-details.html?item=custom-tape">Branded Packing Tape</a></h3>
+          <p class="ap-tile-desc">Reinforced water-activated or heavy-duty self-adhesive branded sealing tape.</p>
+          <div class="ap-tile-price">From TZS 25,000 / roll</div>
+        </div>
+        <div class="ap-tile-actions">
+          <a class="ap-btn-shop" href="product-details.html?item=custom-tape">Shop</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="ap-custom-project">
+    <h3>Have a custom boxes & packaging requirement?</h3>
+    <p>Send your artwork dimensions, quantities, and material specifications. Our team will review your project and prepare a direct quote.</p>
+    <a class="ap-btn-pill" href="contact.html">Request a Custom Quote</a>
+  </section>
+</main>
+
+<!-- EXACT ORIGINAL CLEAN FOOTER -->
+<footer class="global-footer-container">
+  <div class="footer-contents-container">
+    <ul class="links-container">
+      <li><a href="faq.html">Help &amp; FAQs</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="resellers.html">Resellers</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+    <ul class="social-container">
+      <li><a aria-label="Facebook" href="https://www.facebook.com" rel="noopener" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a aria-label="Twitter" href="https://twitter.com" rel="noopener" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a aria-label="Instagram" href="https://instagram.com" rel="noopener" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      <li><a aria-label="LinkedIn" href="https://www.linkedin.com" rel="noopener" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a aria-label="YouTube" href="https://www.youtube.com" rel="noopener" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+
+    <ul class="legal-container">
+      <li class="copyright">&copy; 2026 Forward Force Co. Ltd. All rights reserved.</li>
+    </ul>
+  </div>
+</footer>
+
+<script src="assets/js/forward-force-store.js" defer></script>
+<script>
+  // Clean Mobile Drawer Toggle
+  (function() {
+    var toggle = document.getElementById('apMenuBtn');
+    var drawer = document.getElementById('apMobileDrawer');
+    if (!toggle || !drawer) return;
+
+    toggle.addEventListener('click', function() {
+      var isOpen = drawer.classList.contains('active');
+      if (isOpen) {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      } else {
+        drawer.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    // Close on any link click
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('active');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  })();
+</script>
+</body>
+</html>

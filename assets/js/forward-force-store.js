@@ -10,7 +10,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Premium 350gsm matte or gloss coated cards with crisp double-sided printing.",
-      image: "https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900",
+      image: "assets/images/business-cards-clean.png",
       imageAlt: "Standard Business Cards"
     },
     {
@@ -21,7 +21,7 @@
       priceTzs: 35000,
       baseQty: 1,
       description: "Modern 2.5\" x 2.5\" square cards on extra-thick cardstock.",
-      image: "https://staticecp.uprinting.com/98/600x600/Square_Business_Cards_Marketing_Material_A.jpg",
+      image: "assets/images/business-cards-clean.png",
       imageAlt: "Square Business Cards"
     },
     {
@@ -32,7 +32,7 @@
       priceTzs: 38000,
       baseQty: 1,
       description: "Smooth rounded corners that resist creasing with soft-touch protective finish.",
-      image: "https://staticecp.uprinting.com/119/350x350/Rounded_Corner_Business_Cards_Marketing_Material_A.jpg",
+      image: "assets/images/business-cards-clean.png",
       imageAlt: "Rounded Corner Business Cards"
     },
     {
@@ -43,7 +43,7 @@
       priceTzs: 50000,
       baseQty: 1,
       description: "Shimmering metallic gold or silver foil stamping with velvety soft-touch lamination.",
-      image: "https://staticecp.uprinting.com/121/300x300/Foil_Business_Cards_Marketing_Material_A.jpg",
+      image: "assets/images/business-cards-clean.png",
       imageAlt: "Gold Foil Business Cards"
     },
     {
@@ -54,7 +54,7 @@
       priceTzs: 40000,
       baseQty: 1,
       description: "Vibrant full-color A5 or A4 flyers on 150gsm gloss art paper.",
-      image: "https://staticecp.uprinting.com/19240/250x250/UP_Flyers_PLA_Image_1.jpg",
+      image: "assets/images/menu-flyers-clean.png",
       imageAlt: "Flyers"
     },
     {
@@ -65,7 +65,7 @@
       priceTzs: 55000,
       baseQty: 1,
       description: "Professional tri-fold or bi-fold corporate brochures with precision machine creasing.",
-      image: "https://staticecp.uprinting.com/19242/250x250/UP_Booklets_PLA_Image_1.jpg",
+      image: "assets/images/menu-booklets-clean.png",
       imageAlt: "Brochures"
     },
     {
@@ -76,7 +76,7 @@
       priceTzs: 95000,
       baseQty: 1,
       description: "Saddle-stitched multi-page company profiles and product catalogs.",
-      image: "https://staticecp.uprinting.com/19242/250x250/UP_Booklets_PLA_Image_1.jpg",
+      image: "assets/images/menu-booklets-clean.png",
       imageAlt: "Booklets"
     },
     {
@@ -87,7 +87,7 @@
       priceTzs: 45000,
       baseQty: 1,
       description: "Custom 50-sheet corporate notepads with hard backing and your logo on every sheet.",
-      image: "https://staticecp.uprinting.com/19246/250x250/UP_Notepad_PLA_Image_1.jpg",
+      image: "assets/images/menu-postcards.jpg",
       imageAlt: "Notepads"
     },
     {
@@ -98,7 +98,7 @@
       priceTzs: 25000,
       baseQty: 1,
       description: "Waterproof, UV-resistant custom shape die-cut stickers for branding.",
-      image: "https://staticecp.uprinting.com/6991/250x250/UP_Square_Stickers_PDP_Image_A.jpg",
+      image: "assets/images/custom-stickers-clean.png",
       imageAlt: "Die Cut Stickers"
     },
     {
@@ -120,7 +120,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Eco-friendly textured rustic brown kraft stickers with strong adhesive.",
-      image: "assets/logo_forward_force/kraftsticker.jpeg",
+      image: "assets/images/products/kraft-paper-labels-clean.png",
       imageAlt: "Kraft Stickers"
     },
     {
@@ -131,7 +131,7 @@
       priceTzs: 40000,
       baseQty: 1,
       description: "Eye-catching metallic chrome and holographic sticker finishes.",
-      image: "https://staticecp.uprinting.com/19247/250x250/UP_Metallic_Stickers_PLA_Image_2.jpg",
+      image: "assets/images/coaster-sticker.jpg",
       imageAlt: "Metallic Stickers"
     },
     {
@@ -142,7 +142,7 @@
       priceTzs: 80000,
       baseQty: 1,
       description: "Heavy-duty corrugated cardboard shipping boxes with vibrant custom exterior printing.",
-      image: "assets/logo_forward_force/mailboxes.jpeg",
+      image: "assets/images/products/custom-mailer-boxes-clean.png",
       imageAlt: "Custom Mailer Boxes"
     },
     {
@@ -153,7 +153,7 @@
       priceTzs: 70000,
       baseQty: 1,
       description: "Resealable ziplock barrier pouches for coffee, dry foods, and consumer products.",
-      image: "https://staticecp.uprinting.com/16760/250x250/UP%20Home%20Page%20Prod%20Images%20April%20-%20Pouches.jpg",
+      image: "assets/images/pouch-packaging-clean.png",
       imageAlt: "Stand-Up Pouches"
     },
     {
@@ -164,7 +164,7 @@
       priceTzs: 65000,
       baseQty: 1,
       description: "Premium unboxing experience with all-over repeat logo pattern on soft tissue.",
-      image: "https://staticecp.uprinting.com/19244/250x250/UP_Tissue_Paper_PLA_Image_1.jpg",
+      image: "assets/images/tissue-paper-clean.png",
       imageAlt: "Tissue Paper"
     },
     {
@@ -175,7 +175,7 @@
       priceTzs: 25000,
       baseQty: 1,
       description: "Reinforced water-activated or heavy-duty self-adhesive branded sealing tape.",
-      image: "https://staticecp.uprinting.com/6458/250x250/Poly_Packing_Tape_Updated.jpg",
+      image: "assets/images/custom-tape-clean.png",
       imageAlt: "Custom Packing Tape"
     },
     {
@@ -186,7 +186,7 @@
       priceTzs: 50000,
       baseQty: 1,
       description: "Durable 510gsm weatherproof PVC banner with reinforced brass eyelets.",
-      image: "https://staticecp.uprinting.com/19248/250x250/UP_Vinyl_Banner_PLA_Image_1.jpg",
+      image: "assets/images/dm-banner.jpg",
       imageAlt: "Vinyl Banners"
     },
     {
@@ -197,7 +197,7 @@
       priceTzs: 90000,
       baseQty: 1,
       description: "Retractable 85x200cm aluminium stand with carrying bag and full-color banner.",
-      image: "https://staticecp.uprinting.com/19248/250x250/UP_Vinyl_Banner_PLA_Image_1.jpg",
+      image: "assets/images/dm-banner.jpg",
       imageAlt: "Roll-Up Banner"
     },
     {
@@ -208,7 +208,7 @@
       priceTzs: 60000,
       baseQty: 1,
       description: "Weatherproof 4mm fluted plastic signs with metal H-stakes for outdoor display.",
-      image: "assets/logo_forward_force/yard%20sign.jpeg",
+      image: "assets/images/products/yard-signs-clean.png",
       imageAlt: "Yard Signs"
     },
     {
@@ -219,7 +219,7 @@
       priceTzs: 120000,
       baseQty: 1,
       description: "Double-sided dye-sublimation feather flag complete with fiberglass pole and ground cross-base.",
-      image: "https://staticecp.uprinting.com/19251/250x250/UP_Window_Decals_PLA_Image_1.jpg",
+      image: "assets/images/dm-banner.jpg",
       imageAlt: "Teardrop Flag"
     },
     {
@@ -230,7 +230,7 @@
       priceTzs: 45000,
       baseQty: 1,
       description: "Plush 320gsm cotton-poly fleece hoodie with premium DTF print or embroidery.",
-      image: "https://staticecp.uprinting.com/19238/250x250/UP_Hoodie_PLA_Image_1.jpg",
+      image: "assets/images/custom-hoodie-clean.png",
       imageAlt: "Custom Fleece Hoodie"
     },
     {
@@ -241,7 +241,7 @@
       priceTzs: 20000,
       baseQty: 1,
       description: "100% combed cotton 180gsm t-shirt with vibrant high-density direct-to-film print.",
-      image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/images/ff-dtf-tshirts-clean.png",
       imageAlt: "Branded DTF T-Shirt"
     },
     {
@@ -252,7 +252,7 @@
       priceTzs: 30000,
       baseQty: 1,
       description: "Classic corporate 220gsm polo shirt with high-stitch-count chest embroidery.",
-      image: "https://assets.pens.com/image/upload/products/prd-va7p9gemd/055bbe3373f94574a87a762fc90fbc5e",
+      image: "assets/images/ff-polo-shirts-clean.png",
       imageAlt: "Embroidered Polo Shirt"
     },
     {
@@ -263,7 +263,7 @@
       priceTzs: 18000,
       baseQty: 1,
       description: "Structured 6-panel twill cap with 3D puff embroidery and adjustable closure.",
-      image: "https://images.unsplash.com/photo-1622445275576-721325763afe?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/images/ff-embroidery-caps-clean.png",
       imageAlt: "Embroidered Caps"
     },
     {
@@ -274,7 +274,7 @@
       priceTzs: 12000,
       baseQty: 1,
       description: "Eco-friendly reusable 10oz canvas shopping tote with reinforced handles.",
-      image: "https://images.unsplash.com/photo-1572966059657-6e8910c8c3c0?auto=format&fit=crop&w=1200&q=80",
+      image: "assets/images/tote-bag-clean.png",
       imageAlt: "Canvas Tote Bag"
     },
     {
@@ -285,7 +285,7 @@
       priceTzs: 35000,
       baseQty: 1,
       description: "Self-standing die-cut table display cards for restaurants, cafes, and receptions.",
-      image: "https://staticecp.uprinting.com/19243/250x250/P_Table_Tent_PLA_Image_2.jpg",
+      image: "assets/images/menu-postcards.jpg",
       imageAlt: "Table Tents"
     }
   ];
@@ -327,6 +327,7 @@
     }, 0);
     document.querySelectorAll('[data-cart-count]').forEach(function (node) {
       node.textContent = String(total);
+      node.toggleAttribute('data-empty', total === 0);
     });
   }
 
@@ -350,7 +351,7 @@
       category: (details && details.category) || 'Custom Print',
       unitPrice: (details && details.price) || 15.00,
       priceTzs: (details && details.priceTzs) || 38000,
-      image: (details && details.image) || 'https://images.pexels.com/photos/10932011/pexels-photo-10932011.jpeg?auto=compress&cs=tinysrgb&w=900'
+      image: (details && details.image) || 'assets/images/business-cards-clean.png'
     };
 
     details = details || {};
@@ -524,7 +525,6 @@
       container.innerHTML = items.map(function (item) {
         var unitTzs = item.priceTzs || (item.unitPrice ? item.unitPrice * 2500 : 38000);
         var lineTzs = (unitTzs * item.quantity).toLocaleString();
-        var lineUsd = ((item.unitPrice || 15) * item.quantity).toFixed(2);
 
         return [
           '<tr class="up-cart-row">',
@@ -535,8 +535,8 @@
           '        <h4 class="up-cart-item-title">' + escapeHtml(item.title) + '</h4>',
           '        <span class="up-cart-item-cat">' + escapeHtml(item.category) + '</span>',
           '        <ul class="up-cart-item-specs">',
-          '          <li><b>Finish/Option:</b> ' + escapeHtml(item.size || 'Standard') + '</li>',
-          '          <li><b>Specification:</b> ' + escapeHtml(item.paper || 'Premium Quality') + '</li>',
+          '          <li><b>Size / Specification:</b> ' + escapeHtml(item.size || 'Standard') + '</li>',
+          '          <li><b>Finish / Stock:</b> ' + escapeHtml(item.paper || 'Premium Quality') + '</li>',
           '          <li><b>Proofing:</b> Free PDF Proof via WhatsApp</li>',
           '        </ul>',
           '        <button class="up-remove-link" data-remove-key="' + escapeHtml(item.key) + '" type="button">',
@@ -548,14 +548,13 @@
           '  <td class="up-cart-col-qty">',
           '    <div class="up-qty-control">',
           '      <button class="up-qty-btn up-qty-minus" data-key="' + escapeHtml(item.key) + '">-</button>',
-          '      <input class="up-qty-input" type="number" min="1" step="1" value="' + item.quantity + '" data-input-key="' + escapeHtml(item.key) + '">',
+          '      <input class="up-qty-input" aria-label="Quantity for ' + escapeHtml(item.title) + '" type="number" min="1" step="1" value="' + item.quantity + '" data-input-key="' + escapeHtml(item.key) + '">',
           '      <button class="up-qty-btn up-qty-plus" data-key="' + escapeHtml(item.key) + '">+</button>',
           '    </div>',
-          '    <span class="up-unit-price">TZS ' + unitTzs.toLocaleString() + ' ($' + (item.unitPrice || 15).toFixed(2) + ')</span>',
+          '    <span class="up-unit-price">TZS ' + unitTzs.toLocaleString() + '</span>',
           '  </td>',
           '  <td class="up-cart-col-total">',
-          '    <span class="up-row-price" style="font-weight:700; color:#186f3b;">TZS ' + lineTzs + '</span>',
-          '    <div style="font-size:12px; color:#777;">$' + lineUsd + '</div>',
+          '    <span class="up-row-price">TZS ' + lineTzs + '</span>',
           '  </td>',
           '</tr>'
         ].join('\n');
@@ -570,15 +569,15 @@
       var taxEl = document.getElementById('up-tax-val');
       var totalEl = document.getElementById('up-total-val');
 
-      if (subtotalEl) subtotalEl.textContent = 'TZS ' + fin.subtotalTzs.toLocaleString() + ' ($' + fin.subtotal.toFixed(2) + ')';
+      if (subtotalEl) subtotalEl.textContent = 'TZS ' + fin.subtotalTzs.toLocaleString();
       if (shippingEl) shippingEl.textContent = 'FREE (Within Dar)';
       if (taxEl) taxEl.textContent = 'Included';
-      if (totalEl) totalEl.textContent = 'TZS ' + fin.totalTzs.toLocaleString() + ' ($' + fin.total.toFixed(2) + ')';
+      if (totalEl) totalEl.textContent = 'TZS ' + fin.totalTzs.toLocaleString();
 
       if (discountRow) {
         if (fin.discount > 0) {
           discountRow.style.display = 'flex';
-          if (discountEl) discountEl.textContent = '-TZS ' + fin.discountTzs.toLocaleString() + ' (-$' + fin.discount.toFixed(2) + ')';
+          if (discountEl) discountEl.textContent = '-TZS ' + fin.discountTzs.toLocaleString();
         } else {
           discountRow.style.display = 'none';
         }
@@ -669,18 +668,20 @@
           render();
         } else {
           if (notice) {
-            notice.textContent = 'Invalid promo code. Try "FORWARD10".';
+            notice.textContent = 'This promo code is invalid.';
             notice.className = 'up-promo-error';
           }
         }
       });
     }
 
-    // Checkout Modal Simulation
+    // Prepare an itemized quote request for WhatsApp.
     var checkoutBtn = document.getElementById('up-checkout-btn');
     var modal = document.getElementById('up-checkout-modal');
     var closeModal = document.getElementById('up-close-modal');
     var checkoutForm = document.getElementById('up-checkout-form');
+    var quoteFields = document.getElementById('up-checkout-fields');
+    var confirmation = document.getElementById('up-order-confirmation');
 
     if (checkoutBtn && modal) {
       checkoutBtn.addEventListener('click', function () {
@@ -691,20 +692,22 @@
         }
         var fin = getCartFinancials(items, appliedPromo);
         var modalTotal = document.getElementById('up-modal-total');
-        if (modalTotal) modalTotal.textContent = 'TZS ' + fin.totalTzs.toLocaleString() + ' ($' + fin.total.toFixed(2) + ')';
-        modal.style.display = 'flex';
+        if (modalTotal) modalTotal.textContent = 'TZS ' + fin.totalTzs.toLocaleString();
+        quoteFields.style.display = '';
+        confirmation.style.display = 'none';
+        modal.showModal();
       });
     }
 
     if (closeModal && modal) {
       closeModal.addEventListener('click', function () {
-        modal.style.display = 'none';
+        modal.close();
       });
     }
 
     window.addEventListener('click', function (e) {
       if (e.target === modal) {
-        modal.style.display = 'none';
+        modal.close();
       }
     });
 
@@ -714,8 +717,8 @@
         var fd = new FormData(checkoutForm);
         var name = fd.get('fullname') || 'Customer';
         var phone = fd.get('phone') || '';
-        var address = fd.get('address') || '';
-        var city = fd.get('city') || 'Dar es Salaam';
+        var address = [fd.get('address'), fd.get('zip'), fd.get('city')].filter(Boolean).join(', ');
+        var email = fd.get('email');
         var orderId = 'FF-' + Math.floor(100000 + Math.random() * 900000);
 
         var items = readBasket();
@@ -723,23 +726,26 @@
 
         // Build itemized WhatsApp message
         var msgLines = [
-          '*NEW ORDER FROM FORWARD FORCE WEBSITE*',
-          'Order ID: ' + orderId,
+          '*QUOTE REQUEST FROM FORWARD FORCE WEBSITE*',
+          'Quote reference: ' + orderId,
           'Name: ' + name,
           'Phone: ' + phone,
-          'Delivery Address: ' + address + (city ? (', ' + city) : ''),
-          '',
-          '*ORDER ITEMS:*'
+          'Delivery address: ' + address
         ];
+
+        if (email) msgLines.push('Email: ' + email);
+        msgLines.push('', '*Requested products*');
 
         items.forEach(function (it, idx) {
           var unitTzs = it.priceTzs || (it.unitPrice ? it.unitPrice * 2500 : 38000);
           var lineTzs = (unitTzs * it.quantity).toLocaleString();
           msgLines.push((idx + 1) + '. ' + it.title + ' (Qty: ' + it.quantity + ') - TZS ' + lineTzs);
+          if (it.size) msgLines.push('   Size / specification: ' + it.size);
+          if (it.paper) msgLines.push('   Finish / stock: ' + it.paper);
         });
 
         msgLines.push('');
-        msgLines.push('*Total Amount:* TZS ' + fin.totalTzs.toLocaleString() + ' ($' + fin.total.toFixed(2) + ' USD)');
+        msgLines.push('*Estimated total:* TZS ' + fin.totalTzs.toLocaleString());
         if (appliedPromo) {
           msgLines.push('Promo Applied: ' + appliedPromo);
         }
@@ -748,23 +754,15 @@
 
         var waUrl = 'https://wa.me/255710217583?text=' + encodeURIComponent(msgLines.join('\n'));
 
-        // Clear cart
-        saveBasket([]);
-        localStorage.removeItem('upActivePromo');
-
-        // Show confirmation view
-        document.getElementById('up-checkout-fields').style.display = 'none';
-        var conf = document.getElementById('up-order-confirmation');
-        conf.style.display = 'block';
+        quoteFields.style.display = 'none';
+        confirmation.style.display = 'block';
         document.getElementById('up-conf-order-id').textContent = orderId;
         
         var waBtn = document.getElementById('up-wa-direct-btn');
         if (waBtn) {
           waBtn.href = waUrl;
+          waBtn.focus();
         }
-
-        // Open WhatsApp in new tab automatically
-        window.open(waUrl, '_blank');
       });
     }
   }
