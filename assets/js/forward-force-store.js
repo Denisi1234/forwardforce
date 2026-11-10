@@ -384,8 +384,28 @@
     return product;
   }
 
-  // Toast notification feedback
+  // Toast notification feedback (Apple Clean Dark Floating Pill)
+  function ensureToastStyles() {
+    if (document.getElementById('ff-toast-styles')) return;
+    var style = document.createElement('style');
+    style.id = 'ff-toast-styles';
+    style.textContent =
+      '.up-cart-toast{position:fixed;right:24px;bottom:24px;z-index:99999;display:flex;align-items:center;gap:14px;max-width:min(440px,calc(100vw - 32px));padding:14px 18px;background:rgba(29,29,31,0.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:#fff;border-radius:18px;box-shadow:0 14px 36px rgba(0,0,0,0.22);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;opacity:0;transform:translateY(16px) scale(0.97);transition:opacity .28s cubic-bezier(0.16,1,0.3,1),transform .28s cubic-bezier(0.16,1,0.3,1);pointer-events:auto;border:1px solid rgba(255,255,255,0.1)}' +
+      '.up-cart-toast.show{opacity:1;transform:translateY(0) scale(1)}' +
+      '.up-toast-icon{flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:#34c759;color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 2px 8px rgba(52,199,89,0.35)}' +
+      '.up-toast-body{flex:1;min-width:0}' +
+      '.up-toast-title{font-size:14.5px;font-weight:600;line-height:1.3;color:#ffffff;letter-spacing:-0.01em}' +
+      '.up-toast-sub{font-size:12.5px;line-height:1.35;color:rgba(255,255,255,0.72);margin-top:3px}' +
+      '.up-toast-view-cart{flex:0 0 auto;color:#fff;font-size:13px;font-weight:600;text-decoration:none;padding:7px 14px;border-radius:980px;background:#0071e3;white-space:nowrap;transition:background .15s ease}' +
+      '.up-toast-view-cart:hover{background:#0077ed;color:#fff;text-decoration:none}' +
+      '.up-toast-close{flex:0 0 auto;background:none;border:none;color:rgba(255,255,255,0.6);font-size:22px;line-height:1;cursor:pointer;padding:0 2px;margin-left:4px;transition:color .15s ease}' +
+      '.up-toast-close:hover{color:#fff}' +
+      '@media (max-width: 600px){.up-cart-toast{left:14px;right:14px;bottom:14px;max-width:none;gap:10px;padding:12px 14px;border-radius:14px}.up-toast-sub{display:none}.up-toast-title{font-size:13.5px}.up-toast-view-cart{padding:6px 10px;font-size:12px}}';
+    document.head.appendChild(style);
+  }
+
   function showToast(productTitle) {
+    ensureToastStyles();
     var existing = document.getElementById('up-active-toast');
     if (existing) {
       existing.remove();
@@ -397,8 +417,8 @@
     toast.innerHTML = 
       '<div class="up-toast-icon"><i class="fa fa-check"></i></div>' +
       '<div class="up-toast-body">' +
-        '<div class="up-toast-title">"' + escapeHtml(productTitle) + '" added to your cart!</div>' +
-        '<div class="up-toast-sub">Item is ready in your cart. Checkout completes on WhatsApp.</div>' +
+        '<div class="up-toast-title">Added to Quote Basket!</div>' +
+        '<div class="up-toast-sub">' + escapeHtml(productTitle) + ' is ready in your basket.</div>' +
       '</div>' +
       '<a href="cart.html" class="up-toast-view-cart">View Cart &rarr;</a>' +
       '<button type="button" class="up-toast-close" aria-label="Close">&times;</button>';
@@ -407,7 +427,7 @@
 
     setTimeout(function () {
       toast.classList.add('show');
-    }, 10);
+    }, 15);
 
     var closeBtn = toast.querySelector('.up-toast-close');
     if (closeBtn) {
@@ -424,7 +444,7 @@
           if (toast && toast.parentNode) toast.remove();
         }, 300);
       }
-    }, 3500);
+    }, 4000);
   }
 
   // Calculate pricing & totals
@@ -462,6 +482,7 @@
 
   // Expose to window for global access
   window.UPCart = {
+    showToast: showToast,
     readBasket: readBasket,
     saveBasket: saveBasket,
     addItem: addItem,

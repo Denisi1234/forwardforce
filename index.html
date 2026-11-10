@@ -326,39 +326,39 @@
   }
 
   /* ------------------------------------------
-     Apple Floating Transparent Bento Grid (No Heavy Card Boxes)
+     Apple Clean Bento Grid (Clean White Stage & Increased Width)
      ------------------------------------------ */
   .ap-bento-section {
-    max-width: 1240px;
-    margin: 0 auto 30px;
-    padding: 0 20px;
+    max-width: 1280px;
+    margin: 0 auto 40px;
+    padding: 0 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 32px;
+    gap: 36px 28px;
   }
   .ap-bento-card {
-    background: transparent;
-    padding: 24px 20px;
+    background: #ffffff;
+    padding: 36px 32px 28px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    min-height: 480px;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    min-height: 520px;
+    border-radius: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
   }
   .ap-bento-card:hover {
     transform: translateY(-4px);
-    box-shadow: none;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
   }
   .ap-bento-card.wash {
-    background: transparent;
+    background: #ffffff;
   }
   .ap-bento-header {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   .ap-bento-card h3 {
     font-size: clamp(26px, 2.6vw, 36px);
@@ -377,27 +377,28 @@
     margin: 0 auto 16px;
   }
 
-  /* Apple Clean Floating Product Stage */
+  /* Apple Clean Floating Product Stage (Increased Width & Height) */
   .ap-bento-media {
     margin-top: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 270px;
-    padding: 10px;
+    min-height: 330px;
+    padding: 16px;
   }
   .ap-bento-media img {
-    max-width: 100%;
-    max-height: 270px;
+    width: 100%;
+    max-width: 440px;
+    max-height: 330px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
-    filter: drop-shadow(0 16px 26px rgba(0, 0, 0, 0.07));
+    filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.06));
     transition: transform 0.35s ease;
   }
   .ap-bento-card:hover .ap-bento-media img {
-    transform: translateY(-4px) scale(1.025);
+    transform: translateY(-4px) scale(1.03);
   }
 
   /* ------------------------------------------
@@ -444,13 +445,13 @@
     .ap-cta-group { margin-bottom: 24px; gap: 12px; }
     .ap-billboard-stage { padding: 0 12px; }
     .ap-billboard-stage img { max-height: 380px; }
-    .ap-bento-section { grid-template-columns: 1fr; gap: 28px; padding: 0 16px; }
-    .ap-bento-card { min-height: 400px; padding: 20px 10px; border-bottom: 1px solid var(--ap-border); }
-    .ap-bento-card:last-child { border-bottom: none; }
+    .ap-bento-section { grid-template-columns: 1fr; gap: 24px; padding: 0 16px; }
+    .ap-bento-card { min-height: 440px; padding: 28px 18px 20px; border-radius: 20px; }
+    .ap-bento-card:last-child { border-bottom: 1px solid rgba(0,0,0,0.05); }
     .ap-bento-card h3 { font-size: 26px; }
     .ap-bento-card p { font-size: 14.5px; }
-    .ap-bento-media { min-height: 220px; }
-    .ap-bento-media img { max-height: 210px; }
+    .ap-bento-media { min-height: 250px; }
+    .ap-bento-media img { max-width: 100%; max-height: 250px; }
   }
 </style>
 </head>
@@ -518,10 +519,10 @@
     </div>
   </section>
 
-  <!-- APPLE BENTO SECTION (Seamless Transparent Assets on Apple Background) -->
+  <!-- APPLE BENTO SECTION (Clean White Background & Larger Showcase Images) -->
   <section class="ap-bento-section">
     <!-- Card 1: Custom Mailer Boxes -->
-    <article class="ap-bento-card wash">
+    <article class="ap-bento-card">
       <div class="ap-bento-header">
         <h3>Custom Mailer Boxes</h3>
         <p>Premium fluted cardboard with full-exterior edge-to-edge printing.</p>
@@ -531,11 +532,11 @@
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/products/custom-mailer-boxes.webp" alt="Custom mailer boxes" loading="lazy" decoding="async" width="800" height="600"/>
+        <img src="assets/images/products/custom-mailer-boxes-clean.png" alt="Custom mailer boxes" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
-    <!-- Card 2: Standard Business Cards (Clean Action Link, Price tag removed) -->
+    <!-- Card 2: Standard Business Cards -->
     <article class="ap-bento-card">
       <div class="ap-bento-header">
         <h3>Standard Business Cards</h3>
@@ -546,7 +547,7 @@
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/business-cards-clean.jpg" alt="Luxury raised business cards" loading="lazy" decoding="async" width="800" height="600"/>
+        <img src="assets/images/business-cards-clean.png" alt="Luxury raised business cards" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
@@ -561,12 +562,12 @@
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/ff-polo-shirts.jpg" alt="Embroidered polo shirt" loading="lazy" decoding="async" width="800" height="600"/>
+        <img src="assets/images/ff-polo-shirts-clean.png" alt="Embroidered polo shirt" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
     <!-- Card 4: Kraft Paper Labels -->
-    <article class="ap-bento-card wash">
+    <article class="ap-bento-card">
       <div class="ap-bento-header">
         <h3>Kraft Paper Labels</h3>
         <p>Natural earthy texture for jars, pouches and boxes.</p>
@@ -576,12 +577,12 @@
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/products/kraft-paper-labels.webp" alt="Kraft paper labels" loading="lazy" decoding="async" width="800" height="600"/>
+        <img src="assets/images/products/kraft-paper-labels-clean.png" alt="Kraft paper labels" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
     <!-- Card 5: DTF Technology -->
-    <article class="ap-bento-card wash">
+    <article class="ap-bento-card">
       <div class="ap-bento-header">
         <h3>DTF Transfers</h3>
         <p>Vibrant colors tested to withstand 50+ wash cycles.</p>
@@ -591,7 +592,7 @@
         </div>
       </div>
       <div class="ap-bento-media">
-        <img src="assets/images/ff-dtf-tshirts.jpg" alt="DTF printed t-shirts" loading="lazy" decoding="async" width="800" height="600"/>
+        <img src="assets/images/ff-dtf-tshirts-clean.png" alt="DTF printed t-shirts" loading="lazy" decoding="async" width="800" height="600"/>
       </div>
     </article>
 
